@@ -15,3 +15,6 @@ td, th {
 	padding: 2px;
 	vertical-align: top;
 }
+.item-left {
+	width: 200px;
+}
