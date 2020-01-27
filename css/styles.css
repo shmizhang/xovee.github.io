@@ -13,4 +13,5 @@
 td, th {
 	text-align: left;
 	padding: 2px;
+	vertical-align: top;
 }
