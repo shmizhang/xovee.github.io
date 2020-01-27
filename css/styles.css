@@ -1,0 +1,16 @@
+.t-center {
+	text-align: center;
+}
+.t-small {
+	font-size: 150%;
+}
+.t-middle {
+	font-size: 200%;
+}
+.t-large {
+	font-size: 300%;
+}
+td, th {
+	text-align: left;
+	padding: 2px;
+}
