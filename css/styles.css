@@ -18,3 +18,7 @@ td, th {
 .item-left {
 	width: 200px;
 }
+
+#basic-info th {
+	width: 200px;
+}
