@@ -22,3 +22,7 @@ td, th {
 #basic-info th {
 	width: 200px;
 }
+
+input {
+	margin: 10px 5px 5px 2px;
+}
