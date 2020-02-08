@@ -23,6 +23,6 @@ td, th {
 	width: 200px;
 }
 
-input {
-	margin: 10px 5px 5px 2px;
+label, input {
+	margin: 15px 5px 5px 2px;
 }
