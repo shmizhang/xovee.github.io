@@ -39,13 +39,12 @@ $(document).ready(function(){
         $(this).toggleClass('hover-color')
     })
     $('#interest-title').click(function(){
-        $('#interest-body').slideToggle(function(){
-            if ($('#interest-title b').hasClass('visible')){
-                $('#interest-title b').text('► Interest').removeClass('visible')
-            } else {
-                $('#interest-title b').text('▼ Interest').addClass('visible')
-            }
-        })
+        if ($('#interest-title b').hasClass('visible')){
+            $('#interest-title b').text('► Interest').removeClass('visible')
+        } else {
+            $('#interest-title b').text('▼ Interest').addClass('visible')
+        }
+        $('#interest-body').slideToggle()
     })
 
 })
