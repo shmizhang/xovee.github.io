@@ -11,7 +11,7 @@ $(document).ready(function(){
     $('tbody').hide()
     $('tbody.selected').show()
 
-
+    // project effects
     $('#project-title').on({
         mouseleave: function(){
             $('#project-form').hide(100)
@@ -34,4 +34,18 @@ $(document).ready(function(){
         $('#project-table tbody.selected').show()
     })
     
+    // interest effects
+    $('#interest-title').hover(function(){
+        $(this).toggleClass('hover-color')
+    })
+    $('#interest-title').click(function(){
+        $('#interest-body').slideToggle(function(){
+            if ($('#interest-title b').hasClass('visible')){
+                $('#interest-title b').text('► Interest').removeClass('visible')
+            } else {
+                $('#interest-title b').text('▼ Interest').addClass('visible')
+            }
+        })
+    })
+
 })
