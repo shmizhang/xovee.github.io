@@ -47,4 +47,16 @@ $(document).ready(function(){
         $('#interest-body').slideToggle()
     })
 
+    // calculate numbers of books
+    var numYears = $('#books table').length
+    var numBooks = $('#books table tbody tr').length - numYears
+    var avgBooks = Math.ceil(numBooks / numYears)
+    $('#total-books').text(numBooks)
+    $('#average-books').text(avgBooks)
+
+    $('.book-year').each(function(){
+        var tempNum = $(this).next().find('tr').length - 1
+        $(this).after('<i> read '+ tempNum + ' books.</i>')
+    })
+
 })
