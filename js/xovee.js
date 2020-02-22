@@ -15,12 +15,12 @@ $(document).ready(function(){
     $('#project-title').on({
         mouseleave: function(){
             $('#project-form').hide(100)
-            $('#project-title b').text('► Project')
+            $('#project-title b').text('▹ Project')
             $('#project-title').css('background-color', '#f5f5f0')
         },
         mouseenter: function(){
             $('#project-form').show(100)
-            $('#project-title b').text('▼ Project')
+            $('#project-title b').text('▿ Project')
             $('#project-title').css('background-color', '#ffffcc')
         },
     })
@@ -40,11 +40,25 @@ $(document).ready(function(){
     })
     $('#interest-title').click(function(){
         if ($('#interest-title b').hasClass('visible')){
-            $('#interest-title b').text('► Interest').removeClass('visible')
+            $('#interest-title b').text('▹ Interest').removeClass('visible')
         } else {
-            $('#interest-title b').text('▼ Interest').addClass('visible')
+            $('#interest-title b').text('▿ Interest').addClass('visible')
         }
         $('#interest-body').slideToggle()
+    })
+
+
+    // intern effects
+    $('#intern-title').hover(function(){
+        $(this).toggleClass('hover-color')
+    })
+    $('#intern-title').click(function(){
+        if ($('#intern-title b').hasClass('visible')){
+            $('#intern-title b').text('▹ Intern').removeClass('visible')
+        } else {
+            $('#intern-title b').text('▿ Intern').addClass('visible')
+        }
+        $('#intern-body').slideToggle()
     })
 
     // calculate numbers of books
