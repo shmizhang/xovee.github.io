@@ -62,8 +62,8 @@ $(document).ready(function(){
     })
 
     // calculate numbers of books
-    var numYears = $('#books table').length
-    var numBooks = $('#books table tbody tr').length - numYears
+    var numYears = $('#books table.book-count').length
+    var numBooks = $('#books table.book-count tbody tr').length - numYears
     var avgBooks = Math.ceil(numBooks / numYears)
     $('#total-books').text(numBooks)
     $('#average-books').text(avgBooks)
