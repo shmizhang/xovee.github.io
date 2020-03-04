@@ -34,6 +34,13 @@ label, input {
 	margin: auto;
 }
 
+.wide-section {
+	min-width: 600px;
+	max-width: 1920px; 
+	width: 100%; 
+	margin: auto; 
+}
+
 .hover-color {
 	background-color: #ffffcc;
 }
