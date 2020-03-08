@@ -44,28 +44,28 @@ $(document).ready(function(){
     })
     $('#publication-ccf-a').click(function(){
         $('#publication-table tbody').hide()
-        $('#publication-table tbody.ccf-a').show()
+        $('#publication-table tbody.ccf-a,#publication-table tbody.ccf-1').show()
     })
     $('#publication-ccf-b').click(function(){
         $('#publication-table tbody').hide()
-        $('#publication-table tbody.ccf-b').show()
+        $('#publication-table tbody.ccf-b,#publication-table tbody.ccf-2').show()
     })
     $('#publication-ccf-c').click(function(){
         $('#publication-table tbody').hide()
-        $('#publication-table tbody.ccf-c').show()
+        $('#publication-table tbody.ccf-c,#publication-table tbody.ccf-3').show()
     })
-    $('#publication-ccf-1').click(function(){
-        $('#publication-table tbody').hide()
-        $('#publication-table tbody.ccf-1').show()
-    })
-    $('#publication-ccf-2').click(function(){
-        $('#publication-table tbody').hide()
-        $('#publication-table tbody.ccf-2').show()
-    })
-    $('#publication-ccf-3').click(function(){
-        $('#publication-table tbody').hide()
-        $('#publication-table tbody.ccf-3').show()
-    })
+    // $('#publication-ccf-1').click(function(){
+    //     $('#publication-table tbody').hide()
+    //     $('#publication-table tbody.ccf-1').show()
+    // })
+    // $('#publication-ccf-2').click(function(){
+    //     $('#publication-table tbody').hide()
+    //     $('#publication-table tbody.ccf-2').show()
+    // })
+    // $('#publication-ccf-3').click(function(){
+    //     $('#publication-table tbody').hide()
+    //     $('#publication-table tbody.ccf-3').show()
+    // })
     $('#publication-jcr-1').click(function(){
         $('#publication-table tbody').hide()
         $('#publication-table tbody.jrc-1').show()
