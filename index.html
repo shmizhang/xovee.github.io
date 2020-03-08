@@ -54,9 +54,8 @@ DBLP,
 
 </div>
 
-<hr>
 </header>
-
+<hr>
 
 <!-- Education -->
 <div style='clear:both;' class='section'>
@@ -78,17 +77,39 @@ DBLP,
 
 <!-- Publication -->
 <div class='section'>
-<div><b class='t-middle'>Publication</b></div>
-<table style='padding:10px'>
+    <div id='publication-title'><b class='t-middle'>▹ Publication</b>
+    <form id='publication-form'>
+        <label id='publication-all'><input type='radio' name='publication-selector' value='all'> All</label>
+        <label id='publication-selected'><input type='radio' name='publication-selector' value='selected' checked> Selected</label>
+        <label id='publication-conference'><input type='radio' name='publication-selector' value='conference'> Conference</label>
+        <label id='publication-journal'><input type='radio' name='publication-selector' value='journal'> Journal</label>
+        <br>
+        CCF Conference Rank: <label id='publication-ccf-a'><input type='radio' name='publication-selector' value='ccf-a'> Rank A</label> 
+        <label id='publication-ccf-b'><input type='radio' name='publication-selector' value='ccf-b'> Rank B</label>
+        <label id='publication-ccf-c'><input type='radio' name='publication-selector' value='ccf-c'> Rank C</label>
+        <br>
+        CCF Journal Rank: <label id='publication-ccf-1'><input type='radio' name='publication-selector' value='ccf-1'> Tier 1</label> 
+        <label id='publication-ccf-2'><input type='radio' name='publication-selector' value='ccf-2'> Tier 2</label>
+        <label id='publication-ccf-3'><input type='radio' name='publication-selector' value='ccf-3'> Tier 3</label>
+        <br>
+        JCR Journal Rank: <label id='publication-jcr-1'><input type='radio' name='publication-selector' value='jcr-1'> Tier 1</label> 
+        <label id='publication-jcr-2'><input type='radio' name='publication-selector' value='jcr-2'> Tier 2</label>
+        <label id='publication-jcr-3'><input type='radio' name='publication-selector' value='jcr-3'> Tier 3</label>
+        <label id='publication-jcr-4'><input type='radio' name='publication-selector' value='jcr-4'> Tier 4</label>
+    </form>
+    
+    </div>
 
-<tbody class='selected'>
-    <tr><td class='item-left' rowspan='3'>April 27-30, 2020<br>Beijing, China</td><td>
-    <b>[INFOCOM'20]</b> Fan Zhou, <b>Xovee Xu</b>, Kunpeng Zhang, Goce Trajcevski and Ting Zhong</td></tr>
-    <tr><td><i>Variational Information Diffusion for Probabilistic Cascades Prediction</i></td></tr>
-    <tr><td>IEEE International Conference on Computer Communications (INFOCOM)
-    <!-- <a href='https://www.xovee.cn' target='_blank'>[link]</a> -->
-    </td></tr>
-</tbody>
+<table id='publication-table' style='padding:10px'>
+
+    <tbody class='selected conference ccf-a'>
+        <tr><td class='item-left' rowspan='3'>Jul 6-9, 2020<br>Toronto, Canada</td><td>
+        <b>[INFOCOM'20]</b> Fan Zhou, <b>Xovee Xu</b>, Kunpeng Zhang, Goce Trajcevski and Ting Zhong</td></tr>
+        <tr><td><i>Variational Information Diffusion for Probabilistic Cascades Prediction</i></td></tr>
+        <tr><td>IEEE International Conference on Computer Communications (INFOCOM)
+        <!-- <a href='https://www.xovee.cn' target='_blank'>[link]</a> -->
+        </td></tr>
+    </tbody>
 
 </table>
 </div>
@@ -163,7 +184,7 @@ DBLP,
 
 
 <hr>
-<p><i>Last update</i>: Mar 7, 2020.</p>
+<p><i>Last update</i>: Mar 8, 2020.</p>
 
 </body>
 </html>

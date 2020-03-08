@@ -11,6 +11,79 @@ $(document).ready(function(){
     $('tbody').hide()
     $('tbody.selected').show()
 
+    
+    // publication effects
+    $('#publication-title').on({
+        mouseleave: function(){
+            $('#publication-form').hide(100)
+            $('#publication-title b').text('▹ Publication')
+            $('#publication-title').css('background-color', '#f5f5f0')
+        },
+        mouseenter: function(){
+            $('#publication-form').show(100)
+            $('#publication-title b').text('▿ Publication')
+            $('#publication-title').css('background-color', '#ffffcc')
+        },
+    })
+
+    // publication selector
+    $('#publication-all').click(function(){
+        $('#publication-table tbody').show()
+    })
+    $('#publication-selected').click(function(){
+        $('#publication-table tbody').hide()
+        $('#publication-table tbody.selected').show()
+    })
+    $('#publication-conference').click(function(){
+        $('#publication-table tbody').hide()
+        $('#publication-table tbody.conference').show()
+    })
+    $('#publication-journal').click(function(){
+        $('#publication-table tbody').hide()
+        $('#publication-table tbody.journal').show()
+    })
+    $('#publication-ccf-a').click(function(){
+        $('#publication-table tbody').hide()
+        $('#publication-table tbody.ccf-a').show()
+    })
+    $('#publication-ccf-b').click(function(){
+        $('#publication-table tbody').hide()
+        $('#publication-table tbody.ccf-b').show()
+    })
+    $('#publication-ccf-c').click(function(){
+        $('#publication-table tbody').hide()
+        $('#publication-table tbody.ccf-c').show()
+    })
+    $('#publication-ccf-1').click(function(){
+        $('#publication-table tbody').hide()
+        $('#publication-table tbody.ccf-1').show()
+    })
+    $('#publication-ccf-2').click(function(){
+        $('#publication-table tbody').hide()
+        $('#publication-table tbody.ccf-2').show()
+    })
+    $('#publication-ccf-3').click(function(){
+        $('#publication-table tbody').hide()
+        $('#publication-table tbody.ccf-3').show()
+    })
+    $('#publication-jcr-1').click(function(){
+        $('#publication-table tbody').hide()
+        $('#publication-table tbody.jrc-1').show()
+    })
+    $('#publication-jcr-2').click(function(){
+        $('#publication-table tbody').hide()
+        $('#publication-table tbody.jrc-2').show()
+    })
+    $('#publication-jcr-3').click(function(){
+        $('#publication-table tbody').hide()
+        $('#publication-table tbody.jrc-3').show()
+    })
+    $('#publication-jcr-4').click(function(){
+        $('#publication-table tbody').hide()
+        $('#publication-table tbody.jrc-4').show()
+    })
+
+
     // project effects
     $('#project-title').on({
         mouseleave: function(){
