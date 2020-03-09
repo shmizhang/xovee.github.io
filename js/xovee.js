@@ -11,20 +11,31 @@ $(document).ready(function(){
     $('tbody').hide()
     $('tbody.selected').show()
 
-    
     // publication effects
-    $('#publication-title').on({
-        mouseleave: function(){
-            $('#publication-form').hide(100)
-            $('#publication-title b').text('▹ Publication')
-            $('#publication-title').css('background-color', '#f5f5f0')
-        },
-        mouseenter: function(){
-            $('#publication-form').show(100)
-            $('#publication-title b').text('▿ Publication')
-            $('#publication-title').css('background-color', '#ffffcc')
-        },
+    $('#publication-section').hover(function(){
+        $(this).toggleClass('hover-color')
     })
+    $('#publication-title').click(function(){
+        if ($('#publication-title b').hasClass('visible')){
+            $('#publication-title b').text('▹ Publication').removeClass('visible')
+        } else {
+            $('#publication-title b').text('▿ Publication').addClass('visible')
+        }
+        $('#publication-form').slideToggle()
+        $('#publication-form').toggleClass('hover-color')
+    })
+    // $('#publication-title').on({
+    //     mouseleave: function(){
+    //         $('#publication-form').hide(100)
+    //         $('#publication-title b').text('▹ Publication')
+    //         $('#publication-title').css('background-color', '#f5f5f0')
+    //     },
+    //     mouseenter: function(){
+    //         $('#publication-form').show(100)
+    //         $('#publication-title b').text('▿ Publication')
+    //         $('#publication-title').css('background-color', '#ffffcc')
+    //     },
+    // })
 
     // publication selector
     $('#publication-all').click(function(){
