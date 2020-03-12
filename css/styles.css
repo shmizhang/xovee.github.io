@@ -2,13 +2,13 @@
 	text-align: center;
 }
 .t-small {
-	font-size: 150%;
+	font-size: 140%;
 }
 .t-middle {
-	font-size: 200%;
+	font-size: 180%;
 }
 .t-large {
-	font-size: 300%;
+	font-size: 250%;
 }
 td, th {
 	text-align: left;
@@ -16,7 +16,7 @@ td, th {
 	vertical-align: top;
 }
 .item-left {
-	width: 200px;
+	width: 170px;
 }
 
 #basic-info th {
