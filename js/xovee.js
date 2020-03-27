@@ -52,6 +52,10 @@ $(document).ready(function(){
         $('#publication-table tbody').hide()
         $('#publication-table tbody.journal').show()
     })
+    $('#publication-preprint').click(function(){
+        $('#publication-table tbody').hide()
+        $('#publication-table tbody.preprint').show()
+    })
     $('#publication-ccf-a').click(function(){
         $('#publication-table tbody').hide()
         $('#publication-table tbody.ccf-a,#publication-table tbody.ccf-1').show()
