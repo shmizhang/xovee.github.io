@@ -184,4 +184,7 @@ $(document).ready(function(){
         $(this).after('<i> read '+ tempNum + ' books.</i>')
     })
 
+    var pubNum = $('#publication-table tbody').length
+    $('#publication-title').append('<i> of ' + pubNum + ' conference/journal papers.</i>')
+
 })
