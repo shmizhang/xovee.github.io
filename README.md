@@ -4,6 +4,7 @@ This repo contains the codes of Xovee's personal page.
 ## Structure
 
 - archive
+  - paper
 - css
   - styles.css
 - html
