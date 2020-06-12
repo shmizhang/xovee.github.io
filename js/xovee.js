@@ -123,17 +123,17 @@ $(document).ready(function(){
     })
 
     // project effects
-    $('#project-title').on({
-        mouseleave: function(){
-            $('#project-form').hide(100)
-            $('#project-title b').text('▹ Project')
-            $('#project-title').css('background-color', '#f5f5f0')
-        },
-        mouseenter: function(){
-            $('#project-form').show(100)
-            $('#project-title b').text('▿ Project')
-            $('#project-title').css('background-color', '#ffffcc')
-        },
+    $('#project-section').hover(function(){
+        $(this).toggleClass('hover-color')
+        $('#project-form').toggleClass('form-hover-color')
+    })
+    $('#project-title').click(function(){
+        if ($('#project-title b').hasClass('visible')){
+            $('#project-title b').text('▹ Project').removeClass('visible')
+        } else {
+            $('#project-title b').text('▿ Project').addClass('visible')
+        }
+        $('#project-form').slideToggle()
     })
 
     // project selector

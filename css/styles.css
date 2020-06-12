@@ -52,6 +52,6 @@ label, input {
 
 .selector-border {
 	padding: 5px;
-	border: 2px solid skyblue;
+	border: 1px solid skyblue;
 	border-radius: 3px;
 }
