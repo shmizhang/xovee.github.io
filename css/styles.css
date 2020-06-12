@@ -44,3 +44,14 @@ label, input {
 .hover-color {
 	background-color: #ffffcc;
 }
+
+.form-hover-color {
+	/* background-color: #fdfde7; */
+	background-color: #ffffcc;
+}
+
+.selector-border {
+	padding: 5px;
+	border: 2px solid skyblue;
+	border-radius: 3px;
+}

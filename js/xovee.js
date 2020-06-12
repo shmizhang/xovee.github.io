@@ -14,6 +14,7 @@ $(document).ready(function(){
     // publication effects
     $('#publication-section').hover(function(){
         $(this).toggleClass('hover-color')
+        $('#publication-form').toggleClass('form-hover-color')
     })
     $('#publication-title').click(function(){
         if ($('#publication-title b').hasClass('visible')){
@@ -97,20 +98,19 @@ $(document).ready(function(){
         $('#publication-table tbody.jrc-4').show()
     })
 
+
     // award effects
-    $('#award-title').on({
-        mouseleave: function(){
-            $('#award-form').hide(100)
-            $('#award-title b').text('▹ Award')
-            $('#award-title').css('background-color', '#f5f5f0')
-            $('#award-p').hide()
-        },
-        mouseenter: function(){
-            $('#award-form').show(100)
-            $('#award-title b').text('▿ Award')
-            $('#award-title').css('background-color', '#ffffcc')
-            $('#award-p').show()
-        },
+    $('#award-section').hover(function(){
+        $(this).toggleClass('hover-color')
+        $('#award-form').toggleClass('form-hover-color')
+    })
+    $('#award-title').click(function(){
+        if ($('#award-title b').hasClass('visible')){
+            $('#award-title b').text('▹ Award').removeClass('visible')
+        } else {
+            $('#award-title b').text('▿ Award').addClass('visible')
+        }
+        $('#award-form').slideToggle()
     })
 
     // award selector
