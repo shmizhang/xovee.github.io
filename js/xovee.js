@@ -10,6 +10,7 @@ $(document).ready(function(){
     // hide not selected entries
     $('tbody').hide()
     $('tbody.selected').show()
+    $('#show-links').hide()
 
     // publication effects
     $('#publication-section').hover(function(){
@@ -186,5 +187,10 @@ $(document).ready(function(){
 
     var pubNum = $('#publication-table tbody').length
     $('#publication-title').append('<i> of ' + pubNum + ' conference/journal papers.</i>')
+
+    // show more links or hide
+    $('#show-links-button').click(function(){
+        $('#show-links').toggle()
+    })
 
 })
