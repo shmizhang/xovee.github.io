@@ -173,6 +173,19 @@ $(document).ready(function(){
         $('#intern-body').slideToggle()
     })
 
+    // others effects
+    $('#others-title').hover(function(){
+        $(this).toggleClass('hover-color')
+    })
+    $('#others-title').click(function(){
+        if ($('#others-title b').hasClass('visible')){
+            $('#others-title b').text('▹ Others').removeClass('visible')
+        } else {
+            $('#others-title b').text('▿ Others').addClass('visible')
+        }
+        $('#others-body').slideToggle()
+    })
+
     // calculate numbers of books
     var numYears = $('#books table.book-count').length
     var numBooks = $('#books table.book-count tbody tr').length - numYears
