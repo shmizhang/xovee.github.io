@@ -206,4 +206,23 @@ $(document).ready(function(){
         $('#show-links').toggle()
     })
 
+    // calculate max review times for journal/conference
+    var numReviews = [];
+    $('#review-table tr').each(function(){
+        numReviews.push(Number($(this).find('td').eq(1).text()))
+    })
+    // alert(Math.max.apply(Math, maxNumReviews))
+
+    maxNumReviews = Math.max.apply(Math, numReviews)
+
+    // set the max and value of the review progress
+    $('#review-table tr').each(function(){
+        $(this).find('progress').attr('max', maxNumReviews)
+        $(this).find('progress').attr('value', Number($(this).find('td').eq(1).text()))
+    })
+
+    // prevent table cell line-break
+    $('#review-table tr').each(function(){
+        $(this).find('td').eq(1).css('white-space', 'nowrap')
+    })
 })
