@@ -123,15 +123,15 @@ $(document).ready(function(){
         $('#award-table tbody.selected').show()
     })
 
-    // professional service effects
+    // service effects
     $('#pro-title').hover(function(){
         $(this).toggleClass('hover-color')
     })
     $('#pro-title').click(function(){
         if ($('#pro-title b').hasClass('visible')){
-            $('#pro-title b').text('▹ Professional Service').removeClass('visible')
+            $('#pro-title b').text('▹ Service').removeClass('visible')
         } else {
-            $('#pro-title b').text('▿ Professional Service').addClass('visible')
+            $('#pro-title b').text('▿ Service').addClass('visible')
         }
         $('#pro-body').slideToggle()
     })
