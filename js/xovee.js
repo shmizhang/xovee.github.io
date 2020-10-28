@@ -126,6 +126,7 @@ $(document).ready(function(){
     // service effects
     $('#service-title').hover(function(){
         $(this).toggleClass('hover-color')
+        $('#service-form').toggleClass('form-hover-color')
     })
     $('#service-title').click(function(){
         if ($('#service-title b').hasClass('visible')){
@@ -134,15 +135,18 @@ $(document).ready(function(){
             $('#service-title b').text('▿ Service').addClass('visible')
         }
         $('#service-body').slideToggle()
+        $('#service-form').slideToggle()
     })
 
     // service selector
+    $('#review-table tr').hide()
+    $('#review-table tr.select').show()
     $('#service-all').click(function(){
-        $('#service-table tbody').show()
+        $('#review-table tr').show()
     })
     $('#service-selected').click(function(){
-        $('#service-table tbody').hide()
-        $('#service-table tbody.selected').show()
+        $('#review-table tr').hide()
+        $('#review-table tr.select').show()
     })
 
     // project effects
