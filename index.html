@@ -82,7 +82,7 @@
         <!--<br><u>CCF Journal Rank</u>: <label id='publication-ccf-1'><input type='radio' name='publication-selector' value='ccf-1'>Tier 1</label> 
         <label id='publication-ccf-2'><input type='radio' name='publication-selector' value='ccf-2'>Tier 2</label>
         <label id='publication-ccf-3'><input type='radio' name='publication-selector' value='ccf-3'>Tier 3</label>-->
-        <br><u>CAS JCR Journal Rank</u>: <label id='publication-jcr-1'><input type='radio' name='publication-selector' value='jcr-1'>Tier 1</label> 
+        <br><u>CAS Journal Rank</u>: <label id='publication-jcr-1'><input type='radio' name='publication-selector' value='jcr-1'>Tier 1</label> 
         <label id='publication-jcr-2'><input type='radio' name='publication-selector' value='jcr-2'>Tier 2</label>
         <label id='publication-jcr-3'><input type='radio' name='publication-selector' value='jcr-3'>Tier 3</label>
         <label id='publication-jcr-4'><input type='radio' name='publication-selector' value='jcr-4'>Tier 4</label>
@@ -169,27 +169,31 @@
 
 <!-- Service -->
 <div class='section'>
-    <div id='pro-section'>
-    <div id='pro-title'><b class='t-middle'>▹ Service</b></div>
+    <div id='service-section'>
+    <div id='service-title'><b class='t-middle'>▹ Service</b></div>
+    <form id='service-form' class='selector-border'>
+        <label id='service-all'><input type='radio' name='service-selector' value='all'> All</label>
+        <label id='service-selected'><input type='radio' name='service-selector' value='selected' checked> Selected</label>
+    </form>
     </div>
 
-    <div id='pro-body' style='display: none; padding: 10px;'>
+    <div id='service-body' style='display: none; padding: 10px;'>
     <h2>As Reviewer For: </h2>
-        
+    
     <!-- <tr><td class='item-left'><b></b></td><td></td><td></td><td></td></tr> -->
 
     <table id='review-table' style='padding:10px'>
 
         <tbody class='selected'>
             <tr><th>Title</th><th>Frequency</th><th>Full Titile of the Conference/Journal</th><th>Year</th></tr>
-            <tr><td class='item-left'><b>AAAI</b></td><td>1 <progress max=100 value=1></progress></td><td>AAAI Conference on Artificial Intelligence</td><td>2021</td></tr>
+            <tr><td class='item-left select'><b>AAAI</b></td><td>1 <progress max=100 value=1></progress></td><td>AAAI Conference on Artificial Intelligence</td><td>2021</td></tr>
             <tr><td class='item-left'><b>Access</b></td><td>1 <progress max=100 value=1></progress></td><td>IEEE Access</td><td>2020</td></tr>
-            <tr><td class='item-left'><b>BigData</b></td><td>1 <progress max=100 value=1></progress></td><td>IEEE International Conference on Big Data</td><td>2020</td></tr>
+            <tr><td class='item-left select'><b>BigData</b></td><td>1 <progress max=100 value=1></progress></td><td>IEEE International Conference on Big Data</td><td>2020</td></tr>
             <tr><td class='item-left'><b>IJ-ICT</b></td><td>1 <progress max=100 value=1></progress></td><td>International Journal of Informatics and Communication Technology (IJ-ICT)</td><td>2020</td></tr>
             <tr><td class='item-left'><b>JAIHC</b></td><td>1 <progress max=100 value=1></progress></td><td>Journal of Ambient Intelligence and Humanized Computing</td><td>2020</td></tr>
-            <tr><td class='item-left'><b>KDD</b></td><td>1 <progress max=100 value=1></progress></td><td>ACM SIGKDD Conference on Knowledge Discovery and Data Mining</td><td>2019</td></tr>
+            <tr><td class='item-left select'><b>KDD</b></td><td>1 <progress max=100 value=1></progress></td><td>ACM SIGKDD Conference on Knowledge Discovery and Data Mining</td><td>2019</td></tr>
             <tr><td class='item-left'><b>TELKOMNIKA</b></td><td>3 <progress max=100 value=1></progress></td><td>TELKOMNIKA (Telecommunication Computing Electronics and Control)</td><td>2020</td></tr>
-            <tr><td class='item-left'><b>TNNLS</b></td><td>1 <progress max=100 value=1></progress></td><td>IEEE Transactions on Neural Networks and Learning Systems</td><td>2020</td></tr>
+            <tr><td class='item-left select'><b>TNNLS</b></td><td>1 <progress max=100 value=1></progress></td><td>IEEE Transactions on Neural Networks and Learning Systems</td><td>2020</td></tr>
         </tbody>
 
     </table>
@@ -269,17 +273,6 @@
             <li><a href='https://scholar.google.com/citations?user=Ihj2Rw8AAAAJ&hl=en' target='_blank'><b>Fan Zhou</b></a>, Associated Professor, University of Electronic Science and Technology of China (<a href='https://en.uestc.edu.cn' target='_blank'>UESTC</a>).</li>
             <li><b>Ting Zhong</b>, Associated Professor, University of Electronic Science and Technology of China (<a href='https://en.uestc.edu.cn' target='_blank'>UESTC</a>).</li>
         </ul>
-
-        <h2><del>Interesting</del> Paper Submission Experience</h2>
-
-        <table style='padding:10px'>
-        
-        <tbody class='selected'>
-            <tr><td class='item-left'><b>Accepted by</b></td><td>GLOBECOM x3, INFOCOM x1</td></tr>
-            <tr><td class='item-left'><b>Rejected by</b></td><td>GLOBECOM x1, IJCAI x1, VLDB x1</td></tr>
-        </tbody>
-
-        </table>
 
     </div>
 </div>

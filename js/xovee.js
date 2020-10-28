@@ -124,16 +124,25 @@ $(document).ready(function(){
     })
 
     // service effects
-    $('#pro-title').hover(function(){
+    $('#service-title').hover(function(){
         $(this).toggleClass('hover-color')
     })
-    $('#pro-title').click(function(){
-        if ($('#pro-title b').hasClass('visible')){
-            $('#pro-title b').text('▹ Service').removeClass('visible')
+    $('#service-title').click(function(){
+        if ($('#service-title b').hasClass('visible')){
+            $('#service-title b').text('▹ Service').removeClass('visible')
         } else {
-            $('#pro-title b').text('▿ Service').addClass('visible')
+            $('#service-title b').text('▿ Service').addClass('visible')
         }
-        $('#pro-body').slideToggle()
+        $('#service-body').slideToggle()
+    })
+
+    // service selector
+    $('#service-all').click(function(){
+        $('#service-table tbody').show()
+    })
+    $('#service-selected').click(function(){
+        $('#service-table tbody').hide()
+        $('#service-table tbody.selected').show()
     })
 
     // project effects
