@@ -15,7 +15,10 @@ $(document).ready(function(){
     // publication effects
     $('#publication-section').hover(function(){
         $(this).toggleClass('hover-color')
-        $('#publication-form').toggleClass('form-hover-color')
+        if (!$('#publication-title b').hasClass('visible')){
+            $(this).toggleClass('selector-border'); 
+            $('#publication-section').toggleClass('form-hover-color'); 
+        }
     })
     $('#publication-title').click(function(){
         if ($('#publication-title b').hasClass('visible')){
@@ -84,26 +87,28 @@ $(document).ready(function(){
     // })
     $('#publication-jcr-1').click(function(){
         $('#publication-table tbody').hide()
-        $('#publication-table tbody.jrc-1').show()
+        $('#publication-table tbody.jcr-1').show()
     })
     $('#publication-jcr-2').click(function(){
         $('#publication-table tbody').hide()
-        $('#publication-table tbody.jrc-2').show()
+        $('#publication-table tbody.jcr-2').show()
     })
     $('#publication-jcr-3').click(function(){
         $('#publication-table tbody').hide()
-        $('#publication-table tbody.jrc-3').show()
+        $('#publication-table tbody.jcr-3').show()
     })
     $('#publication-jcr-4').click(function(){
         $('#publication-table tbody').hide()
-        $('#publication-table tbody.jrc-4').show()
+        $('#publication-table tbody.jcr-4').show()
     })
-
 
     // award effects
     $('#award-section').hover(function(){
         $(this).toggleClass('hover-color')
-        $('#award-form').toggleClass('form-hover-color')
+        if (!$('#award-title b').hasClass('visible')){
+            $(this).toggleClass('selector-border'); 
+            $('#award-section').toggleClass('form-hover-color')
+        }
     })
     $('#award-title').click(function(){
         if ($('#award-title b').hasClass('visible')){
@@ -124,10 +129,14 @@ $(document).ready(function(){
     })
 
     // service effects
-    $('#service-title').hover(function(){
+    $('#service-section').hover(function(){
+        if (!$('#service-title b').hasClass('visible')){
+            $(this).toggleClass('selector-border'); 
+            $('#service-section').toggleClass('form-hover-color'); 
+        }
         $(this).toggleClass('hover-color')
-        $('#service-form').toggleClass('form-hover-color')
     })
+
     $('#service-title').click(function(){
         if ($('#service-title b').hasClass('visible')){
             $('#service-title b').text('▹ Service').removeClass('visible')
@@ -152,7 +161,10 @@ $(document).ready(function(){
     // project effects
     $('#project-section').hover(function(){
         $(this).toggleClass('hover-color')
-        $('#project-form').toggleClass('form-hover-color')
+        if (!$('#project-section b').hasClass('visible')){
+            $(this).toggleClass('selector-border'); 
+            $('#project-section').toggleClass('form-hover-color'); 
+        }
     })
     $('#project-title').click(function(){
         if ($('#project-title b').hasClass('visible')){
@@ -188,7 +200,11 @@ $(document).ready(function(){
 
     // intern effects
     $('#intern-title').hover(function(){
-        $(this).toggleClass('hover-color')
+        if (!$('#intern-title b').hasClass('visible')){
+            $(this).toggleClass('selector-border'); 
+            $('#intern-title').toggleClass('form-hover-color'); 
+        }
+        $(this).toggleClass('hover-color'); 
     })
     $('#intern-title').click(function(){
         if ($('#intern-title b').hasClass('visible')){
@@ -201,6 +217,10 @@ $(document).ready(function(){
 
     // others effects
     $('#others-title').hover(function(){
+        if (!$('#others-title b').hasClass('visible')){
+            $(this).toggleClass('selector-border'); 
+            $('#others-title').toggleClass('form-hover-color'); 
+        }
         $(this).toggleClass('hover-color')
     })
     $('#others-title').click(function(){
