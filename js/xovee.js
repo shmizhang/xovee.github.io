@@ -128,6 +128,9 @@ $(document).ready(function(){
         $('#award-table tbody.selected').show()
     })
 
+    
+    // professional service and membership
+
     // service effects
     $('#service-section').hover(function(){
         if (!$('#service-title b').hasClass('visible')){
@@ -139,24 +142,38 @@ $(document).ready(function(){
 
     $('#service-title').click(function(){
         if ($('#service-title b').hasClass('visible')){
-            $('#service-title b').text('▹ Service').removeClass('visible')
+            $('#service-title b').text('▹ Professional Service & Membership').removeClass('visible')
         } else {
-            $('#service-title b').text('▿ Service').addClass('visible')
+            $('#service-title b').text('▿ Professional Service & Membership').addClass('visible')
         }
         $('#service-body').slideToggle()
         $('#service-form').slideToggle()
+        $('#membership-body').slideToggle()
     })
 
-    // service selector
+
+    // review selector
     $('#review-table tr').hide()
     $('#review-table tr.select').show()
-    $('#service-all').click(function(){
+    $('#review-all').click(function(){
         $('#review-table tr').show()
     })
-    $('#service-selected').click(function(){
+    $('#review-selected').click(function(){
         $('#review-table tr').hide()
         $('#review-table tr.select').show()
     })
+
+    // membership selector
+    $('#membership-table tbody').hide()
+    $('#membership-table tbody.select').show()
+    $('#membership-all').click(function(){
+        $('#membership-table tbody').show()
+    })
+    $('#membership-selected').click(function(){
+        $('#membership-table tbody').hide()
+        $('#membership-table tbody.select').show()
+    })
+
 
     // project effects
     $('#project-section').hover(function(){
@@ -252,6 +269,7 @@ $(document).ready(function(){
         $('#show-links').toggle()
     })
 
+    // max over all reviews
     // calculate max review times for journal/conference
     var numReviews = [];
     $('#review-table tr').each(function(){
@@ -262,10 +280,33 @@ $(document).ready(function(){
     maxNumReviews = Math.max.apply(Math, numReviews)
 
     // set the max and value of the review progress
-    $('#review-table tr').each(function(){
-        $(this).find('progress').attr('max', maxNumReviews)
-        $(this).find('progress').attr('value', Number($(this).find('td').eq(1).text()))
+    $('#review-all').click(function(){
+        $('#review-table tr').each(function(){
+            $(this).find('progress').attr('max', maxNumReviews)
+            $(this).find('progress').attr('value', Number($(this).find('td').eq(1).text()))
+        })
     })
+
+
+    // max over selected reviews
+    // calculate max review times for journal/conference
+    var numSelectedReviews = [];
+    $('#review-table tr.select').each(function(){
+        numSelectedReviews.push(Number($(this).find('td').eq(1).text()))
+    })
+    // alert(Math.max.apply(Math, maxNumReviews))
+
+    maxNumSelectedReviews = Math.max.apply(Math, numSelectedReviews)
+
+    // set the max and value of the review progress
+    $('#review-selected').click(function(){
+        $('#review-table tr.select').each(function(){
+            $(this).find('progress').attr('max', maxNumSelectedReviews)
+            $(this).find('progress').attr('value', Number($(this).find('td').eq(1).text()))
+        })
+    }).click()
+    
+    
 
     // prevent table cell line-break
     $('#review-table tr').each(function(){
