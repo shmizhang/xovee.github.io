@@ -112,9 +112,9 @@ $(document).ready(function(){
     })
     $('#award-title').click(function(){
         if ($('#award-title b').hasClass('visible')){
-            $('#award-title b').text('▹ Award').removeClass('visible')
+            $('#award-title b').text('▹ Distinction').removeClass('visible')
         } else {
-            $('#award-title b').text('▿ Award').addClass('visible')
+            $('#award-title b').text('▿ Distinction').addClass('visible')
         }
         $('#award-form').slideToggle()
     })
@@ -142,9 +142,9 @@ $(document).ready(function(){
 
     $('#service-title').click(function(){
         if ($('#service-title b').hasClass('visible')){
-            $('#service-title b').text('▹ Professional Service & Membership').removeClass('visible')
+            $('#service-title b').text('▹ Service & Membership').removeClass('visible')
         } else {
-            $('#service-title b').text('▿ Professional Service & Membership').addClass('visible')
+            $('#service-title b').text('▿ Service & Membership').addClass('visible')
         }
         $('#service-body').slideToggle()
         $('#service-form').slideToggle()
