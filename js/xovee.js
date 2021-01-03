@@ -11,6 +11,7 @@ $(document).ready(function(){
     $('tbody').hide()
     $('tbody.selected').show()
     $('#show-links').hide()
+    $('#publication-rank').hide()
 
     // publication effects
     $('#publication-section').hover(function(){
@@ -49,6 +50,10 @@ $(document).ready(function(){
         $('#publication-table tbody').hide()
         $('#publication-table tbody.selected').show()
     })
+    $('#publication-recent5').click(function(){
+        $('#publication-table tbody').hide()
+        $('#publication-table tbody').slice(0, 5).show()
+    })
     $('#publication-conference').click(function(){
         $('#publication-table tbody').hide()
         $('#publication-table tbody.conference').show()
@@ -60,6 +65,10 @@ $(document).ready(function(){
     $('#publication-preprint').click(function(){
         $('#publication-table tbody').hide()
         $('#publication-table tbody.preprint').show()
+    })
+    $('#publication-corresponding').click(function(){
+        $('#publication-table tbody').hide()
+        $('#publication-table tbody.corresponding').show()
     })
     $('#publication-ccf-a').click(function(){
         $('#publication-table tbody').hide()
@@ -267,6 +276,9 @@ $(document).ready(function(){
     // show more links or hide
     $('#show-links-button').click(function(){
         $('#show-links').toggle()
+    })
+    $('#show-publication-rank-button').click(function(){
+        $('#publication-rank').toggle()
     })
 
     // max over all reviews
