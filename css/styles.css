@@ -10,48 +10,15 @@
 .t-large {
 	font-size: 250%;
 }
-td, th {
-	text-align: left;
-	padding: 2px;
-	vertical-align: top;
-}
-.item-left {
-	width: 170px;
-}
-
-#basic-info th {
-	width: 200px;
-}
-
-label, input {
-	margin: 15px 5px 5px 2px;
-}
 
 .section {
 	min-width: 400px;
-	max-width: 1080px;
+	max-width: 900px;
 	width: 100%;
 	margin: auto;
 }
 
-.wide-section {
-	min-width: 600px;
-	max-width: 1366px; 
-	width: 100%; 
-	margin: auto; 
-}
-
-.hover-color {
-	background-color: #ffffcc;
-}
-
-.form-hover-color {
-	/* background-color: #fdfde7; */
-	background-color: #ffffcc;
-}
-
-.selector-border {
-	padding: 5px;
-	border: 1px solid skyblue;
-	border-radius: 3px;
+.hanging p {
+	text-indent: -2em;
+	margin-left: 3em;
 }
