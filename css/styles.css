@@ -22,3 +22,8 @@
 	text-indent: -2em;
 	margin-left: 3em;
 }
+
+p {
+	margin-top: .65em;
+	margin-bottom: .65em;
+}
