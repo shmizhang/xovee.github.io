@@ -2,7 +2,7 @@
 <html>
 <head>
 <title>Xovee Xu's Home Page</title>
-<meta charset='utf-8' author='xovee-xu'>
+<meta charset='utf-8' author='xovee-xu' name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel='stylesheet' href='css/styles.css'>
 <script src='js/jquery-3.4.1.min.js'></script>
 <script src='js/xovee.js'></script>
@@ -10,16 +10,17 @@
 <body style='background-color:#f5f5f0;font-family: "Palatino Linotype", "Book Antiqua", Palatino, Times, Arial;' class='section'>
 
 <header>
-<!--<div class='t-large t-center'><b>Xovee Xu</b></div>-->
 <!-- Bio -->
 <div id='bio-section'>
 
-<img src='img/photo-mild.jpeg' alt='My Avatar' style='float: right; padding: 10px; max-width:200px;'>
+<div class='avatar-container'>
+    <img src='img/photo-mild.jpeg' alt='My Avatar' class='avatar'>
+    <div class='avatar-overley'>Jan 2019 at<br>Chengdu, China</div>
+</div>
 
-<p class='t-middle' style='text-align: center;'>Xovee Xu (徐增)</p>
+<div class='t-middle title' style='text-align: center;'>Xovee Xu (徐增)</div>
 <p><b>Bio:</b> I am currently a third-year master student major in software engineering at the University of Electronic Science and Technology of China (<a href='https://en.uestc.edu.cn/' target='_blank'>UESTC</a>), Chengdu, Sichuan, China, advised by <a href='https://scholar.google.com/citations?user=Ihj2Rw8AAAAJ&hl=en&oi=ao', target='_blank'>Fan Zhou</a> and Ting Zhong. My research includes social network data mining and knowledge discovery in various real-world applications.
-<a href='./archive/cv-build/cv.pdf' target='_blank'>
-<i>Curriculum Vitae [.pdf]</i></a>
+<a href='./archive/cv-build/cv.pdf' target='_blank'><i>Curriculum Vitae [.pdf]</i></a> and <a href='./html/full-bio.html' target='_blank'><i>FULL BIO</i></a>.
 </p>
 
 <p>    
@@ -35,10 +36,10 @@
 <a itemprop="sameAs" content="https://orcid.org/0000-0001-6415-7558" href="https://orcid.org/0000-0001-6415-7558" target="orcid.widget" rel="me noopener noreferrer">ORCID<img src='img/orcid_16x16.png' alt=''></a>,
 <a href='https://scholar.google.com/citations?hl=en&user=ra0qyRQAAAAJ' target='_blank'>Google Scholar</a>, 
 <a href='https://www.linkedin.com/in/xovee/' target='_blank'>LinkedIn</a>,
-<a href='https://github.com/Xovee' target='_blank'>GitHub</a>
-<span id='show-links' class=''>,
+<a href='https://github.com/Xovee' target='_blank'>GitHub</a>,
 <a href='https://publons.com/researcher/3651887/xovee-xu/' target='_blank'>publons</a>, 
-<a href='https://dblp.org/pid/261/9309' target='_blank'>DBLP</a>, 
+<a href='https://dblp.org/pid/261/9309' target='_blank'>DBLP</a>
+<span id='show-links' class=''>,
 <a href='https://www.researchgate.net/profile/Xovee_Xu4' target='_blank'>ResearchGate</a>,  
 <a href='https://www.semanticscholar.org/author/Xovee-Xu/1593903641' target='_blank'>Semantic Scholar</a>, 
 <a href='https://www.instagram.com/xoveee/' target='_blank'>Instagram</a>, 
@@ -49,17 +50,18 @@
 </p>
 
 </div>
+</header>
 
 <hr>
 
 
 <!-- News -->
 <div class=''>
-<h3 style='color: red; font-style: italic;'>News</h3>
+<h3 style='color: red; font-style: italic; font-size: 1.2em;'>News</h3>
 
 <ul>
-    <li>Mar 2021. I have had a wonderful happy birthday with beloved ones.</li>
-    <li>Mar 2021. We have an <a href='https://dl.acm.org/doi/10.1145/3433000?cid=99659687041' target='_blank'>information cascade survey</a> published in ACM CSUR.</li>
+    <li>Mar 2021 - I have had a wonderful happy birthday with beloved ones.</li>
+    <li>Mar 2021 - We have an <a href='https://dl.acm.org/doi/10.1145/3433000?cid=99659687041' target='_blank'>information cascade survey</a> published in ACM CSUR.</li>
 </ul>
 </div>
 
@@ -75,33 +77,46 @@ Planning Sections:
 "Professional Service", I mean, really services not including the reviewing, might be included here. 
 -->
 
+<!-- Tabs -->
+<h3 id='tabs'>
+    <span id='articles'>Articles</span> <span class='tab-margin'>|</span> <span id='projects'>Projects</span>
+</h3>
+
+
 <!-- Articles -->
-<div class='hanging'>
-<h3>Articles</h3>
+<div class='hanging' id='articles-content'>
 
 <h4 style='font-style: italic; margin-left: 1em; margin-top: 0em;'>2021 & 2020</h4>
 
 <div id='2021&2020'>
 
-<p>[CSUR `21] Fan Zhou, <b>Xovee Xu*</b>, Goce Trajcevski, and Kunpeng Zhnag. 2021. A Survey of Information Cascade Analysis: Models, Predictions, and Recent Advances. <i>ACM Computing Surveys (CSUR)</i>, vol. 54, no. 2, article 27, 36 pages, Mar 2021, doi:10.1145/3433000, arXiv:2005.11041 [<a href='https://doi.org/10.1145/3433000' target='_blank'>link</a>, <a href='https://arxiv.org/abs/2005.11041', target='_blank'>arXiv</a>]</p>
+    <p>[CSUR `21] Fan Zhou, <b>Xovee Xu*</b>, Goce Trajcevski, and Kunpeng Zhnag. 2021. A Survey of Information Cascade Analysis: Models, Predictions, and Recent Advances. <i>ACM Computing Surveys (CSUR)</i>, vol. 54, no. 2, article 27, 36 pages, Mar 2021, doi:10.1145/3433000, arXiv:2005.11041 [<a href='https://doi.org/10.1145/3433000' target='_blank'>link</a>, <a href='https://arxiv.org/abs/2005.11041', target='_blank'>arXiv</a>]</p>
 
-<p>[INFOCOM `20] Fan Zhou, <b>Xovee Xu</b>, Kunpeng Zhang, Goce Trajcevski, and Ting Zhong*. 2020. Variational Information Diffusion for Probabilistic Cascade Prediction. <i>IEEE International Conference on Computer Communications (INFOCOM)</i>, Virtual Conference, Jul 6-9, 2020, pp. 1618-1627, doi:10.1109/INFOCOM41043.2020.9155349 [<a href='https://doi.org/10.1109/INFOCOM41043.2020.9155349' target='_blank'>link</a>]</p>
-</div>
+    <p>[INFOCOM `20] Fan Zhou, <b>Xovee Xu</b>, Kunpeng Zhang, Goce Trajcevski, and Ting Zhong*. 2020. Variational Information Diffusion for Probabilistic Cascade Prediction. <i>IEEE International Conference on Computer Communications (INFOCOM)</i>, Virtual Conference, Jul 6-9, 2020, pp. 1618-1627, doi:10.1109/INFOCOM41043.2020.9155349 [<a href='https://doi.org/10.1109/INFOCOM41043.2020.9155349' target='_blank'>link</a>]</p>
+    </div>
 
-<!-- &#8224; Equal Contribution |  -->
-<p style='font-weight: normal; text-align: right;'>* Corresponding</p>
-
-</div>
+    <!-- &#8224; Equal Contribution |  -->
+    <p style='font-weight: normal; text-align: right;'>* Corresponding</p>
 
 </div>
 
-</header>
+<!-- Projects -->
+<div class='hanging' id='projects-content'>
+
+<div>
+    <p>[May 2019 to present] <b><a href='https://github.com/Xovee/uestc-course' target='_blank'>UESTC Course</a></b> is a public resource repository on GitHub that contains review materials of courses at University of Electronic Science and Technology of China (UESTC). The course materials are arranged and uploaded by students. I am the main creator and maintainer of this repo (from May 2019 to present). PS: If you are a student of UESTC, welcome to contribute resources.</p>
+
+    <p>[Aug 2018 to present] I write Chinese <b>tech blogs</b> in <a href='https://blog.csdn.net/xovee/' target='_blank'>CSDN</a> and <a href='https://www.zhihu.com/people/xovee' target='_blank'>Zhihu</a> since Aug 2018, topics include artificial intelligence, machine learning, tech article translation, LaTeX, PyThon, and so on. My blogs received more than 300k views and I ranked 20K among 30M CSDN users.</p>
+
+    <p>[Sep 2018 to May 2019] I translated an online book entitled "Neural Networks and Deep Learning" written by <a href='http://michaelnielsen.org/' target='_blank'>Michael Nielsen</a> into Simplified Chinese. [<a href='https://blog.csdn.net/xovee/article/details/81384670' target='_blank'>CSDN</a>, <a href='https://github.com/Xovee/simplified-chinese-translation-of-neural-networks-and-deep-learning' target='_blank'>GitHub</a>] </p> 
+</div>
+
 
 <hr>
 
 <!-- footer -->
 <div  style='clear: both;'>
-    <span style='float: left;'><i>Last update</i>: Mar 26, 2021</span>
+    <span style='float: left;'><i>Last update</i>: Mar 28, 2021</span>
     <span style='float: right;'><i>Designed by: </i>Xovee Xu</span>
 </div>
 

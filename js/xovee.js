@@ -10,5 +10,17 @@ $(document).ready(function(){
             }
         })
     })
+
+    // hide and show divs of articles, projects, ...
+    $('#articles-content, #projects-content').hide()
+    $('#tabs span').each(function(){
+        $(this).click(function(){
+            $('#articles-content, #projects-content').hide()
+            $('#' + $(this).attr('id') + '-content').show()
+            $('#tabs span').removeClass('tab-select')
+            $(this).addClass('tab-select')
+        })
+    })
+    $('#articles').click()
     
 })

@@ -16,6 +16,15 @@
 	max-width: 900px;
 	width: 100%;
 	margin: auto;
+	padding: 0em 1em;
+}
+
+.smaller-section {
+	min-width: 400px;
+	max-width: 768px;
+	width: 100%;
+	margin: auto;
+	padding: 0em 1em;
 }
 
 .hanging p {
@@ -33,4 +42,54 @@ p {
 	margin-bottom: 1em;
 }
 
+.title {
+	margin-top: .5em;
+	margin-bottom: .5em;
+}
 
+.tab-margin {
+	margin-right: .5em;
+	margin-left: .5em;
+}
+
+
+.tab-select {
+	font-style: italic;
+	text-decoration: underline;
+	font-size: 1.2em;
+	color:rgb(153, 102, 0);
+}
+
+#tabs span {
+	cursor: pointer;
+}
+
+.avatar {
+	width: 100%;
+	height: auto;
+}
+
+
+.avatar-container {
+	float: right;
+	max-width: 200px;
+	position: relative;
+	padding: 5px 10px; 
+}
+
+.avatar-overley {
+	position: absolute;
+	bottom: 7pt;
+	opacity: 0;
+	background: rgba(0, 0, 0, 0.3);
+	color: #f1f1f1;
+	width: 180px;
+	transition: .5s ease;
+	padding: 5px 10px; 
+	text-align: center;
+	font-weight: bold;
+}
+
+.avatar-container:hover .avatar-overley {
+	opacity: 1;
+  }
