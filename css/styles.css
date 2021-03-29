@@ -57,7 +57,8 @@ p {
 	font-style: italic;
 	text-decoration: underline;
 	font-size: 1.1em;
-	color:rgb(153, 102, 0);
+	/* color:rgb(153, 102, 0); */
+	color:rgb(51, 102, 0);
 }
 
 #tabs span {
