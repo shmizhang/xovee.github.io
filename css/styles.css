@@ -14,17 +14,17 @@
 .section {
 	min-width: 400px;
 	max-width: 900px;
-	width: 100%;
+	/* width: 100%; */
 	margin: auto;
-	padding: 0em 1em;
+	padding: 0 .8em;
 }
 
 .smaller-section {
 	min-width: 400px;
 	max-width: 768px;
-	width: 100%;
+	/* width: 100%; */
 	margin: auto;
-	padding: 0em 1em;
+	padding: 0 .8em;
 }
 
 .hanging p {
@@ -57,7 +57,8 @@ p {
 	font-style: italic;
 	text-decoration: underline;
 	font-size: 1.1em;
-	color:rgb(153, 102, 0);
+	/* color:rgb(153, 102, 0); */
+	color:rgb(51, 102, 0);
 }
 
 #tabs span {
