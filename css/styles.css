@@ -61,6 +61,15 @@ p {
 	color:rgb(51, 102, 0);
 }
 
+#tabs {
+	clear: both;
+}
+
+#select-all {
+	display: inline;
+	float: right;
+}
+
 #tabs span {
 	cursor: pointer;
 }

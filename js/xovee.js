@@ -3,10 +3,10 @@ $(document).ready(function(){
     $('#show-links').hide()
     $('#show-links-button').click(function(){
         $('#show-links').toggle(0, function(){
-            if ($.trim($('#show-links-button').text()) === 'Show') {
-                $('#show-links-button').text('Hide');
+            if ($.trim($('#show-links-button').text()) === 'More') {
+                $('#show-links-button').text('Less');
             } else {
-                $('#show-links-button').text('Show');        
+                $('#show-links-button').text('More');        
             }
         })
     })
@@ -23,4 +23,13 @@ $(document).ready(function(){
     })
     $('#articles').click()
     
+    // show only selected articles
+    $('#article-selected').click(function(){
+        $('#articles-content p').hide()
+        $('#articles-content p.selected').show()
+    })
+    $('#article-all').click(function(){
+        $('#articles-content p').show()
+    })
+    $('#article-selected').click()
 })
