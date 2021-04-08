@@ -1,4 +1,4 @@
-# Personal Page
+# Xovee Xu's Home Page
 This repo contains the source codes of Xovee Xu's home page. 
 
 ## Resue
