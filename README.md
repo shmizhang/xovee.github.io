@@ -1,19 +1,6 @@
 # Personal Page
-This repo contains the codes of Xovee's personal page. 
+This repo contains the source codes of Xovee Xu's home page. 
 
-## Structure
+## Copyright
 
-- archive
-  - paper
-- css
-  - styles.css
-- html
-  - douban.html
-- img
-- js
-  - empty now
-- index.html (homepage)
-
-## License
-
-This website is designed by Xovee Xu. If you want to use this template, please link me (https://xovee.cn) in the footer. 
+Copyright &copy; 2020-2021 Xovee Xu. All Rights Reserved. 
