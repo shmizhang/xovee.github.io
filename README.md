@@ -10,3 +10,5 @@ If you want to use this website template, please add a link at the footer of you
   <small>Website designed by <a href='https://xovee.cn' target='_blank'>Xovee Xu</a>.</small>
 </footer>
 ```
+
+Thanks a million!
