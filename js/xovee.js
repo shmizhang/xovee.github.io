@@ -1,4 +1,8 @@
 $(document).ready(function(){
+    // copyright year
+    curYear = (new Date).getFullYear();
+    $('footer #current-year').text(curYear)
+
     // show or hide links
     $('#show-links').hide()
     $('#show-links-button').click(function(){
