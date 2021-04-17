@@ -16,10 +16,10 @@ $(document).ready(function(){
     })
 
     // hide and show divs of articles, projects, ...
-    $('#undefined-content, #articles-content, #projects-content').hide()
+    $('#undefined-content, #articles-content, #projects-content, #recomm-content').hide()
     $('#tabs span').each(function(){
         $(this).click(function(){
-            $('#undefined-content, #articles-content, #projects-content').hide()
+            $('#undefined-content, #articles-content, #projects-content, #recomm-content').hide()
             $('#' + $(this).attr('id') + '-content').show()
             $('#tabs span').removeClass('tab-select')
             $(this).addClass('tab-select')
