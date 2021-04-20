@@ -108,3 +108,12 @@ p {
 .avatar-container:hover .avatar-overley {
 	opacity: 1;
   }
+
+venue {
+	margin-right: 1em;
+	font-weight: bold;
+}
+
+timespan {
+	margin-right: .5em;
+}
