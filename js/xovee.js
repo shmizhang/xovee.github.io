@@ -15,6 +15,9 @@ $(document).ready(function(){
         })
     })
 
+    // hide news and show recent
+    $('#news-lst li').hide().slice(0, 5).show()
+
     // hide and show divs of articles, projects, ...
     $('#undefined-content, #articles-content, #projects-content').hide()
     $('#tabs span').each(function(){
