@@ -79,35 +79,64 @@ p {
 	cursor: pointer;
 }
 
-.avatar {
-	width: 100%;
-	height: auto;
+@media (max-width: 599px) {
+	.avatar {
+		width: 100%;
+		height: auto;
+	}
+
+	.avatar-container {
+		max-width: 50%;
+		padding: 5px;
+		position: relative;
+		margin: auto;
+	}
+
+	.avatar-overley {
+		position: absolute;
+		bottom: 7pt;
+		opacity: 1;
+		background-color:rgba(0, 0, 0, 0.3);
+		color: #f1f1f1;
+		width: 86%;
+		transition: .5s ease;
+		padding: 5px 10px;
+		text-align: center;
+		font-weight: bold;
+	}
 }
 
+@media (min-width: 600px) {
+	.avatar {
+		width: 100%;
+		height: auto;
+	}
 
-.avatar-container {
-	float: right;
-	max-width: 200px;
-	position: relative;
-	padding: 5px 0px 5px 10px; 
+
+	.avatar-container {
+		float: right;
+		max-width: 200px;
+		position: relative;
+		padding: 5px 0px 5px 10px; 
+	}
+
+	.avatar-overley {
+		position: absolute;
+		bottom: 7pt;
+		opacity: 0;
+		background: rgba(0, 0, 0, 0.3);
+		color: #f1f1f1;
+		width: 180px;
+		transition: .5s ease;
+		padding: 5px 10px; 
+		text-align: center;
+		font-weight: bold;
+	}
+
+	.avatar-container:hover .avatar-overley {
+		opacity: 1;
+	}
 }
-
-.avatar-overley {
-	position: absolute;
-	bottom: 7pt;
-	opacity: 0;
-	background: rgba(0, 0, 0, 0.3);
-	color: #f1f1f1;
-	width: 180px;
-	transition: .5s ease;
-	padding: 5px 10px; 
-	text-align: center;
-	font-weight: bold;
-}
-
-.avatar-container:hover .avatar-overley {
-	opacity: 1;
-  }
 
 venue {
 	margin-right: 1em;
