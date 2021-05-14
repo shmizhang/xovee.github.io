@@ -24,8 +24,8 @@ $(document).ready(function(){
         $(this).click(function(){
             $('#undefined-content, #articles-content, #projects-content').hide()
             $('#' + $(this).attr('id') + '-content').show()
-            $('#tabs span').removeClass('tab-select')
-            $(this).addClass('tab-select')
+            $('#tabs span').removeClass('tab-select tab-color')
+            $(this).addClass('tab-select tab-color')
         })
     })
     $('#articles').click()

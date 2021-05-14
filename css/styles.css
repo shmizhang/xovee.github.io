@@ -62,8 +62,6 @@ p {
 	font-style: italic;
 	text-decoration: underline;
 	font-size: 1.1em;
-	/* color:rgb(153, 102, 0); */
-	color:rgb(51, 102, 0);
 }
 
 #tabs {
@@ -87,6 +85,7 @@ p {
 
 	.avatar-container {
 		max-width: 50%;
+		width: 50%;
 		padding: 5px;
 		position: relative;
 		margin: auto;
@@ -94,7 +93,7 @@ p {
 
 	.avatar-overley {
 		position: absolute;
-		bottom: 7pt;
+		bottom: 10pt;
 		opacity: 1;
 		background-color:rgba(0, 0, 0, 0.3);
 		color: #f1f1f1;
@@ -103,6 +102,7 @@ p {
 		padding: 5px 10px;
 		text-align: center;
 		font-weight: bold;
+		font-size: medium;
 	}
 }
 
@@ -112,17 +112,17 @@ p {
 		height: auto;
 	}
 
-
 	.avatar-container {
 		float: right;
 		max-width: 200px;
+		width: 200px;
 		position: relative;
 		padding: 5px 0px 5px 10px; 
 	}
 
 	.avatar-overley {
 		position: absolute;
-		bottom: 7pt;
+		bottom: 10pt;
 		opacity: 0;
 		background: rgba(0, 0, 0, 0.3);
 		color: #f1f1f1;
@@ -131,6 +131,7 @@ p {
 		padding: 5px 10px; 
 		text-align: center;
 		font-weight: bold;
+		font-size: medium;
 	}
 
 	.avatar-container:hover .avatar-overley {
@@ -145,4 +146,14 @@ venue {
 
 timespan {
 	margin-right: .5em;
+}
+
+.tab-color {
+	color:rgb(51, 102, 0);
+}
+
+#news {
+	color: red;
+	font-size: 1.2em;
+	font-style: italic;
 }
