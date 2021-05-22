@@ -157,3 +157,7 @@ timespan {
 	font-size: 1.2em;
 	font-style: italic;
 }
+
+#news-lst li {
+	margin-bottom: 6pt;
+}
