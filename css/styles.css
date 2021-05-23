@@ -110,12 +110,13 @@ p {
 	.avatar {
 		width: 100%;
 		height: auto;
+		border: 2px solid black;
 	}
 
 	.avatar-container {
 		float: right;
-		max-width: 200px;
-		width: 200px;
+		max-width: 170px;
+		width: 170px;
 		position: relative;
 		padding: 5px 0px 5px 10px; 
 	}
@@ -126,7 +127,7 @@ p {
 		opacity: 0;
 		background: rgba(0, 0, 0, 0.3);
 		color: #f1f1f1;
-		width: 180px;
+		width: 154px;
 		transition: .5s ease;
 		padding: 5px 10px; 
 		text-align: center;
