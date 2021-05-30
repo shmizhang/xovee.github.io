@@ -34,7 +34,11 @@ body {
 
 .hanging p {
 	text-indent: -2em;
-	margin-left: 3em;
+	margin-left: 4em;
+}
+
+.para-indent p, details {
+	margin-left: 2em;
 }
 
 p {
@@ -55,13 +59,6 @@ p {
 .tab-margin {
 	margin-right: .5em;
 	margin-left: .5em;
-}
-
-
-.tab-select {
-	font-style: italic;
-	text-decoration: underline;
-	font-size: 1.1em;
 }
 
 #tabs {
@@ -149,16 +146,24 @@ timespan {
 	margin-right: .5em;
 }
 
-.tab-color {
-	color:rgb(51, 102, 0);
-}
-
 #news {
 	color: red;
-	font-size: 1.2em;
+	font-size: 1.3em;
+	font-style: italic;
+}
+
+#article-title {
+	color:rgb(51, 102, 0);
+	font-size: 1.3em;
 	font-style: italic;
 }
 
 #news-lst li {
 	margin-bottom: 6pt;
+}
+
+#sub-pages a {
+	margin-right: 1.8em;
+	text-decoration: none;
+	font-weight: bold;
 }
