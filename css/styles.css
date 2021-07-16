@@ -147,7 +147,7 @@ timespan {
 	margin-right: .5em;
 }
 
-#news {
+#news-title {
 	color: red;
 	font-size: 1.3em;
 	font-style: italic;
@@ -159,8 +159,22 @@ timespan {
 	font-style: italic;
 }
 
-#news-lst li {
-	margin-bottom: 6pt;
+/* for news list */
+dt {
+	float: left;
+	width: 7em;
+	margin-left: 1em;
+	margin-bottom: 4px;
+	clear: both;
+}
+
+dt:before {
+	content: "\00a0\2022\00a0\00a0\00a0";
+}
+
+dd {
+	margin-left: 7em;
+	margin-bottom: 4px;
 }
 
 #sub-pages a {

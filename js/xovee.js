@@ -4,7 +4,7 @@ $(document).ready(function(){
     $('footer #current-year').text(curYear)
 
     // hide news and show recent
-    $('#news-lst li').hide().slice(0, 5).show()
+    $('#news dd, dt').hide().slice(0, 10).show()
     
     // show only selected articles
     $('#article-selected').click(function(){
