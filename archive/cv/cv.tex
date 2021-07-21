@@ -24,9 +24,12 @@
 
 \setlength\parindent{2em}
 
-
-% \author{Xovee Xu}
-% \date{}
+% define cv section
+\newcommand{\CVsec}[1]{
+    \vspace{-8pt}\section*{#1}\vspace{-4pt}}
+% define cv subsection
+\newcommand{\CVsubsec}[1]{
+    \subsection*{\textnormal{\textit{#1}}}}
 
 \thispagestyle{empty}
 
@@ -58,20 +61,24 @@
 
 \setlength{\parskip}{3pt}
 
-\vspace{-8pt}
 \section*{Education}
-\vspace{-4pt}
 \indent 
 
-Ph.D., Computer Science, University of Electronic Science and Technology of China, 2021 to 2025 (expc.)
+\textbf{University of Electronic Science and Technology of China (UESTC)}, Chengdu, China
 
-M.S., Software Engineering, University of Electronic Science and Technology of China, 2021
+\hspace{2em}Ph.D. Student, Computer Science, 2021 to 2025 (expc.)
 
-B.S., Software Engineering, University of Electronic Science and Technology of China, 2018
+\hspace{2em}M.S., Software Engineering, 2021
 
-\vspace{-8pt}
+\hspace{2em}B.S., Software Engineering, 2018
+
+% Ph.D., Computer Science, University of Electronic Science and Technology of China, 2021 to 2025 (expc.)
+
+% M.S., Software Engineering, University of Electronic Science and Technology of China, 2021
+
+% B.S., Software Engineering, University of Electronic Science and Technology of China, 2018
+
 \section*{Academic Employment}
-\vspace{-8pt}
 \indent
 
 Research Assistant, University of Electronic Science and Technology of China, 2018 -
@@ -86,10 +93,13 @@ Research Assistant, University of Electronic Science and Technology of China, 20
 \input{article.tex}
 
 % teaching
-\vspace{-8pt}
 \section*{Teaching Experience}
-\vspace{-4pt}
 \indent
+
+% Teaching assistant: Run sections/labs & Grade problem sets, papers and exams
+% Teaching associate: Give lectures to the whole class (15-49 percent of the total) Have some influence on the content of the syllabus Run sections/labs & Grade problem sets, papers and exams
+% Lecturers: Give at least half the lectures Have some influence on the content of the syllabus Run sections/labs & Grade problem sets, papers and exams
+% Instructors: Give most or all of the lectures Have substantial influence on the content of the syllabus Run sections/labs & Grade problem sets, papers and exams
 
 \textbf{C Programming Language}\hfill Spring 2020
 
@@ -115,9 +125,7 @@ Research Assistant, University of Electronic Science and Technology of China, 20
 % \hspace{2em}Web Developer Intern, in Chengdu, China
 
 % language
-\vspace{-8pt}
 \section*{Language}
-\vspace{-4pt}
 \indent
 
 Native Chinese (Mandarin \& Northern Shaanxi Dialect)
@@ -134,9 +142,7 @@ Fluent English
 
 
 % reference
-\vspace{-8pt}
 \section*{Reference}
-\vspace{-4pt}
 \indent
 
 \begin{tabular}{cc}
