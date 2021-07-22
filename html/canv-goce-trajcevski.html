@@ -1697,7 +1697,7 @@ function computeColors() {
         }
 
         if (type != 'categorical') {
-            webweb.scales.colors.scalar.domain(d3.extent(rawValues)).range([0,1]);
+            webweb.scales.colors.scalar.domain(d3.extent(rawValues)).range([.12,.9]);
         }
     }
 
@@ -1740,7 +1740,8 @@ function colorWheel(x) {
         return webweb.scales.colors.categorical(getBinaryValue(x, 'color'));
     }
     else {
-        return d3.hsl(210 * (1 - webweb.scales.colors.scalar(x)), 0.7, 0.5);
+        // return d3.hsl(210 * (1 - webweb.scales.colors.scalar(x)), 0.7, 0.5);
+        return d3.interpolatePuRd(webweb.scales.colors.scalar(x))
     }
 }
 ////////////////////////////////////////////////////////////////////////////////

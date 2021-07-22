@@ -24,6 +24,10 @@ $(document).ready(function(){
     $('#show-all-names').click(function(){
         $('#showNodeNames-widget').click()
     })
-    $('#show-all-names').click()
+    // $('#show-all-names').click()
+    $('#show-frequent-co-authors').click(function(){
+        $('#showFrequentCoAuthors-widget').click()
+    })
 
+    $('#nameToMatch-widget').prependTo('#show-certain-author')
 })
