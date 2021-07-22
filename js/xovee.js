@@ -19,4 +19,11 @@ $(document).ready(function(){
     })
     $('#article-selected').click()
 
+    // canv
+    $('#webweb-menu').hide()
+    $('#show-all-names').click(function(){
+        $('#showNodeNames-widget').click()
+    })
+    $('#show-all-names').click()
+
 })

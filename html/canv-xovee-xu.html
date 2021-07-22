@@ -15,8 +15,8 @@
 }
 
 #webweb-menu {
-    font-size: 1em;
-    padding: 1em;
+    font-size: 10px;
+    padding: 15px;
     /* flexbox stuff.. */
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -66,16 +66,34 @@
     margin: 0 auto;
 }
 </style>
-<meta charset='utf-8' author='xovee-xu' name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel='stylesheet' href='../css/styles.css'>
-</head>
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <link rel='stylesheet' href='../css/styles.css'>
+                    <script src='../js/jquery-3.4.1.min.js'></script>
+<script src='../js/xovee.js'></script>
+                </head>
 <body class='section'>
+
 <h1 style='text-align: center; margin: 0.67em;'><a href='/'>Xovee Xu</a></h1>
 <h1>Co-Authorship Network</h1>
 
-This is a visualization of Xovee's co-authorship network (data from DBLP). You can try to create yours <a href='https://github.com/Xovee/canv'>here</a>. 
+<p>This is a visualization of Xovee's co-authorship network (data from DBLP). You can try to create yours <a href='https://github.com/Xovee/canv'>here</a>. The color and size of nodes indicate collaboration frequency. For example, two of my regular co-authors Fan Zhou and Goce Trajcevski are labeled as red.</p>
 
-<script type="text/javascript">// color specifications and designs developed by Cynthia Brewer (http://colorbrewer.org/)
+<p><input id='show-all-names' type='checkbox'> <label for='show-all-names'>Show all co-author names</label></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <script type="text/javascript">// color specifications and designs developed by Cynthia Brewer (http://colorbrewer.org/)
 var colorbrewer = {
     YlGn: {
         2: ["#f7fcb9","#addd8e"],
@@ -667,13 +685,8 @@ var colorbrewer = {
                     <script type="text/javascript">/*! @source http://purl.eligrey.com/github/FileSaver.js/blob/master/FileSaver.js */
 var saveAs=saveAs||function(e){"use strict";if(!("undefined"==typeof e||"undefined"!=typeof navigator&&/MSIE [1-9]\./.test(navigator.userAgent))){var t=e.document,n=function(){return e.URL||e.webkitURL||e},o=t.createElementNS("http://www.w3.org/1999/xhtml","a"),r="download"in o,a=function(e){var t=new MouseEvent("click");e.dispatchEvent(t)},i=/constructor/i.test(e.HTMLElement)||e.safari,d=/CriOS\/[\d]+/.test(navigator.userAgent),f=function(t){(e.setImmediate||e.setTimeout)(function(){throw t},0)},s="application/octet-stream",u=4e4,c=function(e){var t=function(){"string"==typeof e?n().revokeObjectURL(e):e.remove()};setTimeout(t,u)},l=function(e,t,n){t=[].concat(t);for(var o=t.length;o--;){var r=e["on"+t[o]];if("function"==typeof r)try{r.call(e,n||e)}catch(a){f(a)}}},v=function(e){return/^\s*(?:text\/\S*|application\/xml|\S*\/\S*\+xml)\s*;.*charset\s*=\s*utf-8/i.test(e.type)?new Blob([String.fromCharCode(65279),e],{type:e.type}):e},p=function(t,f,u){u||(t=v(t));var p,w=this,m=t.type,y=m===s,S=function(){l(w,"writestart progress write writeend".split(" "))},h=function(){if((d||y&&i)&&e.FileReader){var o=new FileReader;return o.onloadend=function(){var t=d?o.result:o.result.replace(/^data:[^;]*;/,"data:attachment/file;"),n=e.open(t,"_blank");n||(e.location.href=t),t=void 0,w.readyState=w.DONE,S()},o.readAsDataURL(t),void(w.readyState=w.INIT)}if(p||(p=n().createObjectURL(t)),y)e.location.href=p;else{var r=e.open(p,"_blank");r||(e.location.href=p)}w.readyState=w.DONE,S(),c(p)};return w.readyState=w.INIT,r?(p=n().createObjectURL(t),void setTimeout(function(){o.href=p,o.download=f,a(o),S(),c(p),w.readyState=w.DONE})):void h()},w=p.prototype,m=function(e,t,n){return new p(e,t||e.name||"download",n)};return"undefined"!=typeof navigator&&navigator.msSaveOrOpenBlob?function(e,t,n){return t=t||e.name||"download",n||(e=v(e)),navigator.msSaveOrOpenBlob(e,t)}:(w.abort=function(){},w.readyState=w.INIT=0,w.WRITING=1,w.DONE=2,w.error=w.onwritestart=w.onprogress=w.onwrite=w.onabort=w.onerror=w.onwriteend=null,m)}}("undefined"!=typeof self&&self||"undefined"!=typeof window&&window||this);"undefined"!=typeof module&&module.exports?module.exports.saveAs=saveAs:"undefined"!=typeof define&&null!==define&&null!==define.amd&&define("FileSaver.js",function(){return saveAs});
 </script>
-
-
-<!-- Copy your data below -->
-<script type="text/javascript">var wwdata = {"display": {"colorBy": "strength", "sizeBy": "strength", "charge": 150, "linkLength": 150, "scaleLinkOpacity": 1, "scaleLinkWidth": 1, "nameToMatch": "Xovee Xu", "radius": 15, "showNodeNames": 0}, "networks": {"xovee": {"layers": [{"edgeList": [["Fan Zhou", "Xovee Xu", 8.0], ["Fan Zhou", "Goce Trajcevski", 8.0], ["Fan Zhou", "Kunpeng Zhang", 4.0], ["Fan Zhou", "Liu Yu", 1.0], ["Fan Zhou", "Xin Jing", 1.0], ["Fan Zhou", "Ting Zhong", 5.0], ["Fan Zhou", "Jin Wu", 1.0], ["Fan Zhou", "Xiuxiu Qi", 1.0], ["Fan Zhou", "Jiahao Wang", 1.0], ["Fan Zhou", "Zijing Wen", 1.0], ["Fan Zhou", "Leyuan Liu", 1.0], ["Fan Zhou", "Ce Li", 1.0], ["Xovee Xu", "Goce Trajcevski", 8.0], ["Xovee Xu", "Kunpeng Zhang", 4.0], ["Xovee Xu", "Liu Yu", 1.0], ["Xovee Xu", "Xin Jing", 1.0], ["Xovee Xu", "Ting Zhong", 5.0], ["Xovee Xu", "Jin Wu", 1.0], ["Xovee Xu", "Xiuxiu Qi", 1.0], ["Xovee Xu", "Jiahao Wang", 1.0], ["Xovee Xu", "Zijing Wen", 1.0], ["Xovee Xu", "Leyuan Liu", 1.0], ["Xovee Xu", "Ce Li", 1.0], ["Goce Trajcevski", "Kunpeng Zhang", 4.0], ["Goce Trajcevski", "Liu Yu", 1.0], ["Goce Trajcevski", "Xin Jing", 1.0], ["Goce Trajcevski", "Ting Zhong", 5.0], ["Goce Trajcevski", "Jin Wu", 1.0], ["Goce Trajcevski", "Xiuxiu Qi", 1.0], ["Goce Trajcevski", "Jiahao Wang", 1.0], ["Goce Trajcevski", "Zijing Wen", 1.0], ["Goce Trajcevski", "Leyuan Liu", 1.0], ["Goce Trajcevski", "Ce Li", 1.0], ["Kunpeng Zhang", "Ting Zhong", 2.0], ["Kunpeng Zhang", "Ce Li", 1.0], ["Xin Jing", "Ting Zhong", 1.0], ["Xin Jing", "Jin Wu", 1.0], ["Ting Zhong", "Jin Wu", 1.0], ["Ting Zhong", "Xiuxiu Qi", 1.0], ["Ting Zhong", "Jiahao Wang", 1.0], ["Ting Zhong", "Zijing Wen", 1.0], ["Ting Zhong", "Leyuan Liu", 1.0], ["Ting Zhong", "Ce Li", 1.0], ["Xiuxiu Qi", "Jiahao Wang", 1.0], ["Zijing Wen", "Leyuan Liu", 1.0]], "nodes": {}, "metadata": {}}]}}, "title": "Xovee Xu"};</script>
-<!-- Copy your data above -->
-                    
-<script type="text/javascript">/*
+                    <script type="text/javascript">var wwdata = {"display": {"colorBy": "strength", "sizeBy": "strength", "charge": 150, "linkLength": 200, "scaleLinkOpacity": 1, "scaleLinkWidth": 1, "nameToMatch": "Xovee Xu", "radius": 15, "showNodeNames": 0, "hideMenu": 0, "showLegend": 0}, "networks": {"xovee": {"layers": [{"edgeList": [["Fan Zhou", "Xovee Xu", 8.0], ["Fan Zhou", "Goce Trajcevski", 8.0], ["Fan Zhou", "Kunpeng Zhang", 4.0], ["Fan Zhou", "Liu Yu", 1.0], ["Fan Zhou", "Xin Jing", 1.0], ["Fan Zhou", "Ting Zhong", 5.0], ["Fan Zhou", "Jin Wu", 1.0], ["Fan Zhou", "Xiuxiu Qi", 1.0], ["Fan Zhou", "Jiahao Wang", 1.0], ["Fan Zhou", "Zijing Wen", 1.0], ["Fan Zhou", "Leyuan Liu", 1.0], ["Fan Zhou", "Ce Li", 1.0], ["Xovee Xu", "Goce Trajcevski", 8.0], ["Xovee Xu", "Kunpeng Zhang", 4.0], ["Xovee Xu", "Liu Yu", 1.0], ["Xovee Xu", "Xin Jing", 1.0], ["Xovee Xu", "Ting Zhong", 5.0], ["Xovee Xu", "Jin Wu", 1.0], ["Xovee Xu", "Xiuxiu Qi", 1.0], ["Xovee Xu", "Jiahao Wang", 1.0], ["Xovee Xu", "Zijing Wen", 1.0], ["Xovee Xu", "Leyuan Liu", 1.0], ["Xovee Xu", "Ce Li", 1.0], ["Goce Trajcevski", "Kunpeng Zhang", 4.0], ["Goce Trajcevski", "Liu Yu", 1.0], ["Goce Trajcevski", "Xin Jing", 1.0], ["Goce Trajcevski", "Ting Zhong", 5.0], ["Goce Trajcevski", "Jin Wu", 1.0], ["Goce Trajcevski", "Xiuxiu Qi", 1.0], ["Goce Trajcevski", "Jiahao Wang", 1.0], ["Goce Trajcevski", "Zijing Wen", 1.0], ["Goce Trajcevski", "Leyuan Liu", 1.0], ["Goce Trajcevski", "Ce Li", 1.0], ["Kunpeng Zhang", "Ting Zhong", 2.0], ["Kunpeng Zhang", "Ce Li", 1.0], ["Xin Jing", "Ting Zhong", 1.0], ["Xin Jing", "Jin Wu", 1.0], ["Ting Zhong", "Jin Wu", 1.0], ["Ting Zhong", "Xiuxiu Qi", 1.0], ["Ting Zhong", "Jiahao Wang", 1.0], ["Ting Zhong", "Zijing Wen", 1.0], ["Ting Zhong", "Leyuan Liu", 1.0], ["Ting Zhong", "Ce Li", 1.0], ["Xiuxiu Qi", "Jiahao Wang", 1.0], ["Zijing Wen", "Leyuan Liu", 1.0]], "nodes": {}, "metadata": {}}]}}, "title": "Xovee Xu"};</script>
+                    <script type="text/javascript">/*
  * webweb makes pretty interactive network diagrams in your browser
  *
  * Daniel Larremore + Contributors
@@ -1947,7 +1960,7 @@ function computeLegend() {
 
     var datatypeTextPushdown = 15;
 
-    var textPushRight = 2.5 * (Math.max(R, 5) + 5);
+    var textPushRight = 2 * (Math.max(R, 5) + 5);
     var nodePushRight = 5 + Math.max(R, 5);
     var pushdown = function(i) { return 0 };
 
@@ -2042,7 +2055,7 @@ function Legend(metadataName, legendType, dataType, rawValues) {
     }
 }
 Legend.prototype.drawLegendLabel = function(pushDown) {
-    var text = new Text('Collaboration Frequency', 5, pushDown(), "12px");
+    var text = new Text(this.metadataName, 5, pushDown(), "12px");
     webweb.legendText.push(text);
 }
 Legend.prototype.drawLegendText = function(pushDown, pushRight) {
@@ -2102,10 +2115,8 @@ Legend.prototype.makeScalarLegend = function() {
         this.makeBinnedLegend(4);
     }
 
-    // this.text = this.values.slice(0);-->
-    // this.text = ['Rarely', 'Occasionally', 'Sometimes', 'Often', 'Regularly'];
-
-//}
+    this.text = this.values.slice(0);
+}
 // 'bins' a set of values so that we can display a finite legend.
 Legend.prototype.makeBinnedLegend = function(bins) {
     if (bins == undefined) {
@@ -2478,30 +2489,30 @@ function writeMenus(container) {
 
     var widgetContainers = {
         'webweb-menu-left' : {
-            // 'network' : {
-            //     'subWidgets' :{
-            //         'networkSelect' : {
-            //             'text' : "Display data from ",
-            //             'type' : 'select',
-            //             'functions' : {
-            //                 'change' : changeNetwork,
-            //             },
-            //             'options' : webweb.networkNames,
-            //             'value' : webweb.display.networkName,
-            //             'inline' : true,
-            //         },
-            //         'layerSelect' : {
-            //             'text' : " layer ",
-            //             'type' : 'select',
-            //             'functions' : {
-            //                 'change' : changeLayer,
-            //             },
-            //             'options' : layers,
-            //             'value' : webweb.display.networkLayer,
-            //             'inline' : true,
-            //         },
-            //     },
-            // },
+            'network' : {
+                'subWidgets' :{
+                    'networkSelect' : {
+                        'text' : "Display data from ",
+                        'type' : 'select',
+                        'functions' : {
+                            'change' : changeNetwork,
+                        },
+                        'options' : webweb.networkNames,
+                        'value' : webweb.display.networkName,
+                        'inline' : true,
+                    },
+                    'layerSelect' : {
+                        'text' : " layer ",
+                        'type' : 'select',
+                        'functions' : {
+                            'change' : changeLayer,
+                        },
+                        'options' : layers,
+                        'value' : webweb.display.networkLayer,
+                        'inline' : true,
+                    },
+                },
+            },
             'size' : {
                 'subWidgets' : {
                     'sizeSelect' : {
