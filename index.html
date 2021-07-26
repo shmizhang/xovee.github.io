@@ -12,17 +12,17 @@
 <!-- Bio -->
 <div id='bio-section'>
 
-<h1 class='title' style='text-align: center;'>
-
-<span>Xovee Xu</span>
-
 <picture class='avatar-container'>
-    <source type='image/webp' srcset='img/photo-mild.webp 340w' sizes='170px'>
-    <source type='image/jpeg' srcset='img/photo-mild.jpeg 850w'>
-    <img src='img/photo-mild.jpeg' alt='My Avatar' srcset='img/photo-mild.jpeg 850w' sizes='170px' class='avatar'>
+    <!-- <source media='(max-width: 799px)' srcset='lll.jpg'> -->
+    <source type='image/jpeg' media='(max-width: 599px)' srcset='img/photo-mobile-800.jpeg 800w, img/photo-mobile-400.jpeg 400w' sizes='50vw'>
+    <source type='image/webp' srcset='img/photo-mild-340.webp 340w, img/photo-mild-850.webp 850w' sizes='170px' alt='avatar'>
+    <source type='image/jpeg' srcset='img/photo-mild-340.jpeg 340w, img/photo-mild-850.jpeg 850w' sizes='170px' alt='avatar'>
+    <img src='img/photo-mild-850.jpeg' alt='avatar' srcset='(max-width: 599px) img/photo-mobile-800.jpeg 800w, (max-width: 599px) img/photo-mobile-400.jpeg 400w, img/photo-mild-340.jpeg 340w, img/photo-mild-850.jpeg 850w' sizes='(max-width: 599px) 50vvw, 170px' class='avatar'>
     <div class='avatar-overley'>Jan 2019 at<br>Chengdu, China</div>
 </picture>
-</h1>
+
+<h1 class='title'>Xovee Xu</h1>
+
 
 <p>I will be a  PhD student in computer science at the School of Computer Science and Engineering, University of Electronic Science and Technology of China (<a href='https://en.uestc.edu.cn/' target='_blank'>UESTC</a>), Chengdu, Sichuan, China, in Fall 2021.
 My research includes social network data mining, information diffusion, graph, and spatial-temporal data modeling.</p>

@@ -54,6 +54,8 @@ p {
 .title {
 	margin-top: .5em;
 	margin-bottom: .5em;
+	text-align: center;
+	font-size: xx-large;
 }
 
 .tab-margin {
@@ -76,51 +78,56 @@ p {
 
 @media (max-width: 599px) {
 	.avatar {
-		width: 100%;
-		height: auto;
+		display: block;
+		width: 50vw;
+		margin: 10px auto;
+		border-radius: 25vw;
+		border: 3px solid #979791;
+		
 	}
 
-	.avatar-container {
-		max-width: 50%;
-		width: 50%;
-		padding: 5px;
+	/* .avatar-container {
 		position: relative;
-		margin: auto;
-	}
+	} */
 
 	.avatar-overley {
+		display: none;
+	}
+
+	/* .avatar-overley {
 		position: absolute;
-		bottom: 10pt;
+		bottom: 16pt;
+		left: 23.5vw;
 		opacity: 1;
 		background-color:rgba(0, 0, 0, 0.3);
 		color: #f1f1f1;
-		width: 86%;
+		width: 46.5vw;
 		transition: .5s ease;
 		padding: 5px 10px;
 		text-align: center;
 		font-weight: bold;
 		font-size: medium;
-	}
+		margin: auto;
+	} */
 }
 
 @media (min-width: 600px) {
 	.avatar {
 		max-width: 100%;
-		height: auto;
+		width: 170px;
+		height: 212.5px;
 		border: 2px solid black;
 	}
 
 	.avatar-container {
 		float: right;
-		width: 170px;
-		height: auto;
 		position: relative;
 		padding: 5px 0px 5px 10px; 
 	}
 
 	.avatar-overley {
 		position: absolute;
-		bottom: 10pt;
+		bottom: 8pt;
 		opacity: 0;
 		background: rgba(0, 0, 0, 0.3);
 		color: #f1f1f1;
