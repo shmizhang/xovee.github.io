@@ -1,4 +1,4 @@
-$(document).ready(function(){
+window.onload = function(){
     // copyright year and update date
     curYear = (new Date).getFullYear();
     document.getElementById('current-year').innerHTML = curYear;
@@ -12,4 +12,4 @@ $(document).ready(function(){
     for (let i = 0; i < 10; i++) {
         newestNews[i].style.display = '';
     }
-})
+}
