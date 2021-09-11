@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <title>Bio Xovee Xu</title>
+    <meta charset='utf-8' author='xovee-xu' name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta name='description' content="See Xovee Xu's biography here.">
+    <link rel='alternate' hreflang='en' href='https://xovee.cn'>
+    <link rel='canonical' href='https://xovee.cn'>
+    <link rel='stylesheet' href='../css/style.css'>
+
+</head>
+
+<body>
+
+<header>
+    <div id='header-content'>
+        <span><a href='/'>Home</a></span>
+        <span><a><b><u>Bio</u></b></a></span>
+        <span><a>PUB</a></span>
+        <span><a href='../archive/cv/cv.pdf' target='_blank'>CV</a></span>
+        <span><a>Project</a></span>
+    </div>
+
+    <div id='mobile-header'>
+        <a id='home-tag' style='text-align: center; font-weight: bold;'>Xovee Xu</a>
+        <div id='mobile-tags'>
+            <a>Home</a>
+            <a>PUB</a>
+            <a href='../archive/cv/cv.pdf' target='_blank'>CV</a>
+            <a>Project</a>
+        </div>
+
+        <span id='navi-icon'>&#8897;</span>
+    </div>
+</header>
+
+<main>
+
+    <h1 style='font-size: 3em; font-family: Arial, Helvetica, sans-serif;'>Xovee Xu</h1>
+    
+    
+    <p>
+        Xovee Xu is a 1<sup>st</sup> year Ph.D. student in computer science at the school of computer science and engineering, University of Electronic Science and Technology of China (<a href='https://en.uestc.edu.cn' target=''>UESTC</a>), Chengdu, Sichuan, China, supervised by Profs. Fan Zhou and Jingkuan Song. He received the B.S. degree and M.S. degree in software engineering from UESTC, in 2018 and 2021, respectively. He was born in <a href='https://goo.gl/maps/hVBNdvtSZkEvBFVL8' target='_blank'>Zizhou</a>, Yulin, Shaanxi, China, in 1996.
+    </p>
+
+    <p>
+        He is the author of several research articles published in INFOCOM, SIGIR, and CSUR. His current research interests include social network data mining and knowledge discovery, primarily focuses on information diffusion in full-scale graphs, human behavior understanding, spatial-temporal data modeling, representation learning, and their novel applications in various social and scientific scenarios such as information cascade popularity prediction, urban flow inference, and scientific impact prediction.
+    </p>
+
+    <p>
+        He is a (student) member of the IEEE, ACM, and CCF.
+    </p>
+
+    <hr>
+
+    <p>
+        Xovee lives in Chengdu, China. He speaks Chinese (Mandarin & Northern Shaanxi Dialect) and English, and he is learning Spanish as well. His Chinese name is 徐增 (which means <i>slowly increasing</i>).
+    </p>
+
+</main>
+
+<footer>
+    <div id='footer-content'>
+        <hr>
+        &copy; 2020-<span id='current-year'></span> Xovee Xu
+        <span style='float: right;'>Last update: Spet 10, 2021</span>
+    </div>
+</footer>
+
+<script>
+    window.onload = function() {
+        // copyright year and update date
+        curYear = (new Date).getFullYear();
+        document.getElementById('current-year').innerHTML = curYear;
+
+        // navi-click
+        var naviHome = document.getElementById('home-tag')
+        var naviTags = document.getElementById('mobile-tags')
+
+        naviHome.addEventListener('click', function(){
+            if (naviTags.style.display === 'block') {
+                naviTags.style.display = 'none';
+            } else {
+                naviTags.style.display = 'block';
+            }
+        })
+    }
+</script>
+
+</body>
+
+</html>

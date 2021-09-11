@@ -1,0 +1,164 @@
+/* 
+        colors: 
+        black: 222831
+        white text: eee 
+        gray text: 86868b
+        */
+        @media (min-width: 600px) {
+            header {
+                background-color: #222831;
+                padding: .8em;
+            }
+
+            #mobile-header {
+                display: none;
+            }
+
+            #header-content span {
+                margin-right: 2.5em;
+                margin-left: .3em;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            #header-content a {
+                padding: .5em;
+            }
+
+            #header-content a:link, #header-content a:hover, #header-content a:visited {
+                color: #eee;
+                text-decoration: unset;
+            }
+
+            #header-content {
+                max-width: 900px;
+                margin: auto;
+                color: #eee;
+            }
+
+            #footer-content {
+                max-width: 900px;
+                margin: auto;
+                color: #86868b;
+            }
+
+            main {
+                max-width: 900px;
+                margin: auto;
+            }
+
+            .avatar {
+            max-width: 100%;
+            width: 170px;
+            height: 212.5px;
+            border: 2px solid black;
+            }
+
+            .avatar-container {
+                float: right;
+                position: relative;
+                padding: 30px 0px 5px 20px; 
+            }
+
+            .avatar-overley {
+                position: absolute;
+                bottom: 8pt;
+                opacity: 0;
+                background: rgba(0, 0, 0, 0.3);
+                color: #f1f1f1;
+                width: 154px;
+                transition: .5s ease;
+                padding: 5px 10px; 
+                text-align: center;
+                font-weight: bold;
+                font-size: medium;
+            }
+
+            .avatar-container:hover .avatar-overley {
+                opacity: 1;
+            }   
+        }
+
+        @media (max-width: 599px) {
+            .avatar-container {
+                display: none;
+            }
+
+            #header-content {
+                display: none;
+            }
+
+            /* header {
+                background-color: #222831;
+                padding: .8em;
+            }
+
+            #header-content {
+                margin: auto;
+                color: #eee;
+            }
+
+            #header-content span {
+                margin-right: 2.5em;
+                margin-left: .3em;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            #header-content a:link, #header-content a:hover, #header-content a:visited {
+                color: #eee;
+                text-decoration: unset;
+            } */
+
+            #footer-content {
+                margin: auto;
+                color: #86868b;
+            }
+
+            #mobile-header {
+                overflow: hidden;
+                background-color: #222831;
+                position: relative;
+            }
+
+            #mobile-tags {
+                display: none;
+            }
+
+            #mobile-header a {
+                color: #eee;
+                padding: 1em;
+                text-decoration: none;
+                display: block;
+                font-size: 1.3em;
+            }
+            
+            #navi-icon {
+                /* border: 1px solid gray; */
+                display: block;
+                position: absolute;
+                left: 0;
+                top: 0;
+                font-weight: bold;
+                font-size: 1.3em;
+                padding: 1em;
+                color: #eee;
+            }
+
+            #mobile-header a:hover {
+                background-color: #86868b;
+            }
+
+            body {
+                font-size: 18px;
+            }
+            
+        }
+
+        #links span {
+            margin-right: 1em;
+        }
+
+        body {
+            margin: 0;
+            background-color: #eee;
+            font-family: 'Times New Roman', Times, serif;
+        }
