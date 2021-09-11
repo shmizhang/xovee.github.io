@@ -127,8 +127,8 @@
                 position: relative;
             }
 
-            #mobile-header .mobile-tag {
-                /* display: none; */
+            #mobile-tags {
+                display: none;
             }
 
             #mobile-header a {
@@ -153,6 +153,10 @@
 
             #mobile-header a:hover {
                 background-color: #86868b;
+            }
+
+            body {
+                font-size: 18px;
             }
             
         }
@@ -181,11 +185,13 @@
     </div>
 
     <div id='mobile-header'>
-        <span id='home-tag' style='text-align: center; font-weight: bold;'><a>Xovee Xu</a></span>
-        <span class='mobile-tag'><a>Home</a></span>
-        <span class='mobile-tag'><a>PUB</a></span>
-        <span class='mobile-tag'><a href='./archive/cv/cv.pdf' target='_blank'>CV</a></span>
-        <span class='mobile-tag'><a>Project</a></span>
+        <a id='home-tag' style='text-align: center; font-weight: bold;'>Xovee Xu</a>
+        <div id='mobile-tags'>
+            <a>Home</a>
+            <a>PUB</a>
+            <a href='./archive/cv/cv.pdf' target='_blank'>CV</a>
+            <a>Project</a>
+        </div>
 
         <span id='navi-icon'>&#8897;</span>
     </div>
@@ -232,6 +238,18 @@
         // copyright year and update date
         curYear = (new Date).getFullYear();
         document.getElementById('current-year').innerHTML = curYear;
+
+        // navi-click
+        var naviHome = document.getElementById('home-tag')
+        var naviTags = document.getElementById('mobile-tags')
+
+        naviHome.addEventListener('click', function(){
+            if (naviTags.style.display === 'block') {
+                naviTags.style.display = 'none';
+            } else {
+                naviTags.style.display = 'block';
+            }
+        })
     }
 </script>
 
