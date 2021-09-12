@@ -29,7 +29,14 @@
 
             #header-content a:link, #header-content a:hover, #header-content a:visited {
                 color: #eee;
-                text-decoration: unset;
+                text-decoration: none;
+            }
+
+
+            #header-content {
+                max-width: 900px;
+                margin: auto;
+                color: #eee;
             }
 
             #header-content a:hover {
@@ -37,11 +44,6 @@
                 color: #ffb6b9;
             }
 
-            #header-content {
-                max-width: 900px;
-                margin: auto;
-                color: #eee;
-            }
 
             #footer-content {
                 max-width: 900px;
@@ -202,7 +204,8 @@
         }
 
         body {
-            margin: 0;
+            margin: auto;
             background-color: #eee;
             font-family: 'Times New Roman', Times, serif;
+            padding: 0 .5em;
         }
