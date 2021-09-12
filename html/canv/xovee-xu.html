@@ -11,9 +11,8 @@
     </script>
     <style>
         body {
-            background-color: #f5f5f0;
-            font-family: Palatino, Book Antiqua, Times New Roman, Arial;
-            width: 80%;
+            background-color: #eee;
+            font-family: 'Times New Roman', Times, serif;
             margin: auto;
             padding: 0 .5em;
         }
@@ -80,24 +79,66 @@
         }
 
         #webweb-visualization-container>svg {
-            border: solid 3px #f5f5f0;
+            border: solid 3px #eee;
             display: block;
             margin: 0 auto;
         }
 
         #webweb-visualization-container>canvas {
-            border: solid 3px #f5f5f0;
+            border: solid 3px #eee;
             display: block;
             margin: 0 auto;
         }
+
+        header {
+            background-color: #222831;
+            padding: .8em;
+        }
+
+        #header-content span {
+            margin-right: 2.5em;
+            margin-left: .3em;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #header-content a {
+            padding: .5em;
+        }
+
+        #header-content a:link, #header-content a:hover, #header-content a:visited {
+            color: #eee;
+            text-decoration: unset;
+        }
+
+        #header-content {
+            max-width: 900px;
+            margin: auto;
+            color: #eee;
+        }
+
+        main {
+            max-width: 900px;
+            margin: auto;
+        }
+
     </style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='stylesheet' href='../../css/styles.css'>
+    <!-- <link rel='stylesheet' href='../../css/styles.css'> -->
 </head>
 
 <body class='section'>
 
-    <h1 style='text-align: center; margin: 0.67em;'><a id='title-name' href='/'></a></h1>
+    <header>
+        <div id='header-content'>
+            <span><a href='/'>Home</a></span>
+            <span><a href='../../html/bio.html'>Bio</a></span>
+            <span><a href='../../html/article.html'>PUB</a></span>
+            <span><a href='../../archive/cv/cv.pdf' target='_blank'>CV</a></span>
+            <span><a href='../../html/project.html'>Project</a></span>
+        </div>
+    </header>
+
+    <main>
     <h1>Co-Authorship Network</h1>
 
     <p>This is a visualization of <span id='network-name'></span>'s co-authorship network (<span
@@ -111,6 +152,9 @@
             frequent co-authors</label>
         <span id='show-certain-author-container'><label id='show-certain-author'> Search co-author</label></span>
     </p>
+
+    </main>
+
 
 
 
@@ -2957,7 +3001,6 @@
             document.getElementById('show-certain-author').insertAdjacentElement('beforebegin', document.getElementById('nameToMatch-widget'))
 
             document.getElementById('co-author-number').innerHTML = webweb.display.numberCoAuthor
-            document.getElementById('title-name').innerHTML = webweb.display.displayName
             document.getElementById('network-name').innerHTML = webweb.display.displayName
 
         }
