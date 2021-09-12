@@ -9,6 +9,21 @@
     <link rel='canonical' href='https://xovee.cn'>
     <link rel='stylesheet' href='css/style.css'>
 
+    <script>
+        // randomly load photo
+
+        function getImageURL() {
+            var imageURLs = [
+                "img/photo-1.webp", 
+                "img/photo-2.webp",
+                "img/photo-3.webp",
+            ];
+
+            idx = imageURLs.indexOf(document.getElementById('avatar').getAttribute('src')) + 1;
+
+            return imageURLs[idx % imageURLs.length];
+        }
+    </script>
 </head>
 
 <body>
@@ -39,10 +54,7 @@
 <main>
 
     <picture class='avatar-container'>
-        <source type='image/jpeg' media='(max-width: 599px)' srcset='img/photo-mobile-800.jpeg 800w, img/photo-mobile-400.jpeg 400w' sizes='50vw'>
-        <source type='image/webp' srcset='img/photo-mild-340.webp 340w, img/photo-mild-850.webp 850w' sizes='170px' alt='avatar'>
-        <source type='image/jpeg' srcset='img/photo-mild-340.jpeg 340w, img/photo-mild-850.jpeg 850w' sizes='170px' alt='avatar'>
-        <img src='img/photo-mild-850.jpeg' alt='avatar' srcset='(max-width: 599px) img/photo-mobile-800.jpeg 800w, (max-width: 599px) img/photo-mobile-400.jpeg 400w, img/photo-mild-340.jpeg 340w, img/photo-mild-850.jpeg 850w' sizes='(max-width: 599px) 50vw, 170px' class='avatar'>
+        <img src='img/photo-1.webp' alt='avatar' id='avatar' class='avatar'>
         <div class='avatar-overley'>Jan 2019 at<br>Chengdu, China</div>
     </picture>
 
@@ -92,6 +104,12 @@
                 naviTags.style.display = 'block';
             }
         })
+
+        avatar = document.getElementById('avatar');
+        avatar.addEventListener('click', function() {
+            avatar.setAttribute('src', getImageURL());
+        })
+
     }
 </script>
 
