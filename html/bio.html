@@ -13,27 +13,19 @@
 
 <body>
 
-<header>
-    <div id='header-content'>
-        <span><a href='/'>Home</a></span>
-        <span><a><b><u>Bio</u></b></a></span>
-        <span><a href='../html/article.html'>PUB</a></span>
-        <span><a href='../archive/cv/cv.pdf' target='_blank'>CV</a></span>
-        <span><a href='../html/project.html'>Project</a></span>
-    </div>
-
-    <div id='mobile-header'>
-        <a id='home-tag' style='text-align: center; font-weight: bold;'>Xovee Xu</a>
-        <div id='mobile-tags'>
-            <a>Home</a>
-            <a>PUB</a>
-            <a href='../archive/cv/cv.pdf' target='_blank'>CV</a>
-            <a>Project</a>
+    <header>
+        <div id='header-content'>
+            <span id='header-home'><a href='/'>Home</a></span>
+            <span id='mobile-tags'>
+            <span><a><b><u>Bio</u></b></a></span>
+            <span><a href='../html/article.html'>PUB</a></span>
+            <span><a href='../archive/cv/cv.pdf' target='_blank'>CV</a></span>
+            <span><a href='../html/project.html'>Project</a></span>
+            </span>
         </div>
-
-        <span id='navi-icon'>&#8897;</span>
-    </div>
-</header>
+        </div>
+    
+    </header>
 
 <main>
 
@@ -68,7 +60,7 @@
 <script>
     window.onload = function() {
         // navi-click
-        var naviHome = document.getElementById('home-tag')
+        var naviHome = document.getElementById('header-home')
         var naviTags = document.getElementById('mobile-tags')
 
         naviHome.addEventListener('click', function(){

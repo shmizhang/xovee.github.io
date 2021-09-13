@@ -29,25 +29,21 @@
 
 <header>
     <div id='header-content'>
-        <span><a href='/'><b><u>Home</u></b></a></span>
+        <div class='dots'>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+        <span id='header-home'><a><b>Home</b></a></span>
+        <span id='mobile-tags'>
         <span><a href='./html/bio.html'>Bio</a></span>
         <span><a href='./html/article.html'>PUB</a></span>
         <span><a href='./archive/cv/cv.pdf' target='_blank'>CV</a></span>
         <span><a href='./html/project.html'>Project</a></span>
+        </span>
+    </div>
     </div>
 
-    <div id='mobile-header'>
-        <a id='home-tag' style='text-align: center; font-weight: bold;'>Xovee Xu</a>
-        <div id='mobile-tags'>
-            <a>Home</a>
-            <a>Bio</a>
-            <a>PUB</a>
-            <a href='./archive/cv/cv.pdf' target='_blank'>CV</a>
-            <a>Project</a>
-        </div>
-
-        <span id='navi-icon'>&#8897;</span>
-    </div>
 </header>
 
 <main>
@@ -93,7 +89,7 @@
         document.getElementById('current-year').innerHTML = curYear;
 
         // navi-click
-        var naviHome = document.getElementById('home-tag')
+        var naviHome = document.getElementById('header-home')
         var naviTags = document.getElementById('mobile-tags')
 
         naviHome.addEventListener('click', function(){
