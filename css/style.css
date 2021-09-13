@@ -188,6 +188,32 @@
             #header-content a {
                 border-bottom: 1px dashed #eee;
             }
+            
+            .biopic-container {
+                float: left;
+                position: relative;
+            }
+
+            .biopic {
+                width: 100%;
+            }
+
+            .biopic-overley {
+                position: absolute;
+                bottom: 0px;
+                opacity: 0;
+                background: rgba(34, 40, 49, 0.7);
+                color: #eee;
+                width: 100%;
+                transition: .5s ease;
+                padding: 5px 0;
+                text-align: center;
+                font-weight: bold;
+            }
+
+            .biopic-container:hover .biopic-overley {
+                opacity: 1;
+            }
 
             body {
                 font-size: 18px;
