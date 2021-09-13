@@ -194,10 +194,6 @@
                 position: relative;
             }
 
-            .biopic {
-                width: 100%;
-            }
-
             .biopic-overley {
                 position: absolute;
                 bottom: 0px;
