@@ -87,12 +87,16 @@
 
     <header>
         <div id='header-content'>
-            <span><a href='/'>Home</a></span>
+            <span id='header-home'><a>Home</a></span>
+            <span id='mobile-tags'>
             <span><a href='../../html/bio.html'>Bio</a></span>
             <span><a href='../../html/article.html'>PUB</a></span>
             <span><a href='../../archive/cv/cv.pdf' target='_blank'>CV</a></span>
             <span><a href='../../html/project.html'>Project</a></span>
+            </span>
         </div>
+        </div>
+    
     </header>
 
     <main>
@@ -2959,6 +2963,20 @@
 
             document.getElementById('co-author-number').innerHTML = webweb.display.numberCoAuthor
             document.getElementById('network-name').innerHTML = webweb.display.displayName
+
+            // navi-click
+            var naviHome = document.getElementById('header-home')
+            var naviTags = document.getElementById('mobile-tags')
+
+            naviHome.addEventListener('click', function(){
+                if (naviTags.style.display === 'block') {
+                    naviTags.style.display = 'none';
+                    naviHome.firstChild.setAttribute('href', '/');
+                } else {
+                    naviTags.style.display = 'block';
+                    naviHome.firstChild.removeAttribute('href');
+                }
+            })
 
         }
     </script>
