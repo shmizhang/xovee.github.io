@@ -15,12 +15,12 @@
 
 <header>
     <div id='header-content'>
-        <span id='header-home'><a href='/'>Home</a></span>
+        <span id='header-home'><a>Home</a></span>
         <span id='mobile-tags'>
         <span><a href='../html/bio.html'>Bio</a></span>
         <span><a href='../html/article.html'>PUB</a></span>
         <span><a href='../archive/cv/cv.pdf' target='_blank'>CV</a></span>
-        <span><a><b><u>Project</u></b></a></span>
+        <span><a href='../html/project.html'>Project</a></span>
         </span>
     </div>
     </div>
@@ -139,14 +139,16 @@
 <script>
     window.onload = function() {
         // navi-click
-        var naviHome = document.getElementById('home-tag')
+        var naviHome = document.getElementById('header-home')
         var naviTags = document.getElementById('mobile-tags')
 
         naviHome.addEventListener('click', function(){
             if (naviTags.style.display === 'block') {
                 naviTags.style.display = 'none';
+                naviHome.firstChild.setAttribute('href', '/');
             } else {
                 naviTags.style.display = 'block';
+                naviHome.firstChild.removeAttribute('href');
             }
         })
     }

@@ -180,6 +180,11 @@
                 color: #222831;
             }
 
+            .home-hover {
+                background-color: #eee;
+                color: #222831;
+            }
+
             #header-content a {
                 border-bottom: 1px dashed #eee;
             }
