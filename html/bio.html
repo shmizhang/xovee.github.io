@@ -13,19 +13,25 @@
 
 <body>
 
-    <header>
-        <div id='header-content'>
-            <span id='header-home'><a>Home</a></span>
-            <span id='mobile-tags'>
-            <span><a href='../html/bio.html'>Bio</a></span>
-            <span><a href='../html/article.html'>PUB</a></span>
-            <span><a href='../archive/cv/cv.pdf' target='_blank'>CV</a></span>
-            <span><a href='../html/project.html'>Project</a></span>
-            </span>
-        </div>
-        </div>
-    
-    </header>
+<header id='web-header'>
+    <div id='header-content'>
+        <span id='dots'>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </span>
+        <span id='header-home'><a href='/'>Home</a></span>
+        <span id='mobile-header-home'><a>Home</a></span>
+        <span id='mobile-tags'>
+        <span><a href='../html/bio.html'><u>Bio</u></a></span>
+        <span><a href='../html/article.html'>PUB</a></span>
+        <span><a href='../archive/cv/cv.pdf' target='_blank'>CV</a></span>
+        <span><a href='../html/project.html'>Project</a></span>
+        </span>
+    </div>
+    </div>
+
+</header>
 
 <main>
 
@@ -51,7 +57,8 @@
     </p>
 
     <picture class='biopic-container'>
-        <img src='../img/jiuzhaigou.webp' alt='Xovee in Jiuzhaigou' style='margin: auto;' width=826px height=465.5px id='biopic'>
+        <!-- width=826px height=465.5px  -->
+        <img src='../img/jiuzhaigou.webp' alt='Xovee in Jiuzhaigou' id='biopic'>
         <div class='biopic-overley'>Xovee in Jiuzhaigou, Sichuan, China, in 2016. </div>
     </picture>
 
@@ -60,7 +67,8 @@
 <script>
     window.onload = function() {
         // navi-click
-        var naviHome = document.getElementById('header-home')
+        var naviHome = document.getElementById('mobile-header-home')
+        var dots = document.getElementById('dots')
         var naviTags = document.getElementById('mobile-tags')
 
         naviHome.addEventListener('click', function(){
@@ -70,6 +78,14 @@
             } else {
                 naviTags.style.display = 'block';
                 naviHome.firstChild.removeAttribute('href');
+            }
+        })
+
+        dots.addEventListener('click', function(){
+            if (naviTags.style.display === 'block') {
+                naviTags.style.display = 'none';
+            } else {
+                naviTags.style.display = 'block';
             }
         })
     }
