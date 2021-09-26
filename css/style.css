@@ -254,3 +254,7 @@ body {
 .pub-selected {
     display: block;
 }
+
+.pub-item a:first {
+    font-weight: bold;
+}
