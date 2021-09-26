@@ -246,3 +246,11 @@ body {
     background-color: #eee;
     font-family: 'Times New Roman', Times, serif;
 }
+
+/* default show selected publications */
+.pub-item {
+    display: none;
+}
+.pub-selected {
+    display: block;
+}
