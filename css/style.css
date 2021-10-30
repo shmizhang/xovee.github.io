@@ -119,6 +119,11 @@ gray text: 86868b
     .biopic-container:hover .biopic-overley {
         opacity: 1;
     }
+
+    .pub-item, .pub-affi {
+        margin-left: 2em;
+    }
+
 }
 
 @media (max-width: 599px) {
@@ -258,3 +263,4 @@ body {
 .pub-item a:first {
     font-weight: bold;
 }
+
