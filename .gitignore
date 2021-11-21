@@ -4,3 +4,8 @@
 *.log
 *.synctex.gz
 *.out
+*.bbl
+*.bcf
+*.blg
+*.run.xml
+bib.pdf
