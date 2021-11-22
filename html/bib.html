@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <title>Biliographies of Xovee Xu</title>
+    <meta charset='utf-8' author='xovee-xu' name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta name='description' content="See Xovee Xu's biography here.">
+    <link rel='alternate' hreflang='en' href='https://xovee.cn'>
+    <link rel='canonical' href='https://xovee.cn'>
+    <link rel='stylesheet' href='../css/style.css'>
+
+</head>
+
+<body>
+
+<header id='web-header'>
+    <div id='header-content'>
+        <span id='dots'>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </span>
+        <span id='header-home'><a href='/'>Home</a></span>
+        <span id='mobile-header-home'><a>Home</a></span>
+        <span id='mobile-tags'>
+        <span><a href='../html/bio.html'>Bio</a></span>
+        <span><a href='../html/article.html'>PUB</a></span>
+        <span><a href='../archive/cv/cv.pdf' target='_blank'>CV</a></span>
+        <span><a href='../html/project.html'>Project</a></span>
+        </span>
+    </div>
+    </div>
+
+</header>
+
+<main>
+
+    <h1 style='font-size: 3em; font-family: Arial, Helvetica, sans-serif;'>Bibliographies</h1>
+    
+    <p><a href='../archive/bib/xovee.txt' target='_blank'>Download</a> the bibliography file).</p>
+
+    <object data='../archive/bib/xovee.txt' id='bib-data-object'>Not supported</object>
+
+</main>
+
+<script>
+    window.onload = function() {
+        // navi-click
+        var naviHome = document.getElementById('mobile-header-home')
+        var dots = document.getElementById('dots')
+        var naviTags = document.getElementById('mobile-tags')
+
+        naviHome.addEventListener('click', function(){
+            if (naviTags.style.display === 'block') {
+                naviTags.style.display = 'none';
+                naviHome.firstChild.setAttribute('href', '/');
+            } else {
+                naviTags.style.display = 'block';
+                naviHome.firstChild.removeAttribute('href');
+            }
+        })
+
+        dots.addEventListener('click', function(){
+            if (naviTags.style.display === 'block') {
+                naviTags.style.display = 'none';
+            } else {
+                naviTags.style.display = 'block';
+            }
+        })
+    }
+</script>
+
+</body>
+
+</html>
