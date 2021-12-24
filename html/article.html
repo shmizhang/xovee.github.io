@@ -15,11 +15,6 @@
 
 <header>
     <div id='header-content'>
-        <span id='dots'>
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-        </span>
         <span id='header-home'><a href='/'>Home</a></span>
         <span id='mobile-header-home'><a>Home</a></span>
         <span id='mobile-tags'>
@@ -194,14 +189,6 @@
             } else {
                 naviTags.style.display = 'block';
                 naviHome.firstChild.removeAttribute('href');
-            }
-        })
-
-        dots.addEventListener('click', function(){
-            if (naviTags.style.display === 'block') {
-                naviTags.style.display = 'none';
-            } else {
-                naviTags.style.display = 'block';
             }
         })
 

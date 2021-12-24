@@ -5,6 +5,10 @@ white text: eee
 gray text: 86868b
 */
 @media (min-width: 600px) {
+    html {
+        overflow-y: scroll;
+    }
+
     header {
         background-color: #222831;
         padding: .8em 0;
@@ -100,7 +104,7 @@ gray text: 86868b
 
     .biopic-overley {
         position: absolute;
-        bottom: 0px;
+        bottom: 3px;
         opacity: 0;
         background: rgba(34, 40, 49, 0.7);
         color: #eee;
