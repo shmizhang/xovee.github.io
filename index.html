@@ -29,11 +29,6 @@
 
 <header id='web-header'>
     <div id='header-content'>
-        <span id='dots'>
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-        </span>
         <span id='header-home'><a href='/'>Home</a></span>
         <span id='mobile-header-home'><a>Home</a></span>
         <span id='mobile-tags'>
@@ -91,7 +86,6 @@
 
         // navi-click
         var naviHome = document.getElementById('mobile-header-home')
-        var dots = document.getElementById('dots')
         var naviTags = document.getElementById('mobile-tags')
 
         naviHome.addEventListener('click', function(){
@@ -101,14 +95,6 @@
             } else {
                 naviTags.style.display = 'block';
                 naviHome.firstChild.removeAttribute('href');
-            }
-        })
-
-        dots.addEventListener('click', function(){
-            if (naviTags.style.display === 'block') {
-                naviTags.style.display = 'none';
-            } else {
-                naviTags.style.display = 'block';
             }
         })
 
