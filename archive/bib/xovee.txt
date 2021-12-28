@@ -1,6 +1,39 @@
 # author: Xovee Xu
 # homepage: https://xovee.cn
 
+# aaai 22
+# aaai 22
+# aaai 22
+# aaai 22
+
+@article{xu2022heterogeneous, 
+  title = {Heterogeneous Dynamical Academic Network for Learning Scientific Impact Propagation},
+  author = {Xovee Xu and Ting Zhong and Ce Li and Goce Trajcevski and Fan Zhou},
+  journal = {Knowledge-Based Systems}, 
+  volume = {238}, 
+  pages = {107839}, 
+  month = feb, 
+  year = {2022},
+  publisher = {Elsevier},
+  doi = {10.1016/j.knosys.2021.107839}, 
+}
+
+# globecom 21
+
+@article{zhou2021contrastive, 
+  title = {Contrastive Trajectory Learning for Tour Recommendation}, 
+  author = {Fan Zhou and Pengyu Wang and Xovee Xu and Wenxin Tai and Goce Trajcevski}, 
+  journal = {ACM Transactions on Intelligent Systems and Technology (TIST)}, 
+  volume = {13}, 
+  number = {1}, 
+  articleno = {4}, 
+  numpages = {25}, 
+  month = nov, 
+  year = {2021}, 
+  publisher = {ACM}, 
+  doi = {10.1145/3462331}, 
+}
+
 @article{xu2021casflow, 
   title = {{CasFlow}: Exploring Hierarchical Structures and Propagation Uncertainty for Cascade Prediction}, 
   author = {Xovee Xu and Fan Zhou and Kunpeng Zhang and Siyuan Liu and Goce Trajcevski}, 
