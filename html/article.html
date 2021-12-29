@@ -81,7 +81,7 @@
         <b><a href='https://doi.org/10.1016/j.knosys.2021.107839' target='_blank'>Heterogeneous Dynamical Academic Network for Learning Scientific Impact Propagation</a></b><br>
         <b>Xovee Xu</b>, Ting Zhong, Ce Li, Goce Trajcevski, and Fan Zhou*<br>
         <i>Knowledge-Based Systems</i>, vol. 238, pp. 107839, Feb 2021<br>
-        <a href='https://github.com/celi52/si-hdgnn' target='_blank'>code</a>, <a href='https://authors.elsevier.com/c/1eJer3OAb91Y9j' target='_blank'>access link (before Feb 15, 2022)</a>
+        <a href='https://github.com/celi52/si-hdgnn' target='_blank'>code</a>, <a href='https://authors.elsevier.com/c/1eJer3OAb91Y9j' target='_blank'>free access link (before Feb 15, 2022)</a>
     </p>
 
     <p class='pub-item'>
@@ -179,7 +179,6 @@
     window.onload = function() {
         // navi-click
         var naviHome = document.getElementById('mobile-header-home');
-        var dots = document.getElementById('dots');
         var naviTags = document.getElementById('mobile-tags');
 
         naviHome.addEventListener('click', function(){
@@ -197,6 +196,9 @@
         var selectedPubs = document.getElementsByClassName('pub-selected');
         var selectedAll = document.getElementsByClassName('pub-item')
         pubSelected.addEventListener('change', (event) => {
+            // save current value
+            localStorage.setItem('current-selection', pubSelected.value);
+
             if (pubSelected.value === 'select-pub-selected') {
                 for (const elem of selectedAll) {
                     elem.style.display = 'none';
@@ -210,6 +212,12 @@
                 }
             }
         });
+        
+        if (localStorage.getItem('current-selection')) {
+            pubSelected.value = localStorage.getItem('current-selection');
+            pubSelected.dispatchEvent(new Event('change'));
+        };
+
     }
 </script>
 
