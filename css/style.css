@@ -269,6 +269,11 @@ body {
     font-family: 'Times New Roman', Times, serif;
 }
 
+.research-topic-summary {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
 /* default show selected publications */
 .pub-item {
     display: none;

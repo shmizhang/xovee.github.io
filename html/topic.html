@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <title>Publication of Xovee Xu</title>
+    <meta charset='utf-8' author='xovee-xu' name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta name='description' content="See Xovee Xu's full publications here.">
+    <link rel='alternate' hreflang='en' href='https://xovee.cn'>
+    <link rel='canonical' href='https://xovee.cn'>
+    <link rel='stylesheet' href='../css/style.css'>
+
+</head>
+
+<body>
+
+<header>
+    <div id='header-content'>
+        <span id='header-home'><a href='/'>Home</a></span>
+        <span id='mobile-header-home'><a>Home</a></span>
+        <span id='mobile-tags'>
+        <span><a href='../html/bio.html'>Bio</a></span>
+        <span><a href='../html/research.html'><u>Research</u></a></span>
+        <span><a href='../archive/cv/cv.pdf' target='_blank'>CV</a></span>
+        <span><a href='../html/project.html'>Project</a></span>
+        </span>
+    </div>
+
+</header>
+
+<main>
+<h1 id='research-topic-title' style='font-size: 3em; font-family: Arial, Helvetica, sans-serif;'>Research</h1>
+
+<p>Followings are Xovee's research grouped by topic. Click the title to see publication list in that topic. See also in <a href='https://scholar.google.com/citations?user=ra0qyRQAAAAJ&hl=en&oi=ao' target='_blank'>Google Scholar</a>, <a href='https://dblp.uni-trier.de/pid/261/9309.html' target='_blank'>DBLP</a>, <a href='https://publons.com/researcher/3651887/xovee-xu/' target='_blank'>publons</a>, <a href='../archive/cv/cv.pdf' target='_blank'>Curriculum Vitae</a>, <a href='../html/bib.html'>bibilography (bibtex)</a>, or ORCID (<a href='https://orcid.org/0000-0001-6415-7558' target='_blank'>0000-0001-6415-7558</a>).
+</p>
+
+<p>You can also <a href='./research.html'>browse publications</a> in chronological order..</p>
+
+<details>
+<summary class='research-topic-summary'>Information Cascade Analysis</summary>
+<h3>Survey</h3>
+<ul>
+    <li>Fan Zhou, <b>Xovee Xu</b>*, Goce Trajcevski, and Kunpeng Zhang. 2021. <a href='https://dl.acm.org/doi/10.1145/3433000?cid=99659687041' target='_blank'>A Survey of Information Cascade Analysis: Models, Predictions, and Recent Advances</a>. ACM Computing Surveys (CSUR), vol. 54, no. 2, article 27, 36 pages, Mar 2021.</li>
+</ul>
+<h3>Research Article</h3>
+<ul>
+    <li>Bla</li>
+    <li>Bilu</li>
+</ul>
+</details>
+
+<details>
+    <summary class='research-topic-summary'>Urban Computing and Smart City</summary>
+</details>
+
+<h3><a href='#research-topic-title'>Back to top.</a></h3>
+
+</div>
+
+</main>
+
+<script>
+    window.onload = function() {
+        // navi-click
+        var naviHome = document.getElementById('mobile-header-home');
+        var naviTags = document.getElementById('mobile-tags');
+
+        naviHome.addEventListener('click', function(){
+            if (naviTags.style.display === 'block') {
+                naviTags.style.display = 'none';
+                naviHome.firstChild.setAttribute('href', '/');
+            } else {
+                naviTags.style.display = 'block';
+                naviHome.firstChild.removeAttribute('href');
+            }
+        })
+
+    }
+</script>
+
+</body>
+
+</html>
