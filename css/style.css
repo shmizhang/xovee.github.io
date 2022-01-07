@@ -135,6 +135,10 @@ gray text: 86868b
         border-radius: .5em;
     }
 
+    #footnote-template-date {
+        float: right;
+    }
+
 }
 
 @media (max-width: 599px) {
@@ -248,6 +252,9 @@ gray text: 86868b
         background-color: white;
     }
     
+    #footnote-template-date {
+        display: block;
+    }
 }
 
 main a, footer a, main a:visited, footer a:visited {
@@ -270,7 +277,7 @@ body {
 }
 
 .research-topic-summary {
-    font-size: 1.3em;
+    font-size: 1.1em;
     font-weight: bold;
 }
 
@@ -284,5 +291,9 @@ body {
 
 .pub-item a:first {
     font-weight: bold;
+}
+
+#research-by-topic {
+    display: none;
 }
 

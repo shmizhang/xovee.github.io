@@ -28,12 +28,28 @@
 </header>
 
 <main>
-<h1 id='article-title' style='font-size: 3em; font-family: Arial, Helvetica, sans-serif;'>Research</h1>
+<h1 id='research-title' style='font-size: 3em; font-family: Arial, Helvetica, sans-serif;'>Research</h1>
 
-<p>Followings are <select id='select-pub' name='select-pub'><option value='select-pub-selected'>selected</option><option value='select-pub-all'>all</option></select> <label for='select-pub'>publications</label> of Xovee Xu in reverse chronological order grouped by year. See also in <a href='https://scholar.google.com/citations?user=ra0qyRQAAAAJ&hl=en&oi=ao' target='_blank'>Google Scholar</a>, <a href='https://dblp.uni-trier.de/pid/261/9309.html' target='_blank'>DBLP</a>, <a href='https://publons.com/researcher/3651887/xovee-xu/' target='_blank'>publons</a>, <a href='../archive/cv/cv.pdf' target='_blank'>Curriculum Vitae</a>, <a href='../html/bib.html'>bibilography (bibtex)</a>, or ORCID (<a href='https://orcid.org/0000-0001-6415-7558' target='_blank'>0000-0001-6415-7558</a>).
-</p>
+<form>
+    Browsing Xovee's work by <input type='radio' id='research-browse-year' name='research-browse-input' value='year' checked> <label for='research-browse-year'>year</label> <input type='radio' id='research-browse-topic' name='research-browse-input' value='topic'> <label for='research-browse-topic'>research topic</label>. 
+</form>
 
-<p>You can also <a href='./topic.html'>browse publications</a> by research topic.</p>
+<div id='research-by-year'>
+    <p>Followings are 
+        <select id='select-pub' name='select-pub'>
+        <option value='select-pub-selected'>selected</option>
+        <option value='select-pub-all'>all</option>
+        </select> 
+        <label for='select-pub'>publications</label> 
+        of Xovee Xu in reverse chronological order grouped by year. 
+        See also in 
+        <a href='https://scholar.google.com/citations?user=ra0qyRQAAAAJ&hl=en&oi=ao' target='_blank'>Google Scholar</a>, 
+        <a href='https://dblp.uni-trier.de/pid/261/9309.html' target='_blank'>DBLP</a>, 
+        <a href='https://publons.com/researcher/3651887/xovee-xu/' target='_blank'>publons</a>, 
+        <a href='../archive/cv/cv.pdf' target='_blank'>Curriculum Vitae</a>, 
+        <a href='../html/bib.html'>bibilography (bibtex)</a>, 
+        or ORCID (<a href='https://orcid.org/0000-0001-6415-7558' target='_blank'>0000-0001-6415-7558</a>).
+    </p>
 
     <p id='pub-year-lst'>
         <a href='#pub-2022'>2022</a> | <a href='#pub-2021'>2021</a> | <a href='#pub-2020'>2020</a>
@@ -172,9 +188,83 @@
 
     <hr>
 
-    <h3><a href='#article-title'>Back to top.</a></h3>
+</div>
+
+
+<div id='research-by-topic'>
+    <p>Followings are Xovee Xu's publications grouped by research topic. 
+        See also in <a href='https://scholar.google.com/citations?user=ra0qyRQAAAAJ&hl=en&oi=ao' target='_blank'>Google Scholar</a>, 
+        <a href='https://dblp.uni-trier.de/pid/261/9309.html' target='_blank'>DBLP</a>, 
+        <a href='https://publons.com/researcher/3651887/xovee-xu/' target='_blank'>publons</a>, 
+        <a href='../archive/cv/cv.pdf' target='_blank'>Curriculum Vitae</a>, 
+        <a href='../html/bib.html'>bibilography (bibtex)</a>, 
+        or ORCID (<a href='https://orcid.org/0000-0001-6415-7558' target='_blank'>0000-0001-6415-7558</a>).
+    </p>
+    
+    <hr>
+    
+    <details open>
+        <summary class='research-topic-summary'>Information Cascade</summary>
+        <ul>
+            <li>Unpublished. Probabilistic modelling of irregularly sampled information cascade with evolution uncertainty. 2022.</li>
+            <li>Unpublished. Transformer-enhanced Hawkes process for information cascade prediction. 2022.</li>
+            <li>AAAI Student Abs. Linking Transformer to Hawkes process for information cascade prediction (student abstract). 2022.</li>
+            <li>KBS. <a href='https://doi.org/10.1016/j.knosys.2021.107839' target='_blank'>Heterogeneous dynamical academic network for learning scientific impact propagation</a>. 2022.</li>
+            <li>arXiv. <a href='https://arxiv.org/abs/2107.12576' target='_blank'>CCGL: Contrastive cascade graph learning</a>. 2021.</li>
+            <li>TKDE. <a href='https://doi.org/10.1109/TKDE.2021.3126475' target='_blank'>CasFlow: Exploring hierarchical structures and propagation uncertainty for cascade prediction</a>. 2021.</li>
+            <li>SIGIR. <a href=' https://dl.acm.org/doi/10.1145/3404835.3463104?cid=99659687041' target='_blank'>Decoupling representation and regressor for long-tailed information cascade prediction</a>. 2021.</li>
+            <li>ACM CSUR. <a href='https://dl.acm.org/doi/10.1145/3433000?cid=99659687041' target='_blank'>A survey of information cascade analysis: models, predictions, and recent Advances</a>. 2021.</li>
+            <li>GLOBECOM. <a href='https://doi.org/10.1109/GLOBECOM42002.2020.9322124' target='_blank'>Continual information cascade learning</a>. 2020.</li>
+            <li>arXiv. <a href='https://arxiv.org/abs/2003.12042' target='_blank'>A heterogeneous dynamical graph neural networks approach to quantify scientific impact</a>. 2020.</li>
+            <li>INFOCOM. <a href='https://doi.org/10.1109/INFOCOM41043.2020.9155349' target='_blank'>Variational information diffusion for probabilistic sascade prediction</a>. 2020</li>
+        </ul>
+    </details>
+    
+    <details open>
+        <summary class='research-topic-summary'>Urban Computing</summary>
+        <ul>
+            <li>Unpublished. Spatial-temporal contrasting for fine-grained urban flow super-resolution. 2022.</li>
+            <li>Unpublished. Probabilistic fine-grained urban flow inference via normalizing flows. 2022.</li>
+            <li>AAAI Student Abs. Fine-grained urban flow inference via normalizing flows (student abstract). AAAI, 2 pages, 2022.</li>
+        </ul>
+    </details>
+    
+    <details open>
+        <summary class='research-topic-summary'>Network Alignment</summary>
+        <ul>
+            <li>GLOBECOM. HGENA: A hyperbolic graph embedding approach for social network alignment. 2021. </li>
+            <li>GLOBECOM. <a href='https://doi.org/10.1109/GLOBECOM42002.2020.9322311' target='_blank'>Unsupervised user identity linkage via graph neural networks</a>. 2021.</li>
+        </ul>
+        </details>
+    
+    <details open>
+        <summary class='research-topic-summary'>Recommender System</summary>
+        <ul>
+            <li>AAAI Student Abs. Conditional collaborative filtering process for top-k recommender system (student abstract). 2022.</li>
+            <li>CIKM. <a href='https://dl.acm.org/doi/10.1145/3459637.3482216?cid=99659687041' target='_blank'>Vector-quantized autoencoder with copula for collaborative filtering</a>. 2021.</li>
+        </ul>
+    </details>
+    
+    <details open>
+        <summary class='research-topic-summary'>Human Trajectory Learning</summary>
+        <ul>
+            <li>ACM TIST. Contrastive trajectory learning for tour recommendation. 2022.</li>
+        </ul>
+    </details>
+    
+    <details open>
+        <summary class='research-topic-summary'>Applied Data Application</summary>
+        <ul>
+            <li>AAAI. PrEF: Probabilistic electricity forecasting via copula-augmented state space model. 2022.</li>
+            <li>GLOBECOM. <a href='https://doi.org/10.1109/GLOBECOM42002.2020.9322197' target='_blank'>Meta-learned user preference for topic participation prediction</a>. 2020.</li>
+        </ul>
+    </details>
+
+    <hr>
 
 </div>
+
+<h3><a href='#research-title'>Back to top.</a></h3>
 
 </main>
 
@@ -215,7 +305,35 @@
                 }
             }
         });
-        
+
+        // show pubs by year or topic
+        var researchBrowseYear = document.getElementById('research-browse-year');
+        var researchBrowseTopic = document.getElementById('research-browse-topic');
+        var researchYearDiv = document.getElementById('research-by-year');
+        var researchTopicDiv = document.getElementById('research-by-topic');
+
+        researchBrowseYear.addEventListener('change', (event) => {   
+            if (researchBrowseYear.checked) {
+                researchYearDiv.style.display = 'block';
+                researchTopicDiv.style.display = 'none';
+            } else if (researchBrowseTopic.checked) {
+                researchYearDiv.style.display = 'none';
+                researchTopicDiv.style.display = 'block';
+            }
+        });
+
+        researchBrowseTopic.addEventListener('change', (event) => {
+            
+            if (researchBrowseYear.checked) {
+                researchYearDiv.style.display = 'block';
+                researchTopicDiv.style.display = 'none';
+            } else if (researchBrowseTopic.checked) {
+                researchYearDiv.style.display = 'none';
+                researchTopicDiv.style.display = 'block';
+            }
+        });
+
+        // remember the form selection when refresh page
         if (localStorage.getItem('current-selection')) {
             pubSelected.value = localStorage.getItem('current-selection');
             pubSelected.dispatchEvent(new Event('change'));
