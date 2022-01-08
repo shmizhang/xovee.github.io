@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <title>Publication of Xovee Xu</title>
+    <meta charset='utf-8' author='xovee-xu' name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta name='description' content="See Xovee Xu's full publications here.">
+    <link rel='alternate' hreflang='en' href='https://xovee.cn'>
+    <link rel='canonical' href='https://xovee.cn'>
+    <link rel='stylesheet' href='../css/style.css'>
+
+</head>
+
+<body>
+
+<header>
+    <div id='header-content'>
+        <span id='header-home'><a href='/'>Home</a></span>
+        <span id='mobile-header-home'><a>Home</a></span>
+        <span id='mobile-tags'>
+        <span><a href='../html/bio.html'>Bio</a></span>
+        <span><a href='../html/research.html'><u>Research</u></a></span>
+        <span><a href='../archive/cv/cv.pdf' target='_blank'>CV</a></span>
+        <span><a href='../html/project.html'>Project</a></span>
+        </span>
+    </div>
+
+</header>
+
+<main>
+<h1 id='research-title' style='font-size: 3em; font-family: Arial, Helvetica, sans-serif;'>Xovee Xu's</h1>
+
+<div id='artwork-title'>Artwork Universe</div>
+
+<div id='artwork-body'>Placeholder.</div>
+
+
+</main>
+
+<script>
+    window.onload = function() {
+        // navi-click
+        var naviHome = document.getElementById('mobile-header-home');
+        var naviTags = document.getElementById('mobile-tags');
+
+        naviHome.addEventListener('click', function(){
+            if (naviTags.style.display === 'block') {
+                naviTags.style.display = 'none';
+                naviHome.firstChild.setAttribute('href', '/');
+            } else {
+                naviTags.style.display = 'block';
+                naviHome.firstChild.removeAttribute('href');
+            }
+        })
+
+    }
+</script>
+
+</body>
+
+</html>

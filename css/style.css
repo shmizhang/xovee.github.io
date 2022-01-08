@@ -297,3 +297,24 @@ body {
     display: none;
 }
 
+#artwork-title {
+    font-size: 3em;
+    padding: .2em .5em .2em .5em;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #ff3333;
+    color: #eee;
+    font-weight: bold;
+    border-radius: .2em;
+    width: auto;
+    margin-top: -20pt;
+    margin-bottom: 15pt;
+}
+
+#artwork-body {
+    border-radius: .7em;
+    border-color: black;
+    background-color: burlywood;
+    width: auto;
+    height: 500px;
+}
+
