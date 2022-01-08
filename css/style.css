@@ -311,8 +311,6 @@ body {
 }
 
 #artwork-body {
-    border-color: black;
-    background-color: burlywood;
     width: auto;
     height: 500px;
 }
