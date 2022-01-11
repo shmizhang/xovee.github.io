@@ -254,12 +254,12 @@ gray text: 86868b
     }
 }
 
-main a, footer a, main a:visited, footer a:visited {
+main a, footer a, main a:visited, footer a:visited, .show-text-button {
     text-decoration: none;
     color: #f45905;
 }
 
-main a:hover, footer a:hover {
+main a:hover, footer a:hover, .show-text-button:hover {
     text-decoration: underline;
 }
 
@@ -299,9 +299,9 @@ body {
     height: 500px;
 }
 
-.project-item {
+.card-item {
     background-color: #fff;
-    padding: 1em;
+    padding: .5em 1em;
     margin: 1em 0 1em 0;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
