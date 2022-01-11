@@ -23,12 +23,8 @@ gray text: 86868b
         display: none;
     }
 
-    #header-content {
-        margin-left: 10em;
-    }
-
     #header-content span {
-        margin-right: 2.5em;
+        margin-right: 1em;
         margin-left: .3em;
         font-family: Arial, Helvetica, sans-serif;
     }
@@ -297,23 +293,7 @@ body {
     display: none;
 }
 
-#artwork-title {
-    padding: .1em .3em;
-    font-family: 'Times New Roman', Times, serif;
-    background-color: #222831;
-    color: #eee;
-    font-weight: bold;
-    width: auto;
-    border-radius: .2em;
-}
-
 #artwork-body {
     width: auto;
     height: 500px;
 }
-
-.artwork-pic {
-    width: 100%;
-    height: auto;
-}
-
