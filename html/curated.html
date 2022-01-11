@@ -44,10 +44,40 @@
     <h3><a href='./research.html'>Back to previous page.</a></h3>
 
     <div class='card-item'>
+        <h3>CasFlow: Exploring Hierarchical Structures and Propagation Uncertainty for Cascade Prediction</h3>
+
+        <img src='../img/thumbnail/casflow-thumbnail.jpg' align='right' width=200px>
+        <p><b>Xovee Xu</b>, Fan Zhou*, Kunpeng Zhang, Siyuan Liu, and Goce Trajcevski</p>
+
+        <p>IEEE Transactions on Knowledge and Data Engineering, 2021</p>
+
+        <p>
+            Understanding in-network information diffusion is a fundamental problem in many applications and one of the primary challenges is to predict the information cascade size. Most of the existing models rely either on hypothesized point process (e.g., Poisson and Hawkes processes), or simply predict the information propagation via deep neural networks. However, they fail to simultaneously  <span id='hdgnn-button-id' class='show-text-button' onclick='showHiddenTexts("hdgnn-button-id", "hdgnn-text-id")'>Expand</span> <span id='hdgnn-text-id' style='display: none;'> capture the underlying global and local structures of a cascade and the propagation uncertainty in the diffusion, which may result in unsatisfactory prediction performance. To address these, in this work we propose a novel probabilistic cascade prediction framework: Hierarchical Cascade Normalizing Flows (CasFlow). CasFlow allows a non-linear information diffusion inference and models the information diffusion process by learning the latent representation of both the structural and temporal information. It is a pattern-agnostic model leveraging normalizing flows to learn the node-level and cascade-level latent factors in an unsupervised manner. In addition, CasFlow is capable of capturing both the cascade representation uncertainty and node infection uncertainty, while enabling hierarchical pattern learning of information diffusion. Extensive experiments conducted on real-world datasets demonstrate that CasFlow reduces the prediction error to 21.0% by only observing half an hour of cascades, compared to state-of-the-art approaches, while also enabling model interpretability.</span>
+        </p>
+
+        <p><a href='https://doi.org/10.1109/TKDE.2021.3126475' target='_blank'>paper</a>, <a href='https://github.com/Xovee/casflow' target='_blank'>code</a></p>
+    </div>
+
+    <div class='card-item'>
+        <h3>A Survey of Information Cascade Analysis: Models, Predictions, and Recent Advances</h3>
+
+        <img src='../img/thumbnail/csur-thumbnail.jpg' align='right' width=200px>
+        <p>Fan Zhou, <b>Xovee Xu</b>*, Goce Trajcevski, and Kunpeng Zhang</p>
+
+        <p>ACM Computing Surveys, 2021</p>
+
+        <p>
+            The deluge of digital information in our daily life—from user-generated content, such as microblogs and scientific papers, to online business, such as viral marketing and advertising—offers unprecedented opportunities to explore and exploit the trajectories and structures of the evolution of information cascades. Abundant research efforts, both academic and industrial, have aimed to reach a better <span id='hdgnn-button-id' class='show-text-button' onclick='showHiddenTexts("hdgnn-button-id", "hdgnn-text-id")'>Expand</span> <span id='hdgnn-text-id' style='display: none;'> understanding of the mechanisms driving the spread of information and quantifying the outcome of information diffusion. This article presents a comprehensive review and categorization of information popularity prediction methods, from feature engineering and stochastic processes, through graph representation, to deep learning-based approaches. Specifically, we first formally define different types of information cascades and summarize the perspectives of existing studies. We then present a taxonomy that categorizes existing works into the aforementioned three main groups as well as the main subclasses in each group, and we systematically review cutting-edge research work. Finally, we summarize the pros and cons of existing research efforts and outline the open challenges and opportunities in this field.</span>
+        </p>
+
+        <p><a href='https://dl.acm.org/doi/10.1145/3433000?cid=99659687041' target='_blank'>paper</a></p>
+    </div>
+
+    <div class='card-item'>
         <h3>A Heterogeneous Dynamical Graph Neural Networks Approach to Quantify Scientific Impact</h3>
 
-        <img src='../img/thumbnail/hdgnn-thumbnail.jpg' align='right' width=150px>
-        <p>Fan Zhou, Xovee Xu, Ce Li, Goce Trajcevski, Ting Zhong, and Kunpeng Zhang</p>
+        <img src='../img/thumbnail/hdgnn-thumbnail.jpg' align='right' width=180px>
+        <p>Fan Zhou, <b>Xovee Xu</b>, Ce Li, Goce Trajcevski, Ting Zhong, and Kunpeng Zhang</p>
 
         <p>arXiv:2003.12042, 2020, 8 pages</p>
 
