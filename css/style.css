@@ -17,6 +17,7 @@ gray text: 86868b
         width: 100%;
         opacity: 0.95;
         font-size: 1.05em;
+        box-shadow:0 2px 16px 0 rgba(0,0,0,.22),inset 0 -1px 0 0 #dadce0;
     }
 
     #dots, #mobile-header-home {
@@ -296,4 +297,11 @@ body {
 #artwork-body {
     width: auto;
     height: 500px;
+}
+
+.project-item {
+    background-color: #fff;
+    padding: 1em;
+    margin: 1em 0 1em 0;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
