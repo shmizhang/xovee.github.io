@@ -42,6 +42,21 @@
     <h1 id='curated-title' style='font-size: 3em; font-family: Arial, Helvetica, sans-serif;'>Curated Publications</h1>
 
     <div class='card-item'>
+        <h3>CCGL: Contrastive Cascade Graph Learning</h3>
+
+        <img src='../img/thumbnail/ccgl-thumbnail.png' align='right' width=180px>
+        <p><b>Xovee Xu</b>, Fan Zhou*, Kunpeng Zhang, and Siyuan Liu</p>
+
+        <p>arXiv:2107.12576, 2021</p>
+
+        <p>
+            Supervised learning, while prevalent for information cascade modeling, often requires abundant labeled data in training, and the trained model is not easy to generalize across tasks and datasets. Semi-supervised learning facilitates unlabeled data for cascade understanding in pre-training. It often learns fine-grained feature-level representations, which can easily result in overfitting for downstream tasks. <span id='hdgnn-button-id' class='show-text-button' onclick='showHiddenTexts("hdgnn-button-id", "hdgnn-text-id")'>Expand</span> <span id='hdgnn-text-id' style='display: none;'> Recently, contrastive self-supervised learning is designed to alleviate these two fundamental issues in linguistic and visual tasks. However, its direct applicability for cascade modeling, especially graph cascade related tasks, remains underexplored. In this work, we present Contrastive Cascade Graph Learning (CCGL), a novel framework for cascade graph representation learning in a contrastive, self-supervised, and task-agnostic way. In particular, CCGL first designs an effective data augmentation strategy to capture variation and uncertainty. Second, it learns a generic model for graph cascade tasks via self-supervised contrastive pre-training using both unlabeled and labeled data. Third, CCGL learns a task-specific cascade model via fine-tuning using labeled data. Finally, to make the model transferable across datasets and cascade applications, CCGL further enhances the model via distillation using a teacher-student architecture. We demonstrate that CCGL significantly outperforms its supervised and semi-supervised counterpartsfor several downstream tasks. </span>
+        </p>
+
+        <p><a href='https://arxiv.org/abs/2107.12576' target='_blank'>paper</a>, <a href='https://github.com/Xovee/ccgl' target='_blank'>code</a></p>
+    </div>
+
+    <div class='card-item'>
         <h3>CasFlow: Exploring Hierarchical Structures and Propagation Uncertainty for Cascade Prediction</h3>
 
         <img src='../img/thumbnail/casflow-thumbnail.jpg' align='right' width=200px>
