@@ -252,6 +252,12 @@ gray text: 86868b
     #footnote-template-date {
         display: block;
     }
+
+    .card-item img {
+        width: 80%;
+        margin: auto;
+        float: none;
+    }
 }
 
 main a, footer a, main a:visited, footer a:visited, .show-text-button {
@@ -292,11 +298,6 @@ body {
 
 #research-by-topic {
     display: none;
-}
-
-#artwork-body {
-    width: auto;
-    height: 500px;
 }
 
 .card-item {
