@@ -136,6 +136,12 @@ gray text: 86868b
         float: right;
     }
 
+    .canv-thumbnail {
+        border-radius: 10px;
+        margin-right: .5em;
+        margin-top: .5em;
+    }
+
 }
 
 @media (max-width: 599px) {
