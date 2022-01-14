@@ -311,3 +311,7 @@ body {
     margin: 1em 0 1.5em 0;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
+
+#research-browse-year:checked + label, #research-browse-topic:checked + label {
+    font-weight: bold;
+}
