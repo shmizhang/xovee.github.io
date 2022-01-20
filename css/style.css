@@ -154,27 +154,10 @@ gray text: 86868b
         /* padding: .8em; */
     }
 
-    #header-home {
-        font-size: 1.2em;
-    }
-
     #mobile-tags, #hide-second-email, #header-home, .biopic-container {
         display: none;
     }
 
-    .dot {
-        height: 8px;
-        width: 8px;
-        background-color: #eee;
-        border-radius: 50%;
-        display: inline-block;
-    }
-
-    #dots {
-        position: absolute;
-        padding: .8em .8em;
-        right: 0;
-    }
 
     #header-content {
         margin: auto;
@@ -183,12 +166,48 @@ gray text: 86868b
         position: relative;
     }
 
-    #header-content a {
+    #header-content .navi-item {
         display: block;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 1.2em;
         text-decoration: none;
         padding: .6em .8em;
+    }
+
+    .mobile-navi-home {
+        display: block;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.3em;
+        text-decoration: none;
+        padding: .6em .8em;
+        border-bottom: 1px dashed #eee;
+    }
+
+    .menu-icon-container {
+        display: inline-block;
+        cursor: pointer;
+        padding-top: 3px;
+    }
+
+    .icon-bar-1, .icon-bar-2, .icon-bar-3 {
+        width: 28px;
+        height: 3px;
+        background-color: #eee;
+        margin-top: 6px;
+        margin-right: 10px;
+        transition: .4s;
+    }
+
+    .menu-icon-change .icon-bar-1 {
+        -webkit-transform: rotate(-45deg) translate(-7.2px, 4.8px);
+        transform: rotate(-45deg) translate(-7.2px, 4.8px);
+    }
+
+    .menu-icon-change .icon-bar-2 {opacity: 0;}
+
+    .menu-icon-change .icon-bar-3 {
+        -webkit-transform: rotate(45deg) translate(-10px, -4px);
+        transform: rotate(45deg) translate(-8px, -8px);
     }
 
     #header-content a:link, #header-content a:hover, #header-content a:visited {
@@ -264,6 +283,7 @@ gray text: 86868b
         margin: auto;
         float: none;
     }
+
 }
 
 main a, footer a, main a:visited, footer a:visited, .show-text-button {

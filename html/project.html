@@ -25,12 +25,21 @@
 <header>
     <div id='header-content'>
         <span id='header-home'><a href='/'>Home</a></span>
-        <span id='mobile-header-home'><a>Home</a></span>
+        <a id='mobile-header-home'  onclick='menuIcon(this)'>
+            <div class='mobile-navi-home'>
+                <div class='menu-icon-container'>
+                    <div class='icon-bar-1'></div>
+                    <div class='icon-bar-2'></div>
+                    <div class='icon-bar-3'></div>
+                </div>
+                <span>Xovee</span>
+            </div>
+        </a>
         <span id='mobile-tags'>
-        <span><a href='../html/bio.html'>Bio</a></span>
-        <span><a href='../html/research.html'>Research</a></span>
-        <span><a href='../html/cv.html'>CV</a></span>
-        <span><a href='../html/project.html'><u>Project</u></a></span>
+        <span><a class='navi-item' href='../html/bio.html'>Bio</a></span>
+        <span><a class='navi-item' href='../html/research.html'>Research</a></span>
+        <span><a class='navi-item' href='../html/cv.html'>CV</a></span>
+        <span><a class='navi-item' href='../html/project.html'><u>Project</u></a></span>
         </span>
     </div>
     </div>
@@ -145,10 +154,10 @@
         naviHome.addEventListener('click', function(){
             if (naviTags.style.display === 'block') {
                 naviTags.style.display = 'none';
-                naviHome.firstChild.setAttribute('href', '/');
+                naviHome.setAttribute('href', '/');
             } else {
                 naviTags.style.display = 'block';
-                naviHome.firstChild.removeAttribute('href');
+                naviHome.removeAttribute('href');
             }
         })
     }

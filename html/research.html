@@ -25,12 +25,21 @@
 <header>
     <div id='header-content'>
         <span id='header-home'><a href='/'>Home</a></span>
-        <span id='mobile-header-home'><a>Home</a></span>
+        <a id='mobile-header-home'  onclick='menuIcon(this)'>
+            <div class='mobile-navi-home'>
+                <div class='menu-icon-container'>
+                    <div class='icon-bar-1'></div>
+                    <div class='icon-bar-2'></div>
+                    <div class='icon-bar-3'></div>
+                </div>
+                <span>Xovee</span>
+            </div>
+        </a>
         <span id='mobile-tags'>
-        <span><a href='../html/bio.html'>Bio</a></span>
-        <span><a href='../html/research.html'><u>Research</u></a></span>
-        <span><a href='../html/cv.html'>CV</a></span>
-        <span><a href='../html/project.html'>Project</a></span>
+        <span><a class='navi-item' href='../html/bio.html'>Bio</a></span>
+        <span><a class='navi-item' href='../html/research.html'><u>Research</u></a></span>
+        <span><a class='navi-item' href='../html/cv.html'>CV</a></span>
+        <span><a class='navi-item' href='../html/project.html'>Project</a></span>
         </span>
     </div>
 
@@ -55,12 +64,13 @@
 
     <p id='research-links'>
         <span><a href='https://scholar.google.com/citations?user=ra0qyRQAAAAJ&hl=en&oi=ao' target='_blank'>Google Scholar</a></span>
-        <span><a href='../html/curated.html'>Curated List</a></span>
-        <span><a href='../html/artwork.html'>Artwork</a></span>
+        <span><a href='./curated.html'>Curated List</a></span>
+        <span><a href='./artwork.html'>Artwork</a></span>
         <span><a href='https://dblp.uni-trier.de/pid/261/9309.html' target='_blank'>DBLP</a></span>
         <span><a href='https://publons.com/researcher/3651887/xovee-xu/' target='_blank'>publons</a></span>
         <span><a href='../archive/cv/cv.pdf' target='_blank'>CV</a></span>
-        <span><a href='../html/bib.html'>.bib</a></span>
+        <span><a href='./bib.html'>.bib</a></span>
+        <span><a href='./canv/xovee-xu.html'>Co-Authors</a></span>
         <span><a href='https://orcid.org/0000-0001-6415-7558' target='_blank'>ORCID</a></span>
     </p>
 
@@ -284,10 +294,10 @@
         naviHome.addEventListener('click', function(){
             if (naviTags.style.display === 'block') {
                 naviTags.style.display = 'none';
-                naviHome.firstChild.setAttribute('href', '/');
+                naviHome.setAttribute('href', '/');
             } else {
                 naviTags.style.display = 'block';
-                naviHome.firstChild.removeAttribute('href');
+                naviHome.removeAttribute('href');
             }
         })
 
