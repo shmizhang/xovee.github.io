@@ -9,6 +9,10 @@
         gtag('js', new Date());
 
         gtag('config', 'G-RKRTC1TG5F');
+
+        function menuIcon(x) {
+            x.classList.toggle('menu-icon-change');
+        }
     </script>
 
     <title>Homepage of Xovee Xu</title>
@@ -25,23 +29,6 @@
     <link rel='canonical' href='https://xovee.cn'>
     <link rel='stylesheet' href='css/style.css'>
 
-    <script>
-        // randomly load photo
-        function getImageURL() {
-            var imageURLs = [
-                "img/photo-1.webp", 
-                "img/photo-2.webp",
-                "img/photo-3.webp",
-            ];
-
-            idx = imageURLs.indexOf(document.getElementById('avatar').getAttribute('src')) + 1;
-
-            return imageURLs[idx % imageURLs.length];
-        }
-        function menuIcon(x) {
-            x.classList.toggle('menu-icon-change');
-        }
-    </script>
 </head>
 
 <body>
@@ -136,6 +123,19 @@
         }
 
         setInterval(clickAvatar, 10000);
+
+        // randomly load photo
+        function getImageURL() {
+            var imageURLs = [
+                "img/photo-1.webp", 
+                "img/photo-2.webp",
+                "img/photo-3.webp",
+            ];
+
+            idx = imageURLs.indexOf(document.getElementById('avatar').getAttribute('src')) + 1;
+
+            return imageURLs[idx % imageURLs.length];
+        }
 
     }
 </script>
