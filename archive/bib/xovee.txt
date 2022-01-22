@@ -20,9 +20,7 @@
   doi = {10.1016/j.knosys.2021.107839}, 
 }
 
-# globecom 21
-
-@article{zhou2021contrastive, 
+@article{zhou2022contrastive, 
   title = {Contrastive Trajectory Learning for Tour Recommendation}, 
   author = {Fan Zhou and Pengyu Wang and Xovee Xu and Wenxin Tai and Goce Trajcevski}, 
   journal = {ACM Transactions on Intelligent Systems and Technology (TIST)}, 
@@ -30,11 +28,13 @@
   number = {1}, 
   articleno = {4}, 
   numpages = {25}, 
-  month = nov, 
-  year = {2021}, 
+  month = feb, 
+  year = {2022}, 
   publisher = {ACM}, 
   doi = {10.1145/3462331}, 
 }
+
+# globecom 21
 
 @article{xu2021casflow, 
   title = {{CasFlow}: Exploring Hierarchical Structures and Propagation Uncertainty for Cascade Prediction}, 
