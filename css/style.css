@@ -336,3 +336,9 @@ body {
 #research-browse-year:checked + label, #research-browse-topic:checked + label {
     font-weight: bold;
 }
+
+.red-theme {
+    background-color: #ee1d24;
+    color: #ffff00;
+    transition: 1s;
+}
