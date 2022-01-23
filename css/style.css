@@ -37,6 +37,7 @@ gray text: 86868b
     #header-content a:link, #header-content a:hover, #header-content a:visited {
         color: #ccc;
         text-decoration: none;
+        transition: 1s;
     }
 
     #header-content {
@@ -345,4 +346,8 @@ body {
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: 400px auto;
+}
+
+#change-theme:hover {
+    text-decoration: underline;
 }
