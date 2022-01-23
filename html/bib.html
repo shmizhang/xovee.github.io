@@ -61,22 +61,20 @@
 </main>
 
 <script>
-    window.onload = function() {
-        // navi-click
-        var naviHome = document.getElementById('mobile-header-home')
-        var dots = document.getElementById('dots')
-        var naviTags = document.getElementById('mobile-tags')
+    // navi-click
+    var naviHome = document.getElementById('mobile-header-home')
+    var dots = document.getElementById('dots')
+    var naviTags = document.getElementById('mobile-tags')
 
-        naviHome.addEventListener('click', function(){
-            if (naviTags.style.display === 'block') {
-                naviTags.style.display = 'none';
-                naviHome.setAttribute('href', '/');
-            } else {
-                naviTags.style.display = 'block';
-                naviHome.removeAttribute('href');
-            }
-        })
-    }
+    naviHome.addEventListener('click', function(){
+        if (naviTags.style.display === 'block') {
+            naviTags.style.display = 'none';
+            naviHome.setAttribute('href', '/');
+        } else {
+            naviTags.style.display = 'block';
+            naviHome.removeAttribute('href');
+        }
+    })
 </script>
 
 </body>

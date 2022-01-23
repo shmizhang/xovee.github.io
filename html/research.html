@@ -300,77 +300,74 @@
 </main>
 
 <script>
-    window.onload = function() {
-        // navi-click
-        var naviHome = document.getElementById('mobile-header-home');
-        var naviTags = document.getElementById('mobile-tags');
+    // navi-click
+    var naviHome = document.getElementById('mobile-header-home');
+    var naviTags = document.getElementById('mobile-tags');
 
-        naviHome.addEventListener('click', function(){
-            if (naviTags.style.display === 'block') {
-                naviTags.style.display = 'none';
-                naviHome.setAttribute('href', '/');
-            } else {
-                naviTags.style.display = 'block';
-                naviHome.removeAttribute('href');
+    naviHome.addEventListener('click', function(){
+        if (naviTags.style.display === 'block') {
+            naviTags.style.display = 'none';
+            naviHome.setAttribute('href', '/');
+        } else {
+            naviTags.style.display = 'block';
+            naviHome.removeAttribute('href');
+        }
+    })
+
+    // select drop-down list
+    var pubSelected = document.getElementById('select-pub');
+    var selectedPubs = document.getElementsByClassName('pub-selected');
+    var selectedAll = document.getElementsByClassName('pub-item')
+    pubSelected.addEventListener('change', (event) => {
+        // save current value
+        localStorage.setItem('current-selection', pubSelected.value);
+
+        if (pubSelected.value === 'select-pub-selected') {
+            for (const elem of selectedAll) {
+                elem.style.display = 'none';
             }
-        })
-
-        // select drop-down list
-        var pubSelected = document.getElementById('select-pub');
-        var selectedPubs = document.getElementsByClassName('pub-selected');
-        var selectedAll = document.getElementsByClassName('pub-item')
-        pubSelected.addEventListener('change', (event) => {
-            // save current value
-            localStorage.setItem('current-selection', pubSelected.value);
-
-            if (pubSelected.value === 'select-pub-selected') {
-                for (const elem of selectedAll) {
-                    elem.style.display = 'none';
-                }
-                for (const elem of selectedPubs) {
-                    elem.style.display = 'block';
-                }
-            } else if (pubSelected.value === 'select-pub-all') {
-                for (const elem of selectedAll) {
-                    elem.style.display = 'block';
-                }
+            for (const elem of selectedPubs) {
+                elem.style.display = 'block';
             }
-        });
-
-        // show pubs by year or topic
-        var researchBrowseYear = document.getElementById('research-browse-year');
-        var researchBrowseTopic = document.getElementById('research-browse-topic');
-        var researchYearDiv = document.getElementById('research-by-year');
-        var researchTopicDiv = document.getElementById('research-by-topic');
-
-        researchBrowseYear.addEventListener('change', (event) => {   
-            if (researchBrowseYear.checked) {
-                researchYearDiv.style.display = 'block';
-                researchTopicDiv.style.display = 'none';
-            } else if (researchBrowseTopic.checked) {
-                researchYearDiv.style.display = 'none';
-                researchTopicDiv.style.display = 'block';
+        } else if (pubSelected.value === 'select-pub-all') {
+            for (const elem of selectedAll) {
+                elem.style.display = 'block';
             }
-        });
+        }
+    });
 
-        researchBrowseTopic.addEventListener('change', (event) => {
-            
-            if (researchBrowseYear.checked) {
-                researchYearDiv.style.display = 'block';
-                researchTopicDiv.style.display = 'none';
-            } else if (researchBrowseTopic.checked) {
-                researchYearDiv.style.display = 'none';
-                researchTopicDiv.style.display = 'block';
-            }
-        });
+    // show pubs by year or topic
+    var researchBrowseYear = document.getElementById('research-browse-year');
+    var researchBrowseTopic = document.getElementById('research-browse-topic');
+    var researchYearDiv = document.getElementById('research-by-year');
+    var researchTopicDiv = document.getElementById('research-by-topic');
 
-        // remember the form selection when refresh page
-        if (localStorage.getItem('current-selection')) {
-            pubSelected.value = localStorage.getItem('current-selection');
-            pubSelected.dispatchEvent(new Event('change'));
-        };
+    researchBrowseYear.addEventListener('change', (event) => {   
+        if (researchBrowseYear.checked) {
+            researchYearDiv.style.display = 'block';
+            researchTopicDiv.style.display = 'none';
+        } else if (researchBrowseTopic.checked) {
+            researchYearDiv.style.display = 'none';
+            researchTopicDiv.style.display = 'block';
+        }
+    });
 
-    }
+    researchBrowseTopic.addEventListener('change', (event) => {
+        
+        if (researchBrowseYear.checked) {
+            researchYearDiv.style.display = 'block';
+            researchTopicDiv.style.display = 'none';
+        } else if (researchBrowseTopic.checked) {
+            researchYearDiv.style.display = 'none';
+            researchTopicDiv.style.display = 'block';
+        }
+    });
+
+    // remember the form selection when refresh page
+    if (localStorage.getItem('current-selection')) {
+        pubSelected.value = localStorage.getItem('current-selection');
+        pubSelected.dispatchEvent(new Event('change'));
+    };
 </script>
 
 </body>
