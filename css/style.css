@@ -35,19 +35,19 @@ gray text: 86868b
     }
 
     #header-content a:link, #header-content a:hover, #header-content a:visited {
-        color: #eee;
+        color: #ccc;
         text-decoration: none;
     }
 
     #header-content {
         max-width: 900px;
         margin: auto;
-        color: #eee;
+        color: #ccc;
     }
 
     #header-content a:hover {
-        text-decoration: underline;
-        color: #ffb6b9;
+        color: white;
+        transition: .5s;
     }
 
     #footer-content {
