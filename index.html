@@ -95,49 +95,46 @@
 </footer>
 
 <script>
-    window.onload = function() {
-        // copyright year and update date
-        curYear = (new Date).getFullYear();
-        document.getElementById('current-year').innerHTML = curYear;
+    // copyright year and update date
+    curYear = (new Date).getFullYear();
+    document.getElementById('current-year').innerHTML = curYear;
 
-        // navi-click
-        var naviHome = document.getElementById('mobile-header-home')
-        var naviTags = document.getElementById('mobile-tags')
+    // navi-click
+    var naviHome = document.getElementById('mobile-header-home')
+    var naviTags = document.getElementById('mobile-tags')
 
-        naviHome.addEventListener('click', function(){
-            if (naviTags.style.display === 'block') {
-                naviTags.style.display = 'none';
-                naviHome.setAttribute('href', '/');
-            } else {
-                naviTags.style.display = 'block';
-                naviHome.removeAttribute('href');
-            }
-        })
-
-        avatar = document.getElementById('avatar');
-        avatar.addEventListener('click', function() {
-            avatar.setAttribute('src', getImageURL());
-        })
-
-        function clickAvatar() {
-            document.getElementById('avatar').click();
+    naviHome.addEventListener('click', function(){
+        if (naviTags.style.display === 'block') {
+            naviTags.style.display = 'none';
+            naviHome.setAttribute('href', '/');
+        } else {
+            naviTags.style.display = 'block';
+            naviHome.removeAttribute('href');
         }
+    })
 
-        setInterval(clickAvatar, 10000);
+    avatar = document.getElementById('avatar');
+    avatar.addEventListener('click', function() {
+        avatar.setAttribute('src', getImageURL());
+    })
 
-        // randomly load photo
-        function getImageURL() {
-            var imageURLs = [
-                "img/photo-1.webp", 
-                "img/photo-2.webp",
-                "img/photo-3.webp",
-            ];
+    function clickAvatar() {
+        document.getElementById('avatar').click();
+    }
 
-            idx = imageURLs.indexOf(document.getElementById('avatar').getAttribute('src')) + 1;
+    setInterval(clickAvatar, 10000);
 
-            return imageURLs[idx % imageURLs.length];
-        }
+    // randomly load photo
+    function getImageURL() {
+        var imageURLs = [
+            "img/photo-1.webp", 
+            "img/photo-2.webp",
+            "img/photo-3.webp",
+        ];
 
+        idx = imageURLs.indexOf(document.getElementById('avatar').getAttribute('src')) + 1;
+
+        return imageURLs[idx % imageURLs.length];
     }
 </script>
 
