@@ -320,6 +320,10 @@ p {
     font-weight: bold;
 }
 
+/* #cv-main {
+    /* background-color: #f45905; */
+} */
+
 /* default show selected publications */
 .pub-item {
     display: none;
@@ -347,14 +351,29 @@ p {
     font-weight: bold;
 }
 
-.red-theme {
-    background-color: #ee1d24;
-    color: #ffff00;
-    transition: 1s;
-    background-image: url('../img/tiananmen.png');
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: 400px auto;
+.cv-theme {
+    background: linear-gradient(-63deg, #b33030, #14279b, #eb413e, #fd7e6d);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+    color: white;
+}
+
+.cv-theme a, .cv-theme a, .cv-theme a:visited {
+    text-decoration: underline;
+    color: #fff;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 #change-theme:hover {

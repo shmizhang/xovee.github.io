@@ -13,10 +13,6 @@
         function menuIcon(x) {
             x.classList.toggle('menu-icon-change');
         }
-
-        function changeTheme(x) {
-            document.body.classList.toggle('red-theme');
-        }
     </script>
     
     <title>CV of Xovee Xu</title>
@@ -28,7 +24,7 @@
     
 </head>
 
-<body>
+<body class='cv-theme'>
 
 <header id='web-header'>
     <div id='header-content'>
@@ -54,16 +50,16 @@
 
 </header>
 
-<main>
+<main id='cv-main'>
 
     <h2>Long CV</h2>
 
-    <a href='../archive/cv/cv.pdf' target='_blank' style='margin-left: 2.4em;'>PDF</a>
+    <a href='../archive/cv/cv.pdf' target='_blank' style='margin-left: 2.4em;'>View PDF</a>
 
     <h2>Short CV</h2>
     
     <ul>
-        <li>I am <a id='change-theme' style='cursor: pointer;' onclick='changeTheme(this)'>Chinese</a> 🇨🇳! 1996- </li>
+        <li>I am Chinese 🇨🇳! 1996- </li>
         <li>BS, UESTC, Software Engineering, 2018</li>
         <li>MS, UESTC, Software Engineering, 2021</li>
         <li>PhD student, UESTC, Computer Science, 2021-</li>
