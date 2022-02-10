@@ -38,7 +38,6 @@ gray text: 86868b
     #header-content a:link, #header-content a:hover, #header-content a:visited {
         color: #ccc;
         text-decoration: none;
-        transition: 1s;
     }
 
     #header-content {
