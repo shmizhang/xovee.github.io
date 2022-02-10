@@ -1,6 +1,16 @@
 # author: Xovee Xu
 # homepage: https://xovee.cn
 
+
+@article{xu2022ccgl, 
+  title = {{CCGL}: Contrastive Cascade Graph Learning}, 
+  author = {Xovee Xu and Fan Zhou and Kunpeng Zhang and Siyuan Liu}, 
+  journal = {IEEE Transactions on Knowledge and Data Engineering (TKDE)}, 
+  numpages = {15}, 
+  year = {2022}, 
+  publisher = {IEEE}, 
+}
+
 # icassp 22
 
 # aaai 22
@@ -58,14 +68,6 @@
   pages = {3458--3462}, 
   publisher = {ACM}, 
   doi = {10.1145/3459637.3482216}, 
-}
-
-@article{xu2021ccgl, 
-  title = {{CCGL}: Contrastive Cascade Graph Learning}, 
-  author = {Xovee Xu and Fan Zhou and Kunpeng Zhang and Siyuan Liu}, 
-  journal = {arXiv:2107.12576}, 
-  numpages = {14}, 
-  year = {2021}, 
 }
 
 @inproceedings{zhou2021decoupling, 
