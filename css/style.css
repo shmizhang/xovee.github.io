@@ -143,6 +143,11 @@ gray text: 86868b
         margin-top: .5em;
     }
 
+    .move-right-corres {
+        float: right;
+        margin-top: .3em;
+    }
+
 }
 
 @media (max-width: 599px) {
