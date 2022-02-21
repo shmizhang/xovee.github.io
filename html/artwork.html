@@ -58,7 +58,7 @@
 <main>
 <h1 id='research-title' style='font-size: 3em;'>Xovee Xu's Artwork Board</h1>
 
-<p>&copy; 2022 Xovee Xu</p>
+<p>&copy; <span id='current-year-1'></span> Xovee Xu</p>
 
 <div id='artwork-body'>
 <picture>
@@ -71,11 +71,16 @@
 </picture>
 </div>
 
-<p>&copy; 2022 Xovee Xu</p>
+<p>&copy; <span id='current-year-2'></span> Xovee Xu</p>
 
 </main>
 
 <script>
+    // current year
+    curYear = (new Date).getFullYear();
+    document.getElementById('current-year-1').innerHTML = curYear;
+    document.getElementById('current-year-2').innerHTML = curYear;
+
     // navi-click
     var naviHome = document.getElementById('mobile-header-home');
     var naviTags = document.getElementById('mobile-tags');
