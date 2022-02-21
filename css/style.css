@@ -7,7 +7,7 @@ gray text: 86868b
 @media (min-width: 600px) {
     html {
         overflow-y: scroll;
-        font-size: 13pt;
+        font-size: 12pt;
     }
 
     header {
@@ -349,33 +349,4 @@ p {
 
 #research-browse-year:checked + label, #research-browse-topic:checked + label {
     font-weight: bold;
-}
-
-.cv-theme {
-    background: linear-gradient(-63deg, #b33030, #14279b, #eb413e, #fd7e6d);
-	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
-	height: 100vh;
-    color: white;
-}
-
-.cv-theme a, .cv-theme a, .cv-theme a:visited {
-    text-decoration: underline;
-    color: #fff;
-}
-
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
-
-#change-theme:hover {
-    text-decoration: underline;
 }
