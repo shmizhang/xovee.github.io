@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1500" height="500" viewBox="0 0 1500 500" xml:space="preserve">
+<desc>Created @ WordClouds.com</desc>
+<defs>
+</defs>
+<rect x="0" y="0" width="100%" height="100%" fill="rgba(0, 0, 0, 0)"></rect>
+<g transform="matrix(1 0 0 1 755 251)" style=""  >
+		<text xml:space="preserve" font-family="Arial" font-size="119.867872861552" font-style="normal" font-weight="normal" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(20,7,52); fill-rule: nonzero; opacity: 1; white-space: pre;" ><tspan x="-536.36" y="37.66" >information cascade</tspan></text>
+</g>
+<g transform="matrix(1 0 0 1 830 331)" style=""  >
+		<text xml:space="preserve" font-family="Arial" font-size="79.91191524103466" font-style="normal" font-weight="normal" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(15,36,87); fill-rule: nonzero; opacity: 1; white-space: pre;" ><tspan x="-356.85" y="25.1" >information diffusion</tspan></text>
+</g>
+<g transform="matrix(1 0 0 1 680 171)" style=""  >
+		<text xml:space="preserve" font-family="Arial" font-size="57.71416100741393" font-style="normal" font-weight="normal" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(40,84,154); fill-rule: nonzero; opacity: 1; white-space: pre;" ><tspan x="-189.28" y="18.13" >neural network</tspan></text>
+</g>
+<g transform="matrix(1 0 0 1 680 126)" style=""  >
+		<text xml:space="preserve" font-family="Arial" font-size="39.95595762051733" font-style="normal" font-weight="normal" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(20,7,52); fill-rule: nonzero; opacity: 1; white-space: pre;" ><tspan x="-187.68" y="12.55" >graph neural network</tspan></text>
+</g>
+<g transform="matrix(1 0 0 1 880 380)" style=""  >
+		<text xml:space="preserve" font-family="Arial" font-size="44.395508467241484" font-style="normal" font-weight="normal" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(55,120,194); fill-rule: nonzero; opacity: 1; white-space: pre;" ><tspan x="-140.64" y="13.95" >social network</tspan></text>
+</g>
+<g transform="matrix(1 0 0 1 610 410)" style=""  >
+		<text xml:space="preserve" font-family="Arial" font-size="35.516406773793186" font-style="normal" font-weight="normal" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(40,84,154); fill-rule: nonzero; opacity: 1; white-space: pre;" ><tspan x="-148.07" y="11.16" >cascade prediction</tspan></text>
+</g>
+<g transform="matrix(1 0 0 1 585 86)" style=""  >
+		<text xml:space="preserve" font-family="Arial" font-size="39.95595762051733" font-style="normal" font-weight="normal" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(15,36,87); fill-rule: nonzero; opacity: 1; white-space: pre;" ><tspan x="-131.06" y="12.55" >cascade graph</tspan></text>
+</g>
+<g transform="matrix(1 0 0 1 605 370)" style=""  >
+		<text xml:space="preserve" font-family="Arial" font-size="22.197754233620742" font-style="normal" font-weight="normal" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(20,7,52); fill-rule: nonzero; opacity: 1; white-space: pre;" ><tspan x="-130.8" y="6.97" >information cascade graph</tspan></text>
+</g>
+<g transform="matrix(1 0 0 1 820 90)" style=""  >
+		<text xml:space="preserve" font-family="Arial" font-size="22.197754233620742" font-style="normal" font-weight="normal" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(55,120,194); fill-rule: nonzero; opacity: 1; white-space: pre;" ><tspan x="-99.33" y="6.97" >popularity prediction</tspan></text>
+</g>
+<g transform="matrix(1 0 0 1 785 206)" style=""  >
+		<text xml:space="preserve" font-family="Arial" font-size="17.758203386896593" font-style="normal" font-weight="normal" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(40,84,154); fill-rule: nonzero; opacity: 1; white-space: pre;" ><tspan x="-62.67" y="5.58" >scientific impact</tspan></text>
+</g>
+<g transform="matrix(1 0 0 1 910 205)" style=""  >
+		<text xml:space="preserve" font-family="Arial" font-size="17.758203386896593" font-style="normal" font-weight="normal" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(15,36,87); fill-rule: nonzero; opacity: 1; white-space: pre;" ><tspan x="-56.77" y="5.58" >graph learning</tspan></text>
+</g>
+</svg>
