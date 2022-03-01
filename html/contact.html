@@ -15,10 +15,10 @@
         }
         // toggle address
         function toggleAddress(x) {
-            if (x.innerHTML === '<b>Lab address</b><br>Room 433, Main Building<br>4 Section 2, N Jianshe Rd, Chenghua<br>Chengdu, Sichuan 610054, China<br><br>') {
+            if (x.innerHTML === '<b>Lab address</b><br>Room 433, Main Building<br>4 Section 2, N Jianshe Rd<br>Chengdu, Sichuan 610054, China<br><br>') {
                 x.innerHTML = '<b>Lab address</b><br>6 1 0 0 5 4<br>中国&nbsp;&nbsp;四川省&nbsp;&nbsp;成都市&nbsp;&nbsp;成华区&nbsp;&nbsp;建设北路二段4号<br>电子科技大学（沙河校区）&nbsp;&nbsp;主楼中433<br><br>';
             } else {
-                x.innerHTML = '<b>Lab address</b><br>Room 433, Main Building<br>4 Section 2, N Jianshe Rd, Chenghua<br>Chengdu, Sichuan 610054, China<br><br>';
+                x.innerHTML =   '<b>Lab address</b><br>Room 433, Main Building<br>4 Section 2, N Jianshe Rd<br>Chengdu, Sichuan 610054, China<br><br>';
             }
         }
     </script>
@@ -77,17 +77,12 @@
 
         <b>Email</b>: <span style='margin-right: .3em; margin-left: .3em;'>first-name</span> @ieee.org or std.uestc.edu.cn<br><br>
 
-        <div id='lab-address' onclick='toggleAddress(this)' title='Click to show Chinese/English version.'>
-            <b>Lab address</b><br>
-            Room 433, Main Building<br>
-            4 Section 2, N Jianshe Rd<br>
-            Chengdu, Sichuan 610054, China<br><br>
-        </div>
+        <div id='lab-address' onclick='toggleAddress(this)' title='Click to show Chinese/English version.'><b>Lab address</b><br>Room 433, Main Building<br>4 Section 2, N Jianshe Rd<br>Chengdu, Sichuan 610054, China<br><br></div>
 
         <b>Affiliations</b><br>
         <a href='https://www.en.scse.uestc.edu.cn/' target='_blank'>School of Computer Science and Engineering</a><br>
         Fan Zhou Lab of UESTC<br>
-        <a href='https://vl-group.github.io/' target='_blank'>Vision and Language Group</a>, Center for Future Media of UESTC<br>
+        <a href='https://vl-group.github.io/' target='_blank'>Vision and Language Group</a> of UESTC<br>
 
     </div>
     
