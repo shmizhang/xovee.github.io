@@ -388,3 +388,9 @@ p {
 #research-browse-year:checked + label, #research-browse-topic:checked + label {
     font-weight: bold;
 }
+
+.wordcloud {
+    display: block;
+    margin: 1em 0;
+    border: #222831 2px solid;
+}
