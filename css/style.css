@@ -332,7 +332,7 @@ gray text: 86868b
 
 main a, footer a, main a:visited, footer a:visited, .show-text-button {
     text-decoration: none;
-    color: #f45905;
+    color: green;
 }
 
 main a:hover, footer a:hover, .show-text-button:hover {
@@ -345,12 +345,14 @@ main a:hover, footer a:hover, .show-text-button:hover {
 
 h1, h2, h3 {
     font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #000;
 }
 
 body {
     margin: auto;
     background-color: #eee;
-    font-family: Helvetica, sans-serif;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    color: #000;
 }
 
 p {
@@ -362,10 +364,16 @@ p {
     font-weight: bold;
 }
 
+.research-xovee-name {
+    font-weight: normal;
+}
+
 /* default show selected publications */
 .pub-item {
     display: none;
+    font-weight: 300;
 }
+
 .pub-selected {
     display: block;
 }
@@ -376,6 +384,14 @@ p {
 
 #research-by-topic {
     display: none;
+}
+
+#research-by-topic ul {
+    font-weight: 400;
+}
+
+#research-by-topic ul a {
+    font-weight: 300;
 }
 
 .card-item {
