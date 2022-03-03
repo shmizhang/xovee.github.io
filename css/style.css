@@ -355,6 +355,10 @@ body {
     color: #000;
 }
 
+.short-cv {
+    font-family: 'Courier New', Courier, monospace;
+}
+
 p {
     line-height: 1.26;
 }
