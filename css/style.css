@@ -12,12 +12,12 @@ gray text: 86868b
 
     header {
         background-color: #222831;
-        padding: .7em 0;
+        padding: .6em 0;
         position: fixed;
         top: 0;
         width: 100%;
         opacity: 0.95;
-        font-size: 1.05em;
+        font-size: 1.1em;
         box-shadow:0 2px 16px 0 rgba(0,0,0,.22),inset 0 -1px 0 0 #dadce0;
     }
 
@@ -28,7 +28,7 @@ gray text: 86868b
     #header-content span {
         margin-right: 1em;
         margin-left: .3em;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: 'Open Sans', Helvetica, sans-serif;
         font-size: .92em;
     }
 
@@ -195,7 +195,7 @@ gray text: 86868b
 
     #header-content .navi-item {
         display: block;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: 'Open Sans', Helvetica, sans-serif;
         font-size: 1.2em;
         text-decoration: none;
         padding: .6em .8em;
@@ -203,7 +203,7 @@ gray text: 86868b
 
     .mobile-navi-home {
         display: block;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: 'Open Sans', Helvetica, sans-serif;
         font-size: 1.3em;
         text-decoration: none;
         padding: .6em .8em;
@@ -333,6 +333,7 @@ gray text: 86868b
 main a, footer a, main a:visited, footer a:visited, .show-text-button {
     text-decoration: none;
     color: green;
+    /* font-weight: bold; */
 }
 
 main a:hover, footer a:hover, .show-text-button:hover {
@@ -353,10 +354,6 @@ body {
     background-color: #eee;
     font-family: 'Open Sans', Helvetica, sans-serif;
     color: #000;
-}
-
-.short-cv {
-    font-family: 'Courier New', Courier, monospace;
 }
 
 p {
