@@ -125,6 +125,7 @@ gray text: 86868b
 
     .pub-item, .pub-affi {
         margin-left: 2em;
+        font-size: 13px;
     }
 
     #bib-data-object {
@@ -372,15 +373,20 @@ p {
 /* default show selected publications */
 .pub-item {
     display: none;
-    font-weight: 300;
+    font-size: 14px;
+    color: #333;
+}
+
+.pub-item b {
+    font-size: 16px;
 }
 
 .pub-selected {
     display: block;
 }
 
-.pub-item a:first {
-    font-weight: bold;
+.font-normal {
+    font-weight: normal;
 }
 
 #research-by-topic {
