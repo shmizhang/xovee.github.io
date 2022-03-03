@@ -353,6 +353,10 @@ body {
     font-family: Helvetica, sans-serif;
 }
 
+.short-cv {
+    font-family: 'Courier New', Courier, monospace;
+}
+
 p {
     line-height: 1.26;
 }
