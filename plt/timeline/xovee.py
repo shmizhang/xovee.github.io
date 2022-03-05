@@ -1,15 +1,27 @@
 import matplotlib.pyplot as plt
 import csv
+from scholarly import scholarly
 
 
-with open('./paper.csv') as f:
-    reader = csv.reader(f, delimiter=',')
-    next(reader)
+search_query = scholarly.search_author('Xovee Xu')
 
-papers = dict()
+author = scholarly.fill(next(search_query))
 
-i = 0
-for row in reader:
-    papers[i] = row
+print(search_query)
 
-print(papers[i])
+print(next(scholarly.search_pubs('CCGL: Contrastive Cascade Graph Learning')))
+
+
+print(author.keys())
+
+# with open('./plt/timeline/paper.csv') as f:
+#     reader = csv.reader(f, delimiter=',')
+#     next(reader)
+
+#     papers = dict()
+
+#     i = 0
+#     for row in reader:
+#         papers[i] = row
+
+#     print(papers[i])
