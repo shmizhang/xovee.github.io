@@ -66,7 +66,7 @@
 
     <picture class='avatar-container'>
         <img src='img/photo-1.webp' alt='avatar' id='avatar' class='avatar'>
-        <div class='avatar-overley'>Jan 2019 at<br>Chengdu, China</div>
+        <div class='avatar-overley' id='avatar-label'>Jan 2019 at<br>Chengdu, China</div>
     </picture>
 
     <h1 style='font-size: 3em'>Xovee Xu</h1>
@@ -125,8 +125,12 @@
     })
 
     avatar = document.getElementById('avatar');
+    avatarLabel = document.getElementById('avatar-label');
     avatar.addEventListener('click', function() {
-        avatar.setAttribute('src', getImageURL());
+        const [imgURL, imgLabel] = getImageURL();
+        avatar.setAttribute('src', imgURL);
+        // console.log(imgLabel);
+        avatarLabel.innerHTML = imgLabel;
     })
 
     function clickAvatar() {
@@ -140,11 +144,20 @@
         var imageURLs = [
             "img/photo-1.webp", 
             "img/photo-2.webp",
+            "img/photo-3.jpeg",
         ];
 
-        idx = imageURLs.indexOf(document.getElementById('avatar').getAttribute('src')) + 1;
+        var imageLabels = [
+            "Jan 2019 at<br>Chengdu, China", 
+            "Jan 2019 at<br>Chengdu, China ", 
+            "A little child at<br>Yulin, China",
+        ]
 
-        return imageURLs[idx % imageURLs.length];
+        idx = imageURLs.indexOf(document.getElementById('avatar').getAttribute('src')) + 1;
+        label_idx = imageLabels.indexOf(document.getElementById('avatar-label').innerHTML) + 1;
+
+
+        return [imageURLs[idx % imageURLs.length], imageLabels[label_idx % imageLabels.length]];
     }
 </script>
 
