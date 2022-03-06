@@ -149,15 +149,13 @@
 
         var imageLabels = [
             "Jan 2019 at<br>Chengdu, China", 
-            "Jan 2019 at<br>Chengdu, China ", 
+            "Jan 2019 at<br>Chengdu, China", 
             "A little child at<br>Yulin, China",
         ]
 
         idx = imageURLs.indexOf(document.getElementById('avatar').getAttribute('src')) + 1;
-        label_idx = imageLabels.indexOf(document.getElementById('avatar-label').innerHTML) + 1;
 
-
-        return [imageURLs[idx % imageURLs.length], imageLabels[label_idx % imageLabels.length]];
+        return [imageURLs[idx % imageURLs.length], imageLabels[idx % imageURLs.length]];
     }
 </script>
 
