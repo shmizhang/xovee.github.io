@@ -2,7 +2,6 @@ import numpy as np
 from bokeh.plotting import figure, show, ColumnDataSource
 from bokeh.models import DatetimeTickFormatter, Line, ResetTool, HoverTool, Label, WheelZoomTool, PanTool, TapTool, Title, Circle
 from bokeh.embed import components
-from bokeh.transform import jitter
 from datetime import datetime, timedelta
 import csv
 
@@ -85,7 +84,7 @@ p.toolbar.logo = None
 p.toolbar_location = 'above'
 p.toolbar.autohide = True
 
-p.background_fill_color = None
+# p.background_fill_color = None
 p.border_fill_color = None
 
 p.xaxis.major_tick_line_color = 'silver'
@@ -95,6 +94,9 @@ p.xaxis[0].formatter = DatetimeTickFormatter(months='%b %Y')
 p.yaxis.major_tick_line_color = None
 p.yaxis.minor_tick_line_color = None
 p.yaxis.axis_line_color = None
+
+p.xgrid.grid_line_color = '#eee'
+p.ygrid.grid_line_color = '#eee'
 
 circles = p.circle(
     'date',
@@ -174,4 +176,4 @@ print('-'*64)
 print(div)
 
 # show the results
-# show(p)
+show(p)
