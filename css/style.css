@@ -170,6 +170,10 @@ gray text: 86868b
         height: 300px;
     }
 
+    .timeline-container {
+        margin-top: 20px;
+    }
+
 }
 
 @media (max-width: 599px) {
@@ -328,6 +332,10 @@ gray text: 86868b
         border: 2px solid black;
         width: 100%;
         height: 300px;
+    }
+
+    .timeline-container {
+        display: none;
     }
 }
 
