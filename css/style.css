@@ -205,7 +205,6 @@ gray text: 86868b
         display: none;
     }
 
-
     #header-content {
         margin: auto;
         color: #eee;
@@ -281,7 +280,7 @@ gray text: 86868b
         border-bottom: 1px dashed #eee;
         cursor: grab;
     }
-
+    
     body {
         font-size: 16px;
     }
