@@ -28,7 +28,7 @@ gray text: 86868b
     #header-content span {
         margin-right: 1em;
         margin-left: .3em;
-        font-family: 'Open Sans', Helvetica, sans-serif;
+        font-family: 'Roboto', 'Open Sans', Helvetica, sans-serif;
         font-size: .92em;
     }
 
@@ -205,7 +205,6 @@ gray text: 86868b
         display: none;
     }
 
-
     #header-content {
         margin: auto;
         color: #eee;
@@ -215,7 +214,7 @@ gray text: 86868b
 
     #header-content .navi-item {
         display: block;
-        font-family: 'Open Sans', Helvetica, sans-serif;
+        font-family: 'Roboto', 'Open Sans', Helvetica, sans-serif;
         font-size: 1.2em;
         text-decoration: none;
         padding: .6em .8em;
@@ -223,7 +222,7 @@ gray text: 86868b
 
     .mobile-navi-home {
         display: block;
-        font-family: 'Open Sans', Helvetica, sans-serif;
+        font-family: 'Roboto', 'Open Sans', Helvetica, sans-serif;
         font-size: 1.3em;
         text-decoration: none;
         padding: .6em .8em;
@@ -281,7 +280,7 @@ gray text: 86868b
         border-bottom: 1px dashed #eee;
         cursor: grab;
     }
-
+    
     body {
         font-size: 16px;
     }
@@ -347,7 +346,7 @@ h1, h2, h3 {
 body {
     margin: auto;
     background-color: #eee;
-    font-family: 'Open Sans', Helvetica, sans-serif;
+    font-family: 'Roboto', 'Open Sans', Helvetica, sans-serif;
     color: #000;
 }
 
@@ -368,7 +367,8 @@ p {
 .pub-item {
     display: none;
     font-size: 14px;
-    color: #333;
+    /* color: #333; */
+    font-weight: 300;
 }
 
 .pub-item b {
