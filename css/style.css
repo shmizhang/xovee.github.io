@@ -68,6 +68,10 @@ gray text: 86868b
         padding-right: 10px;
     }
 
+    #stat-mobile {
+        display: none;
+    }
+
     .avatar {
         max-width: 100%;
         width: 170px;
@@ -190,6 +194,10 @@ gray text: 86868b
     main {
         width: 95%;
         margin: auto;
+    }
+
+    #stat-page {
+        display: none;
     }
 
     .avatar-container {

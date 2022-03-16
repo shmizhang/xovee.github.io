@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RKRTC1TG5F"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-RKRTC1TG5F');
+
+        function menuIcon(x) {
+            x.classList.toggle('menu-icon-change');
+        }
+    </script>
+    
+    <title>Visualization of Xovee's Publications</title>
+    <meta charset='utf-8' author='xovee-xu' name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta name='description' content="See interactive visualizations of Xovee's Publications here. ">
+    <link rel='alternate' hreflang='en' href='https://xovee.cn'>
+    <link rel='canonical' href='https://xovee.cn'>
+    <link rel='stylesheet' href='../css/style.css'>
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../img/favicon/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../img/favicon/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="../img/favicon/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="../img/favicon/favicon-16x16.png" sizes="16x16" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    
+</head>
+
+<body>
+
+<header id='web-header'>
+    <div id='header-content'>
+        <span id='header-home'><a href='/'>Home</a></span>
+        <a id='mobile-header-home'  onclick='menuIcon(this)'>
+            <div class='mobile-navi-home'>
+                <div class='menu-icon-container'>
+                    <div class='icon-bar-1'></div>
+                    <div class='icon-bar-2'></div>
+                    <div class='icon-bar-3'></div>
+                </div>
+                <span>Home</span>
+            </div>
+        </a>
+        <span id='mobile-tags'>
+        <span><a class='navi-item' href='../html/research.html'>Research</a></span>
+        <span><a class='navi-item' href='../archive/cv/cv.pdf' target='_blank'>CV</a></span>
+        <span><a class='navi-item' href='../html/project.html'>Project</a></span>
+        <span><a class='navi-item' href='../html/contact.html'>Contact</a></span>
+        </span>
+    </div>
+    </div>
+
+</header>
+
+<main>
+
+    <h1 style='font-size: 2.4em;'>Visualization of Xovee's Publication</h1>
+
+    <div id='stat-mobile'>Please view this page within a larger screen (>=600px width and preferably >=920px).</div>
+
+    <div id='stat-page'>
+
+    <div>
+        Here are several interactive visualizations of Xovee's Publications:
+        <ul>
+            <li><a href='#pub-rel-viz'>Publication Relation Visualization</a>, created by <a href='https://www.litmaps.co' target='_blank'>Litmaps</a>.</li>
+        </ul>
+    </div>
+
+    <h2 id='pub-rel-viz'>Publication Relation Visualization</h2>
+
+    <iframe title='Publication Relation Visualization' class='' frameborder=0 src='https://app.litmaps.co/embed/9C111298-1C95-46F3-9BF3-0D2DF9041A6E?graphConfig=%7B%22scaleMode%22%3A%22citations%22%2C%22xAxisMode%22%3A%22compact%22%2C%22yAxisMode%22%3A%22compact%22%2C%22edgeMode%22%3A%22alwaysOn%22%2C%22labelContentMode%22%3A%22shortTitle%22%2C%22graphError%22%3Anull%7D' style='min-width: 600px; min-height: 350px' />
+
+    </div>
+</main>
+
+<script>
+    // navi-click
+    var naviHome = document.getElementById('mobile-header-home')
+    var dots = document.getElementById('dots')
+    var naviTags = document.getElementById('mobile-tags')
+
+    naviHome.addEventListener('click', function(){
+        if (naviTags.style.display === 'block') {
+            naviTags.style.display = 'none';
+            naviHome.setAttribute('href', '/');
+        } else {
+            naviTags.style.display = 'block';
+            naviHome.removeAttribute('href');
+        }
+    })
+
+</script>
+
+</body>
+
+</html>
