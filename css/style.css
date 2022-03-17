@@ -334,7 +334,7 @@ main a:hover, footer a:hover, .show-text-button:hover {
     text-decoration: underline;
 }
 
-#links span, .research-links span {
+#links a, .research-links span {
     margin-right: 1em;
 }
 
