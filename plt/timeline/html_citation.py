@@ -4,7 +4,7 @@ import csv
 
 def read_google_scholar_page(path):
 
-    with open(path, 'r') as f:
+    with open(path, 'r', encoding='UTF-8') as f:
         page = f.read()
 
     soup = BeautifulSoup(page, 'html.parser')
@@ -16,14 +16,41 @@ def read_google_scholar_page(path):
 
     paper_dict = {title: citation for title, citation in zip(all_titles, all_citations)}
 
+    return paper_dict
 
-def read_my_csv_data(path):
 
-    print('hi')
+def read_my_csv_data(path, papers):
+    with open(path) as f:
+        csv_reader = csv.reader(f, delimiter=',')
+        headers = next(csv_reader)
+        lines = list(csv_reader)
+
+        for row in lines:
+            if row[0] in papers.keys():
+                old_citation = int(row[-1])
+                new_citation = papers[row[0]]
+                if old_citation != new_citation:
+                    row[-1] = new_citation
+                    print('Update citation from {} to {}, for paper {}'.format(
+                        old_citation, new_citation, row[0]
+                    ))
+            else:
+                print('This paper is not tracked by Google Scholar or has zero citation: ', row[0])
+
+        return headers, lines
 
 
 html_path = './citation.html'
 csv_path = './paper.csv'
 
-read_google_scholar_page(html_path)
+papers = read_google_scholar_page(html_path)
+
+headers, new_csv_data = read_my_csv_data(csv_path, papers)
+
+with open('paper_new.csv', 'w', newline='') as f:
+    csv_writer = csv.writer(f)
+    csv_writer.writerow(headers)
+    csv_writer.writerows(new_csv_data)
+
+
 

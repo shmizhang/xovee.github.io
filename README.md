@@ -7,9 +7,9 @@ Designing a website is really a challenging task, not the technical parts but th
 
 It's just like a competition. Player A tells me to put many fancy functions and content on the page, but player B tells me you need to be concise and clear, don't put too much on the website, otherwise the visitor's attention would be distracted. 
 
-As a result, I sometimes busying on adding features to my site, and the next day I delete them all. 
+As a result, I was sometimes busying on adding features to my site, and the next day I delete them all. 
 
-Anywhy, I perfer a simple design and control myself not to obey this rule. 
+Anyway, I prefer a simple design and control myself not to obey this rule. 
 
 ## Resue
 
