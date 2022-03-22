@@ -168,9 +168,9 @@ circles.level = 'annotation'
 
 script, div = components(p)
 
-print(script)
-print('-'*64)
-print(div)
+with open('./scholar_timeline_output.txt', 'w') as f:
+    f.write(script)
+    f.write(div)
 
 # show the results
 show(p)
