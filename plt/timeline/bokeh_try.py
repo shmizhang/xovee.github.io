@@ -122,7 +122,7 @@ all_milestone_lines = list()
 
 
 def draw_milestone_annotation(data):
-    label = Label(x=to_date(data[0]), y=128, x_units='data', y_units='screen', text=data[1], text_color='gray',
+    label = Label(x=to_date(data[0]), y=128, x_units='data', y_units='screen', text=' > ' + data[1], text_color='gray',
                   text_font_size='12px')
     p.add_layout(label)
     all_milestone_lines.append(label)
@@ -151,6 +151,7 @@ paper_tooltips = """
 """
 milestone_tooltips = """
     <div>
+        <span><b>@role</b></span><br>
         <span>@affiliation</span><br>
         <span>@duration</span><address>@address</address>
     </div>

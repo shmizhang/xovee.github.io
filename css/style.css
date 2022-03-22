@@ -414,10 +414,24 @@ p {
     font-weight: bold;
 }
 
-.wordcloud {
-    display: block;
-    margin: 1em 0;
-    /* border: #222831 2px solid; */
+.viz-trace {
+    padding: 0;
+}
+
+.viz-trace li {
+    font-family: Courier, monospace;
+    list-style-type: none;
+    margin-right: .3em;
+    margin-bottom: .3em;
+    padding: .3em;
+    background-color: white;
+    display: inline-block;
+    border-radius: .4em;
+}
+
+.viz-toggle {
+    background-color: #222831;
+    color: white;
 }
 
 #home-intro p {
