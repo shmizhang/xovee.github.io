@@ -77,24 +77,30 @@
         </ul>
     </div>
 
-    <h2>Trace of Xovee's Publications</h2>
+    <div class='card-item'>
+        <h2>Trace of Xovee's Publications</h2>
 
-    <ul class='viz-trace'>
-        <li>infocom-20</li><li>globecom-20</li><li>csur-21</li><li>sigir-21</li><li>cikm-21</li><li>tkde-21</li><li>globecom-21</li><li>tist-22</li><li>kbs-22</li><li>aaai-22</li><li>tkde-22</li><li>icassp-22</li>
-    </ul>
-
-    <h2 id='scholar-time-viz'>Scholar Timeline Visualization</h2>
-
-    <p>You can drag and zoom horizontally on this diagram. The green pots are my publications and you can hover on them to see detailed information. </p>
-
-    <!-- scholar timeline -->
-    <div class='timeline-container'>
-        <div class="bk-root" id="947aa043-4b23-4f4e-8063-19de2017e467" data-root-id="1004"></div>
+        <ul class='viz-trace'>
+            <li>infocom-20</li><li>globecom-20</li><li>csur-21</li><li>sigir-21</li><li>cikm-21</li><li>tkde-21</li><li>globecom-21</li><li>tist-22</li><li>kbs-22</li><li>aaai-22</li><li>tkde-22</li><li>icassp-22</li>
+        </ul>
     </div>
 
-    <h2 id='pub-rel-viz'>Publication Relation Visualization</h2>
+    <div class='card-item'>
+        <h2 id='scholar-time-viz'>Scholar Timeline Visualization</h2>
 
-    <iframe title='Publication Relation Visualization' class='' frameborder=0 src='https://app.litmaps.co/embed/9C111298-1C95-46F3-9BF3-0D2DF9041A6E?graphConfig=%7B%22scaleMode%22%3A%22citations%22%2C%22xAxisMode%22%3A%22compact%22%2C%22yAxisMode%22%3A%22compact%22%2C%22edgeMode%22%3A%22alwaysOn%22%2C%22labelContentMode%22%3A%22shortTitle%22%2C%22graphError%22%3Anull%7D' style='min-width: 600px; min-height: 500px; width: 100%;'></iframe>
+        <p>You can drag and zoom horizontally on this diagram. The green pots are my publications and you can hover on them to see detailed information. </p>
+
+        <!-- scholar timeline -->
+        <div class='timeline-container'>
+            <div class="bk-root" id="947aa043-4b23-4f4e-8063-19de2017e467" data-root-id="1004"></div>
+        </div>
+    </div>
+
+    <div class='card-item'>
+        <h2 id='pub-rel-viz'>Publication Relation Visualization</h2>
+
+        <iframe title='Publication Relation Visualization' class='' frameborder=0 src='https://app.litmaps.co/embed/9C111298-1C95-46F3-9BF3-0D2DF9041A6E?graphConfig=%7B%22scaleMode%22%3A%22citations%22%2C%22xAxisMode%22%3A%22compact%22%2C%22yAxisMode%22%3A%22compact%22%2C%22edgeMode%22%3A%22alwaysOn%22%2C%22labelContentMode%22%3A%22shortTitle%22%2C%22graphError%22%3Anull%7D' style='min-width: 600px; min-height: 500px; width: 100%;'></iframe>
+    </div>
 
     </div>
 </main>
@@ -137,7 +143,7 @@
         element.addEventListener('mouseout', function(){
             allListItems.forEach((element) => {
                 element.style.color = 'black';
-                element.style.backgroundColor = 'white';
+                element.style.backgroundColor = '#eee';
             })
         });
     })
