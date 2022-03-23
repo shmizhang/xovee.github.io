@@ -419,7 +419,8 @@ p {
 }
 
 .viz-trace li {
-    font-family: Courier, monospace;
+    font-family: 'Consolas', 'Deja Vu Sans Mono', 'Bitstream Vera Sans Mono', monospace;
+    font-weight: normal;
     list-style-type: none;
     margin-right: .3em;
     margin-bottom: .3em;
