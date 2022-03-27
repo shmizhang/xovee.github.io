@@ -2,20 +2,7 @@
 <html lang='en'>
 
 <head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RKRTC1TG5F"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-RKRTC1TG5F');
-
-        function menuIcon(x) {
-            x.classList.toggle('menu-icon-change');
-        }
-    </script>
-
-    <title>Xovee Xu's Homepage</title>
+    <title>Homepage of Xovee Xu</title>
     <meta charset='utf-8' author='xovee-xu' name='viewport' content='width=device-width, initial-scale=1.0'>
     <meta name='description' content="PhD student in computer science at UESTC, Chengdu, China. See Xovee's bio, publications, CV, projects and more.">
 
@@ -31,14 +18,14 @@
 
     <link rel='alternate' hreflang='en' href='https://xovee.cn'>
     <link rel='canonical' href='https://xovee.cn'>
-    <link rel='stylesheet' href='css/style.css'>
-    <script defer src='https://cdn.bokeh.org/bokeh/release/bokeh-2.4.2.min.js' crossorigin='anonymous'></script>
+    <link rel='stylesheet' href='css/pure-base-grids.css'>
+    <link rel='stylesheet' href='css/main.css'>
 
 </head>
 
 <body>
 
-<header id='web-header'>
+<header>
     <div id='header-content'>
         <span id='header-home'><a href='/'>Home</a></span>
         <a id='mobile-header-home'  onclick='menuIcon(this)'>
@@ -48,7 +35,6 @@
                     <div class='icon-bar-2'></div>
                     <div class='icon-bar-3'></div>
                 </div>
-                <span>Home</span>
             </div>
         </a>
         <span id='mobile-tags'>
@@ -57,34 +43,37 @@
         <span><a class='navi-item' href='./html/contact.html'>Contact</a></span>
         </span>
     </div>
-    </div>
 
 </header>
 
 <main>
 
-    <picture class='avatar-container'>
-        <img src='img/photo-1.webp' alt='avatar' id='avatar' class='avatar'>
-        <div class='avatar-overley' id='avatar-label'>Jan 2019 at<br>Chengdu, China</div>
-    </picture>
+    <div class='pure-g'>
+        <div class='pure-u-1 pure-u-md-1-3 ll-box' style='padding-left: 1em;'>
+            <picture class='avatar-container'>
+                <img class='pure-img' src='img/photo-1.webp' alt='avatar'>
+            </picture>
+        </div>
 
-    <h1 style='font-size: 3em'>Xovee Xu</h1>
+        <div class='pure-u-1 pure-u-md-2-3'>
+            <h1>Xovee Xu</h1>
+            <div id='home-intro'>
 
-    <div id='home-intro'>
-
-        <p>1st year PhD student in computer science</p>
-
-        <p>> Supervised by Profs. <a href='https://scholar.google.com/citations?user=Ihj2Rw8AAAAJ&hl=en&authuser=1&oi=sra', target='_blank'>Fan Zhou</a> and <a href='https://scholar.google.com/citations?user=F5Zy9V4AAAAJ&hl=en&authuser=1&oi=ao' target='_blank'>Jingkuan Song</a></p>
-
-        <p>> University of Electronic Science and Technology of China (<a href='https://en.uestc.edu.cn/' target='_blank'>UESTC</a>), Chengdu, China</p>
-
-        <p>> Researching on how information is diffused in social networks, how can we realize AI technologies for social good, and bridging social and computer science.</p>
-
-        <p id='links'>
-            > 
-            <a href='https://scholar.google.com/citations?user=ra0qyRQAAAAJ&hl=en&oi=ao' target='_blank'>Google Scholar</a> 
-            <a href='./archive/cv/cv.pdf' target='_blank'>CV.pdf</a>
-        </p>
+                <p>1st year PhD student in computer science</p>
+        
+                <p>> Supervised by Profs. <a href='https://scholar.google.com/citations?user=Ihj2Rw8AAAAJ&hl=en&authuser=1&oi=sra', target='_blank'>Fan Zhou</a> and <a href='https://scholar.google.com/citations?user=F5Zy9V4AAAAJ&hl=en&authuser=1&oi=ao' target='_blank'>Jingkuan Song</a></p>
+        
+                <p>> University of Electronic Science and Technology of China (<a href='https://en.uestc.edu.cn/' target='_blank'>UESTC</a>), Chengdu, China</p>
+        
+                <p>> Researching on how information is diffused in social networks, how can we realize AI technologies for social good, and bridging social and computer science.</p>
+        
+                <p id='links'>
+                    > 
+                    <a href='https://scholar.google.com/citations?user=ra0qyRQAAAAJ&hl=en&oi=ao' target='_blank'>Google Scholar</a> 
+                    <a href='./archive/cv/cv.pdf' target='_blank'>CV.pdf</a>
+                </p>
+            </div>
+        </div>
     </div>
 
     <!-- scholar timeline -->
@@ -100,7 +89,6 @@
         <!-- <hr> -->
         &copy; 2018-<span id='current-year'></span> Xovee Xu 
         <span id='footnote-template-date'>
-            <a href='https://github.com/Xovee/xovee.github.io' target='_blank' style='color: #86868b;'>Website template.</a> 
             Last update: Mar 22, 2022
         </span>
     </div>
@@ -125,42 +113,11 @@
         }
     })
 
-    avatar = document.getElementById('avatar');
-    avatarLabel = document.getElementById('avatar-label');
-    avatar.addEventListener('click', function() {
-        const [imgURL, imgLabel] = getImageURL();
-        avatar.setAttribute('src', imgURL);
-        // console.log(imgLabel);
-        avatarLabel.innerHTML = imgLabel;
-    })
-
-    function clickAvatar() {
-        document.getElementById('avatar').click();
-    }
-
-    setInterval(clickAvatar, 10000);
-
-    // randomly load photo
-    function getImageURL() {
-        var imageURLs = [
-            "img/photo-1.webp", 
-            "img/photo-2.webp",
-            "img/photo-3.jpeg",
-        ];
-
-        var imageLabels = [
-            "Jan 2019 at<br>Chengdu, China", 
-            "Jan 2019 at<br>Chengdu, China", 
-            "A little child at<br>Yulin, China",
-        ]
-
-        idx = imageURLs.indexOf(document.getElementById('avatar').getAttribute('src')) + 1;
-
-        return [imageURLs[idx % imageURLs.length], imageLabels[idx % imageURLs.length]];
-    }
 </script>
 
 <!-- bokeh: xovee timeline -->
+
+<script defer src='https://cdn.bokeh.org/bokeh/release/bokeh-2.4.2.min.js' crossorigin='anonymous'></script>
 <script type="text/javascript">
     (function() {
           const fn = function() {
@@ -196,6 +153,20 @@
           if (document.readyState != "loading") fn();
           else document.addEventListener("DOMContentLoaded", fn);
         })();
+</script>
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RKRTC1TG5F"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-RKRTC1TG5F');
+
+    function menuIcon(x) {
+        x.classList.toggle('menu-icon-change');
+    }
 </script>
 
 </body>
