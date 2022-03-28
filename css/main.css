@@ -1,46 +1,77 @@
 /* 
 colors: 
-black: 222831
+black: 141414
 white text: eee 
 gray text: 86868b
 */
 
 /* overall */
-html {
-    overflow-y: scroll;
-    font-size: 16px;
-}
-
+html {overflow-y: scroll; font-size: 16px;}
 html, button, input, select, textarea, .pure-g [class *= "pure-u"] {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;}
+h1 {font-size: 3em;}
+img {width: 100%; height: auto; margin: auto;}
+main {width: 95%; margin: auto;}
+footer {width: 95%; margin: auto; color: #86868b;}
+.footnote-date {float: right;}
+
+/* header */
+header {background-color: #141414;}
+#mobile-tags, #header-home {display: none;}
+#header-content {margin: auto; color: #eee; overflow: hidden; position: relative;}
+#header-content .navi-item {display: block; font-family: 'Roboto', 'Open Sans', Helvetica, sans-serif; font-size: 1.3rem; text-decoration: none; padding: .6em .8em}
+.mobile-navi-home {display: block; font-size: 1.3rem; text-decoration: none;padding: .6em .8em; border-bottom: 1px dashed #eee;}
+#header-content a {border-bottom: 1px dashed #eee; cursor: grab;}
+#header-content a:link, #header-content a:visited {color: #eee;text-decoration: none;}
+#mobile-tags a:hover {background-color: #eee;color: #141414;}
+.menu-icon-container {display: inline-block; cursor: pointer; padding-top: 3px;}
+.icon-bar-1, .icon-bar-2, .icon-bar-3 {width: 28px; height: 3px; background-color: #eee; margin-top: 6px; margin-right: 10px; transition: .4s;}
+.menu-icon-change .icon-bar-1 {-webkit-transform: rotate(-45deg) translate(-7.2px, 4.8px); transform: rotate(-45deg) translate(-7.2px, 4.8px);}
+.menu-icon-change .icon-bar-2 {opacity: 0;}
+.menu-icon-change .icon-bar-3 {-webkit-transform: rotate(45deg) translate(-10px, -4px); transform: rotate(45deg) translate(-8px, -8px);}
+
+/* home content */
+.avatar-container {display: block; aspect-ratio: 1/1; width: 80%; margin: auto;}
+.avatar {aspect-ratio: 1/1;object-fit: cover; padding: 1rem 0;}
+
+/* viz */
+#stat-page {display: none;}
+
+/* bib */
+#bib-data-object {width: 100%; height: 60vh; background-color: white;}
+
+
+
+
+/* modules */
+/* 1. card */
+.card-item img {
+    width: 80%;
+    margin: auto;
+    float: none;
 }
 
-h1 {
-    font-size: 3em;
+.uestc-logo {
+    display: block;
+    width: 50%;
+    margin: auto;
 }
 
-.pure-g > div {
-    box-sizing: border-box;
+.uestc-main-building {
+    width: 100%;
+    border: 2px solid black;
 }
 
-.l-box {
-    padding: 1em;
+#uestc-google-map {
+    display: none;
+    border: 2px solid black;
+    width: 100%;
+    height: 300px;
 }
 
-.ll-box {
-    padding: 2em;
+.timeline-container {
+    display: none;
 }
-
-@media screen and (min-width: 2000px) {
-    html {
-        font-size: 20px;
-    }
-    #bib-data-object, main, #header-content, #foot-content {
-        max-width: 1680px;
-        margin: auto;
-    }
-}
-
 
 @media (min-width: 600px) {
     header {
@@ -91,30 +122,15 @@ h1 {
         color: #86868b;
         padding-left: 10px;
         padding-right: 10px;
+        font-size: .8rem;
     }
 
     main {
         max-width: 920px;
         margin: auto;
-        padding-top: 3.0em;
+        padding-top: 3.0rem;
         padding-left: 10px;
         padding-right: 10px;
-    }
-
-    .pub-item, .pub-affi {
-        margin-left: 2em;
-        font-size: 13px;
-    }
-
-    #bib-data-object {
-        max-width: 920px;
-        width: 90%;
-        height: 500px;
-        background-color: white;
-        border-radius: .5em;
-        padding-left: 10px;
-        padding-right: 10px;
-        margin: auto;
     }
 
     #footnote-template-date {
@@ -156,149 +172,37 @@ h1 {
         margin-top: 20px;
     }
 
+    /* research */
+    .pub-item, .pub-affi {
+        margin-left: 2em;
+        font-size: 13px;
+    }
+
+    /* bib */
+    #bib-data-object {
+        max-width: 920px;
+        width: 90%;
+        height: 600px;
+        background-color: white;
+        border-radius: .5em;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin: auto;
+    }
 }
 
-@media (max-width: 599px) {
-    main {
-        width: 95%;
-        margin: auto;
-    }
 
-    #stat-page {
-        display: none;
+@media screen and (min-width: 2000px) {
+    html {
+        font-size: 20px;
     }
-
-    .avatar-container {
-        display: none;
-    }
-
-    header {
-        background-color: #222831;
-        /* padding: .8em; */
-    }
-
-    #mobile-tags, #hide-second-email, #header-home, .biopic-container {
-        display: none;
-    }
-
-    #header-content {
-        margin: auto;
-        color: #eee;
-        overflow: hidden;
-        position: relative;
-    }
-
-    #header-content .navi-item {
-        display: block;
-        font-family: 'Roboto', 'Open Sans', Helvetica, sans-serif;
-        font-size: 1.2em;
-        text-decoration: none;
-        padding: .6em .8em;
-    }
-
-    .mobile-navi-home {
-        display: block;
-        font-family: 'Roboto', 'Open Sans', Helvetica, sans-serif;
-        font-size: 1.3em;
-        text-decoration: none;
-        padding: .6em .8em;
-        border-bottom: 1px dashed #eee;
-    }
-
-    .menu-icon-container {
-        display: inline-block;
-        cursor: pointer;
-        padding-top: 3px;
-    }
-
-    .icon-bar-1, .icon-bar-2, .icon-bar-3 {
-        width: 28px;
-        height: 3px;
-        background-color: #eee;
-        margin-top: 6px;
-        margin-right: 10px;
-        transition: .4s;
-    }
-
-    .menu-icon-change .icon-bar-1 {
-        -webkit-transform: rotate(-45deg) translate(-7.2px, 4.8px);
-        transform: rotate(-45deg) translate(-7.2px, 4.8px);
-    }
-
-    .menu-icon-change .icon-bar-2 {opacity: 0;}
-
-    .menu-icon-change .icon-bar-3 {
-        -webkit-transform: rotate(45deg) translate(-10px, -4px);
-        transform: rotate(45deg) translate(-8px, -8px);
-    }
-
-    #header-content a:link, #header-content a:hover, #header-content a:visited {
-        color: #eee;
-        text-decoration: none;
-    }
-
-    #footer-content {
-        margin: auto;
-        color: #86868b;
-    }
-
-    #mobile-tags a:hover {
-        background-color: #eee;
-        color: #222831;
-    }
-
-    .home-hover {
-        background-color: #eee;
-        color: #222831;
-    }
-
-    #header-content a {
-        border-bottom: 1px dashed #eee;
-        cursor: grab;
-    }
-    
-    body {
-        font-size: 16px;
-    }
-
-    #bib-data-object {
-        width: 100%;
-        height: 400px;
-        background-color: white;
-    }
-    
-    #footnote-template-date {
-        display: block;
-    }
-
-    .card-item img {
+    #bib-data-object, main, #header-content, #foot-content {
+        /* max-width: 80%; */
         width: 80%;
         margin: auto;
-        float: none;
-    }
-
-    .uestc-logo {
-        display: block;
-        width: 50%;
-        margin: auto;
-    }
-
-    .uestc-main-building {
-        width: 100%;
-        border: 2px solid black;
-    }
-
-    #uestc-google-map {
-        display: none;
-        border: 2px solid black;
-        width: 100%;
-        height: 300px;
-    }
-
-    .timeline-container {
-        display: none;
     }
 }
+
 
 main a, footer a, main a:visited, footer a:visited, .show-text-button {
     text-decoration: none;
