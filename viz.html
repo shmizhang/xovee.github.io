@@ -2,45 +2,36 @@
 <html lang='en'>
 
 <head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RKRTC1TG5F"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-RKRTC1TG5F');
-
-        function menuIcon(x) {
-            x.classList.toggle('menu-icon-change');
-        }
-    </script>
-    
     <title>Visualization of Xovee's Research</title>
     <meta charset='utf-8' author='xovee-xu' name='viewport' content='width=device-width, initial-scale=1.0'>
     <meta name='description' content="See interactive visualizations of Xovee's Publications here. ">
-    <link rel='alternate' hreflang='en' href='https://xovee.cn'>
-    <link rel='canonical' href='https://xovee.cn'>
-    <link rel='stylesheet' href='../css/style.css'>
 
     <!-- favicon -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../img/favicon/apple-touch-icon-144x144.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../img/favicon/apple-touch-icon-152x152.png" />
-    <link rel="icon" type="image/png" href="../img/favicon/favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="../img/favicon/favicon-16x16.png" sizes="16x16" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="./img/favicon/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="./img/favicon/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="./img/favicon/favicon-16x16.png" sizes="16x16" />
 
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
+    <!-- styles -->
+    <link rel='stylesheet' href='css/main.css'>
+    <script>
+        function menuIcon(x) {
+            x.classList.toggle('menu-icon-change');
+        }
+    </script>
     
 </head>
 
 <body>
 
-<header id='web-header'>
+<header>
     <div id='header-content'>
-        <span id='header-home'><a href='/'>Home</a></span>
-        <a id='mobile-header-home'  onclick='menuIcon(this)'>
+        <span id='header-home' class='hide-item'><a href='/'>Home</a></span>
+        <a id='mobile-header-home' onclick='menuIcon(this)'>
             <div class='mobile-navi-home'>
                 <div class='menu-icon-container'>
                     <div class='icon-bar-1'></div>
@@ -50,12 +41,11 @@
                 <span>Home</span>
             </div>
         </a>
-        <span id='mobile-tags'>
-        <span><a class='navi-item' href='../html/research.html'>Research</a></span>
-        <span><a class='navi-item' href='../html/project.html'>Project</a></span>
-        <span><a class='navi-item' href='../html/contact.html'>Contact</a></span>
+        <span id='mobile-tags' class='hide-item'>
+        <span><a class='navi-item' href='./research.html'>Research</a></span>
+        <span><a class='navi-item' href='./project.html'>Project</a></span>
+        <span><a class='navi-item' href='./contact.html'>Contact</a></span>
         </span>
-    </div>
     </div>
 
 </header>
@@ -64,10 +54,8 @@
 
     <h1 style='font-size: 2.4em;'>Visualization of Xovee's Research</h1>
 
-    <div id='stat-mobile'>Please view this page within a larger screen (>=600px width and preferably >=920px).</div>
-
-    <div id='stat-page'>
-
+    
+    
     <div>
         Here are several interactive visualizations of Xovee's Research:
         <ul>
@@ -82,6 +70,10 @@
             <li>infocom-20</li><li>globecom-20</li><li>csur-21</li><li>sigir-21</li><li>cikm-21</li><li>tkde-21</li><li>globecom-21</li><li>tist-22</li><li>kbs-22</li><li>aaai-22</li><li>tkde-22</li><li>icassp-22</li>
         </ul>
     </div>
+
+    <div id='stat-mobile'>Please view other visualizations within a larger screen (>=600px width and preferably >=920px).</div>
+
+    <div id='stat-page' class='hide-item'>
 
     <h2 id='scholar-time-viz'>Scholar Timeline Visualization</h2>
 
@@ -103,7 +95,6 @@
 <script>
     // navi-click
     var naviHome = document.getElementById('mobile-header-home')
-    var dots = document.getElementById('dots')
     var naviTags = document.getElementById('mobile-tags')
 
     naviHome.addEventListener('click', function(){
@@ -182,6 +173,16 @@
           if (document.readyState != "loading") fn();
           else document.addEventListener("DOMContentLoaded", fn);
         })();
+</script>
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RKRTC1TG5F"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-RKRTC1TG5F');
 </script>
 
 </body>

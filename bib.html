@@ -7,10 +7,9 @@
     <meta name='description' content="See Xovee Xu's bibliographies here.">
 
     <!-- favicon -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/favicon/apple-touch-icon-144x144.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="img/favicon/apple-touch-icon-152x152.png" />
-    <link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="./img/favicon/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="./img/favicon/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="./img/favicon/favicon-16x16.png" sizes="16x16" />
 
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,6 +18,11 @@
 
     <!-- styles -->
     <link rel='stylesheet' href='css/main.css'>
+    <script>
+        function menuIcon(x) {
+            x.classList.toggle('menu-icon-change');
+        }
+    </script>
     
 </head>
 
@@ -26,20 +30,21 @@
 
 <header>
     <div id='header-content'>
-        <span id='header-home'><a href='/'>Home</a></span>
-        <a id='mobile-header-home'  onclick='menuIcon(this)'>
+        <span id='header-home' class='hide-item'><a href='/'>Home</a></span>
+        <a id='mobile-header-home' onclick='menuIcon(this)'>
             <div class='mobile-navi-home'>
                 <div class='menu-icon-container'>
                     <div class='icon-bar-1'></div>
                     <div class='icon-bar-2'></div>
                     <div class='icon-bar-3'></div>
                 </div>
+                <span>Home</span>
             </div>
         </a>
-        <span id='mobile-tags'>
-        <span><a class='navi-item' href='./html/research.html'>Research</a></span>
-        <span><a class='navi-item' href='./html/project.html'>Project</a></span>
-        <span><a class='navi-item' href='./html/contact.html'>Contact</a></span>
+        <span id='mobile-tags' class='hide-item'>
+        <span><a class='navi-item' href='./research.html'>Research</a></span>
+        <span><a class='navi-item' href='./project.html'>Project</a></span>
+        <span><a class='navi-item' href='./contact.html'>Contact</a></span>
         </span>
     </div>
 
@@ -47,7 +52,7 @@
 
 <main>
 
-    <h1 style='font-size: 3em;'>Bibliographies</h1>
+    <h1>Bibliography</h1>
     
     <p><a href='archive/bib/xovee.txt' target='_blank'>Download</a> the bibliography file.</p>
 
@@ -58,7 +63,6 @@
 <script>
     // navi-click
     var naviHome = document.getElementById('mobile-header-home')
-    var dots = document.getElementById('dots')
     var naviTags = document.getElementById('mobile-tags')
 
     naviHome.addEventListener('click', function(){
@@ -80,10 +84,6 @@
     gtag('js', new Date());
 
     gtag('config', 'G-RKRTC1TG5F');
-
-    function menuIcon(x) {
-        x.classList.toggle('menu-icon-change');
-    }
 </script>
 
 </body>

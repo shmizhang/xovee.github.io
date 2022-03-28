@@ -2,45 +2,35 @@
 <html lang='en'>
 
 <head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RKRTC1TG5F"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-RKRTC1TG5F');
-
-        function menuIcon(x) {
-            x.classList.toggle('menu-icon-change');
-        }
-    </script>
-    
     <title>Research of Xovee Xu</title>
     <meta charset='utf-8' author='xovee-xu' name='viewport' content='width=device-width, initial-scale=1.0'>
     <meta name='description' content="See Xovee Xu's full publications here.">
-    <link rel='alternate' hreflang='en' href='https://xovee.cn'>
-    <link rel='canonical' href='https://xovee.cn'>
-    <link rel='stylesheet' href='../css/style.css'>
 
     <!-- favicon -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../img/favicon/apple-touch-icon-144x144.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../img/favicon/apple-touch-icon-152x152.png" />
-    <link rel="icon" type="image/png" href="../img/favicon/favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="../img/favicon/favicon-16x16.png" sizes="16x16" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="./img/favicon/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="./img/favicon/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="./img/favicon/favicon-16x16.png" sizes="16x16" />
 
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
     
+    <!-- styles -->
+    <link rel='stylesheet' href='css/main.css'>
+    <script>
+        function menuIcon(x) {
+            x.classList.toggle('menu-icon-change');
+        }
+    </script>
 </head>
 
 <body>
 
 <header>
     <div id='header-content'>
-        <span id='header-home'><a href='/'>Home</a></span>
-        <a id='mobile-header-home'  onclick='menuIcon(this)'>
+        <span id='header-home' class='hide-item'><a href='/'>Home</a></span>
+        <a id='mobile-header-home' onclick='menuIcon(this)'>
             <div class='mobile-navi-home'>
                 <div class='menu-icon-container'>
                     <div class='icon-bar-1'></div>
@@ -50,17 +40,17 @@
                 <span>Home</span>
             </div>
         </a>
-        <span id='mobile-tags'>
-        <span><a class='navi-item' href='../html/research.html'>Research</a></span>
-        <span><a class='navi-item' href='../html/project.html'>Project</a></span>
-        <span><a class='navi-item' href='../html/contact.html'>Contact</a></span>
+        <span id='mobile-tags' class='hide-item'>
+        <span><a class='navi-item' href='./research.html'>Research</a></span>
+        <span><a class='navi-item' href='./project.html'>Project</a></span>
+        <span><a class='navi-item' href='./contact.html'>Contact</a></span>
         </span>
     </div>
 
 </header>
 
 <main>
-<h1 id='research-title' style='font-size: 2.4em;'>Research</h1>
+<h1 id='research-title'>Research</h1>
 
 <form>
     Group articles by <input type='radio' id='research-browse-year' name='research-browse-input' value='year' checked> <label class='bold-label' for='research-browse-year'>year</label> <input type='radio' id='research-browse-topic' name='research-browse-input' value='topic'> <label class='bold-label' for='research-browse-topic'>research topic</label> 
@@ -78,14 +68,14 @@
     <p class='research-links'>
         <span><a href='./curated.html'>Curated Pubs</a></span>
         <span><a href='./viz.html'>Visualization</a></span>
-        <span><a href='./canv/xovee-xu.html'>Co-Authors</a></span>
+        <span><a href='./canv.html'>Co-Authors</a></span>
     </p>
 
     <p class='research-links'>
         <span><a href='https://scholar.google.com/citations?user=ra0qyRQAAAAJ&hl=en&oi=ao' target='_blank'>Google Scholar</a></span>
         <span><a href='https://dblp.uni-trier.de/pid/261/9309.html' target='_blank'>DBLP</a></span>
         <span><a href='https://publons.com/researcher/3651887/xovee-xu/' target='_blank'>publons</a></span>
-        <span><a href='../archive/cv/cv.pdf' target='_blank'>CV</a></span>
+        <span><a href='./archive/cv/cv.pdf' target='_blank'>CV</a></span>
         <span><a href='https://orcid.org/0000-0001-6415-7558' target='_blank'>ORCID</a></span>
     </p>
 
@@ -105,59 +95,59 @@
 
     <!-- <p class='pub-item pub-selected'>
         <b>Spatial-Temporal Contrasting for Fine-Grained Urban Flow Inference</b><br>
-        <span class='research-xovee-name'>Xovee Xu</span>, Ting Zhong, Fan Zhou*, and Goce Trajcevski<br>
+        <span class='font-normal-weight'>Xovee Xu</span>, Ting Zhong, Fan Zhou*, and Goce Trajcevski<br>
         Under Review<br>
-        <a href='https://github.com/Xovee/stcf' target='_blank' class='font-normal'>code</a>
+        <a href='https://github.com/Xovee/stcf' target='_blank' class='font-normal-weight'>code</a>
     </p> -->
 
     <p class='pub-item'>
         <b>Probabilistic Fine-Grained Urban Flow Inference With Normalizing Flows</b><br>
-        Ting Zhong, Haoyang Yu, Rongfan Li, <span class='research-xovee-name'>Xovee Xu</span>*, Xucheng Luo, and Fan Zhou<br>
+        Ting Zhong, Haoyang Yu, Rongfan Li, <span class='font-normal-weight'>Xovee Xu</span>*, Xucheng Luo, and Fan Zhou<br>
         IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP), Singapore & Shenzhen & Online, May 22-27, 2022, 5 pages, Accepted<br>
-        <a href='https://github.com/PattonYu/fufi-didi-xian' target='_blank' class='font-normal'>data</a>
+        <a href='https://github.com/PattonYu/fufi-didi-xian' target='_blank' class='font-normal-weight'>data</a>
     </p>
 
     <p class='pub-item pub-selected'>
         <b><a href='https://doi.org/10.1109/TKDE.2022.3151829' target='_blank'>CCGL: Contrastive Cascade Graph Learning</a></b><br>
-        <span class='research-xovee-name'>Xovee Xu</span>, Fan Zhou*, Kunpeng Zhang, and Siyuan Liu<br>
-        <i>IEEE Transactions on Knowledge and Data Engineering (TKDE)</i>, 15 pages, Feb 2022, Accepted, <a href='https://arxiv.org/abs/2107.12576' target='_blank' class='font-normal'>arXiv:2107.12576</a><br>
-        <a href='https://github.com/Xovee/ccgl' target='_blank' class='font-normal'>code</a>
+        <span class='font-normal-weight'>Xovee Xu</span>, Fan Zhou*, Kunpeng Zhang, and Siyuan Liu<br>
+        <i>IEEE Transactions on Knowledge and Data Engineering (TKDE)</i>, 15 pages, Feb 2022, Accepted, <a href='https://arxiv.org/abs/2107.12576' target='_blank' class='font-normal-weight'>arXiv:2107.12576</a><br>
+        <a href='https://github.com/Xovee/ccgl' target='_blank' class='font-normal-weight'>code</a>
     </p>
 
     <p class='pub-item'>
         <b>Linking Transformer to Hawkes Process for Information Cascade Prediction (Student Abstract)</b><br>
-        Liu Yu, <span class='research-xovee-name'>Xovee Xu</span>, Ting Zhong, Goce Trajcevski, and Fan Zhou*<br>
+        Liu Yu, <span class='font-normal-weight'>Xovee Xu</span>, Ting Zhong, Goce Trajcevski, and Fan Zhou*<br>
         AAAI Conference on Artificial Intelligence (AAAI), Vancouver, Canada, Feb 22 - Mar 1, 2022, 2 pages, Accepted
     </p>
 
     <p class='pub-item'>
         <b>Conditional Collaborative Filtering Process for Top-K Recommender System (Student Abstract)</b><br>
-        Guanyu Wang, <span class='research-xovee-name'>Xovee Xu</span>, Ting Zhong*, and Fan Zhou<br>
+        Guanyu Wang, <span class='font-normal-weight'>Xovee Xu</span>, Ting Zhong*, and Fan Zhou<br>
         AAAI Conference on Artificial Intelligence (AAAI), Vancouver, Canada, Feb 22 - Mar 1, 2022, 2 pages, Accepted
     </p>
 
     <p class='pub-item'>
         <b>Fine-Grained Urban Flow Inference via Normalizing Flows (Student Abstract)</b><br>
-        Haoyang Yu, <span class='research-xovee-name'>Xovee Xu</span>, Ting Zhong, and Fan Zhou*<br>
+        Haoyang Yu, <span class='font-normal-weight'>Xovee Xu</span>, Ting Zhong, and Fan Zhou*<br>
         AAAI Conference on Artificial Intelligence (AAAI), Vancouver, Canada, Feb 22 - Mar 1, 2022, 2 pages, Accepted
     </p>
 
     <p class='pub-item pub-selected'>
         <b>PrEF: Probabilistic Electricity Forecasting via Copula-Augmented State Space Model</b><br>
-        Zhiyuan Wang&#8224;, <span class='research-xovee-name'>Xovee Xu</span>&#8224;, Goce Trajcevski, Kunpeng Zhang, Ting Zhong, and Fan Zhou*<br>
+        Zhiyuan Wang&#8224;, <span class='font-normal-weight'>Xovee Xu</span>&#8224;, Goce Trajcevski, Kunpeng Zhang, Ting Zhong, and Fan Zhou*<br>
         AAAI Conference on Artificial Intelligence (AAAI), Vancouver, Canada, Feb 22 - Mar 1, 2022, 9 pages, Accepted
     </p>
 
     <p class='pub-item pub-selected'>
         <b><a href='https://doi.org/10.1016/j.knosys.2021.107839' target='_blank'>Heterogeneous Dynamical Academic Network for Learning Scientific Impact Propagation</a></b><br>
-        <span class='research-xovee-name'>Xovee Xu</span>, Ting Zhong, Ce Li, Goce Trajcevski, and Fan Zhou*<br>
+        <span class='font-normal-weight'>Xovee Xu</span>, Ting Zhong, Ce Li, Goce Trajcevski, and Fan Zhou*<br>
         <i>Knowledge-Based Systems</i>, vol. 238, pp. 107839, Feb 2022<br>
-        <a href='https://github.com/celi52/si-hdgnn' target='_blank' class='font-normal'>code</a>
+        <a href='https://github.com/celi52/si-hdgnn' target='_blank' class='font-normal-weight'>code</a>
     </p>
 
     <p class='pub-item'>
         <b><a href='https://doi.org/10.1145/3462331' target='_blank'>Contrastive Trajectory Learning for Tour Recommendation</a></b><br>
-        Fan Zhou, Pengyu Wang, <span class='research-xovee-name'>Xovee Xu</span>*, Wenxin Tai, and Goce Trajcevski<br>
+        Fan Zhou, Pengyu Wang, <span class='font-normal-weight'>Xovee Xu</span>*, Wenxin Tai, and Goce Trajcevski<br>
         <i>ACM Transactions on Intelligent Systems and Technology (TIST)</i>, vol. 13, no. 1, article 4, 25 pages, Feb 2022<br>
         Special Issue on Intelligent Trajectory Data Analytics
     </p>
@@ -168,33 +158,33 @@
     
     <p class='pub-item'>
         <b><a href='https://doi.org/10.1109/GLOBECOM46510.2021.9685690' target='_blank'>HGENA: A Hyperbolic Graph Embedding Approach for Social Network Alignment</a></b><br>
-        Fan Zhou, Ce Li, <span class='research-xovee-name'>Xovee Xu</span>, Leyuan Liu*, and Goce Trajcevski<br>
+        Fan Zhou, Ce Li, <span class='font-normal-weight'>Xovee Xu</span>, Leyuan Liu*, and Goce Trajcevski<br>
         IEEE Global Communications Conference (GLOBECOM), Hybrid Conference, Madrid, Spain, Dec 7-11, 2021, 6 pages<br>
     </p>
 
     <p class='pub-item pub-selected'>
         <b><a href='https://doi.org/10.1109/TKDE.2021.3126475' target='_blank'>CasFlow: Exploring Hierarchical Structures and Propagation Uncertainty for Cascade Prediction</a></b><br>
-        <span class='research-xovee-name'>Xovee Xu</span>, Fan Zhou*, Kunpeng Zhang, Siyuan Liu, and Goce Trajcevski<br>
+        <span class='font-normal-weight'>Xovee Xu</span>, Fan Zhou*, Kunpeng Zhang, Siyuan Liu, and Goce Trajcevski<br>
         <i>IEEE Transactions on Knowledge and Data Engineering (TKDE)</i>, 15 pages, Nov 2021, Early-Access<br>
-        <a href='https://github.com/Xovee/casflow' target='_blank' class='font-normal'>code</a>
+        <a href='https://github.com/Xovee/casflow' target='_blank' class='font-normal-weight'>code</a>
     </p>
 
     <p class='pub-item'>
         <b><a href='https://dl.acm.org/doi/10.1145/3459637.3482216?cid=99659687041' target='_blank'>Vector-Quantized Autoencoder With Copula for Collaborative Filtering</a></b><br>
-        Guanyu Wang, Ting Zhong, <span class='research-xovee-name'>Xovee Xu</span>, Kunpeng Zhang, Fan Zhou*, and Yong Wang<br>
+        Guanyu Wang, Ting Zhong, <span class='font-normal-weight'>Xovee Xu</span>, Kunpeng Zhang, Fan Zhou*, and Yong Wang<br>
         ACM International Conference on Information and Knowledge Management (CIKM), Virtual Event, Nov 1-5, 2021, pp. 3458-3462
     </p>
 
     <p class='pub-item pub-selected'>
         <b><a href=' https://dl.acm.org/doi/10.1145/3404835.3463104?cid=99659687041' target='_blank'>Decoupling Representation and Regressor for Long-Tailed Information Cascade Prediction</a></b><br>
-        Fan Zhou, Liu Yu, <span class='research-xovee-name'>Xovee Xu</span>*, and Goce Trajcevski<br>
+        Fan Zhou, Liu Yu, <span class='font-normal-weight'>Xovee Xu</span>*, and Goce Trajcevski<br>
         International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR), Virtual Event, Jul 11-15, 2021, pp. 1875-1879
     </p>
 
     <p class='pub-item pub-selected'>
         <b><a href='https://dl.acm.org/doi/10.1145/3433000?cid=99659687041' target='_blank'>A Survey of Information Cascade Analysis: Models, Predictions, and Recent Advances</a></b><br>
-        Fan Zhou, <span class='research-xovee-name'>Xovee Xu</span>*, Goce Trajcevski, and Kunpeng Zhang<br>
-        <i>ACM Computing Surveys (CSUR)</i>, vol. 54, no. 2, article 27, 36 pages, Mar 2021, <a href='https://arxiv.org/abs/2005.11041' target='_blank' class='font-normal'>arXiv:2005.11041</a>
+        Fan Zhou, <span class='font-normal-weight'>Xovee Xu</span>*, Goce Trajcevski, and Kunpeng Zhang<br>
+        <i>ACM Computing Surveys (CSUR)</i>, vol. 54, no. 2, article 27, 36 pages, Mar 2021, <a href='https://arxiv.org/abs/2005.11041' target='_blank' class='font-normal-weight'>arXiv:2005.11041</a>
     </p>
 
     <h2 id='pub-2020' class='pub-selected'>2020</h2>
@@ -203,35 +193,35 @@
 
     <p class='pub-item'>
         <b><a href='https://doi.org/10.1109/GLOBECOM42002.2020.9322197' target='_blank'>Meta-Learned User Preference for Topic Participation Prediction</a></b><br>
-        Fan Zhou, Xiuxiu Qi, <span class='research-xovee-name'>Xovee Xu</span>, Jiahao Wang*, Ting Zhong, and Goce Trajcevski<br>
+        Fan Zhou, Xiuxiu Qi, <span class='font-normal-weight'>Xovee Xu</span>, Jiahao Wang*, Ting Zhong, and Goce Trajcevski<br>
         IEEE Global Communications Conference (GLOBECOM), Virtual Conference, Dec 7-11, 2020, 6 pages
     </p>
 
     <p class='pub-item'>
         <b><a href='https://doi.org/10.1109/GLOBECOM42002.2020.9322311' target='_blank'>Unsupervised User Identity Linkage via Graph Neural Networks</a></b><br>
-        Fan Zhou, Zijing Wen, Ting Zhong*, Goce Trajcevski, <span class='research-xovee-name'>Xovee Xu</span>, and Leyuan Liu*<br>
+        Fan Zhou, Zijing Wen, Ting Zhong*, Goce Trajcevski, <span class='font-normal-weight'>Xovee Xu</span>, and Leyuan Liu*<br>
         IEEE Global Communications Conference (GLOBECOM), Virtual Conference, Dec 7-11, 2020, 6 pages
     </p>
 
     <p class='pub-item'>
         <b><a href='https://doi.org/10.1109/GLOBECOM42002.2020.9322124' target='_blank'>Continual Information Cascade Learning</a></b><br>
-        Fan Zhou, Xin Jing, <span class='research-xovee-name'>Xovee Xu</span>, Ting Zhong, Goce Trajcevski, and Jin Wu*<br>
+        Fan Zhou, Xin Jing, <span class='font-normal-weight'>Xovee Xu</span>, Ting Zhong, Goce Trajcevski, and Jin Wu*<br>
         IEEE Global Communications Conference (GLOBECOM), Virtual Conference, Dec 7-11, 2020, 6 pages
     </p>
 
     <p class='pub-item pub-selected'>
         <b><a href='https://arxiv.org/abs/2003.12042' target='_blank'>A Heterogeneous Dynamical Graph Neural Networks Approach to Quantify Scientific Impact</a></b><br>
-        Fan Zhou, <span class='research-xovee-name'>Xovee Xu</span>, Ce Li, Goce Trajcevski, Ting Zhong, and Kunpeng Zhang<br>
+        Fan Zhou, <span class='font-normal-weight'>Xovee Xu</span>, Ce Li, Goce Trajcevski, Ting Zhong, and Kunpeng Zhang<br>
         arXiv:2003.12042, Mar 2020, 8 pages<br>
-        <a href='https://github.com/celi52/si-hdgnn' target='_blank' class='font-normal'>code</a>
+        <a href='https://github.com/celi52/si-hdgnn' target='_blank' class='font-normal-weight'>code</a>
     </p>
 
     <p class='pub-item pub-selected'>
         <b><a href='https://doi.org/10.1109/INFOCOM41043.2020.9155349' target='_blank'>Variational Information Diffusion for Probabilistic Cascade Prediction</a></b><br>
-        Fan Zhou, <span class='research-xovee-name'>Xovee Xu</span>, Kunpeng Zhang, Goce Trajcevski, and Ting Zhong*<br>
+        Fan Zhou, <span class='font-normal-weight'>Xovee Xu</span>, Kunpeng Zhang, Goce Trajcevski, and Ting Zhong*<br>
         IEEE International Conference on Computer Communications (INFOCOM), Virtual Event, Jul 6-9, 2020, pp. 1618-1627<br>
         <span style='color: red; font-weight: bold;'>INFOCOM 2020 Student Conference Award</span><br>
-        <a href='https://youtu.be/Jn6-m4mL-0k' target='_blank' class='font-normal'>video</a>
+        <a href='https://youtu.be/Jn6-m4mL-0k' target='_blank' class='font-normal-weight'>video</a>
     </p>
 
     <hr>
@@ -239,7 +229,7 @@
 </div>
 
 
-<div id='research-by-topic'>
+<div id='research-by-topic' class='hide-item'>
     <hr>
 
     <h3>Information Cascade</h3>
@@ -366,6 +356,16 @@
         pubSelected.value = localStorage.getItem('current-selection');
         pubSelected.dispatchEvent(new Event('change'));
     };
+</script>
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RKRTC1TG5F"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-RKRTC1TG5F');
 </script>
 
 </body>

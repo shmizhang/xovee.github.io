@@ -18,6 +18,11 @@
 
     <!-- styles -->
     <link rel='stylesheet' href='css/main.css'>
+    <script>
+        function menuIcon(x) {
+            x.classList.toggle('menu-icon-change');
+        }
+    </script>
 
 </head>
 
@@ -25,8 +30,8 @@
 
 <header>
     <div id='header-content'>
-        <span id='header-home'><a href='/'>Home</a></span>
-        <a id='mobile-header-home'  onclick='menuIcon(this)'>
+        <span id='header-home' class='hide-item'><a href='/'>Home</a></span>
+        <a id='mobile-header-home' onclick='menuIcon(this)'>
             <div class='mobile-navi-home'>
                 <div class='menu-icon-container'>
                     <div class='icon-bar-1'></div>
@@ -36,10 +41,10 @@
                 <span>Home</span>
             </div>
         </a>
-        <span id='mobile-tags'>
-        <span><a class='navi-item' href='./html/research.html'>Research</a></span>
-        <span><a class='navi-item' href='./html/project.html'>Project</a></span>
-        <span><a class='navi-item' href='./html/contact.html'>Contact</a></span>
+        <span id='mobile-tags' class='hide-item'>
+        <span><a class='navi-item' href='./research.html'>Research</a></span>
+        <span><a class='navi-item' href='./project.html'>Project</a></span>
+        <span><a class='navi-item' href='./contact.html'>Contact</a></span>
         </span>
     </div>
 
@@ -76,7 +81,7 @@
     </div>
 
     <!-- scholar timeline -->
-    <div class='timeline-container'>
+    <div class='hide-item'>
         <div class="bk-root" id="947aa043-4b23-4f4e-8063-19de2017e467" data-root-id="1004"></div>
     </div>
 
@@ -160,10 +165,6 @@
     gtag('js', new Date());
 
     gtag('config', 'G-RKRTC1TG5F');
-
-    function menuIcon(x) {
-        x.classList.toggle('menu-icon-change');
-    }
 </script>
 
 </body>

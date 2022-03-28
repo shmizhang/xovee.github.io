@@ -5,4 +5,4 @@ https://xovee.cn/project.html
 https://xovee.cn/bib.html
 https://xovee.cn/curated.html
 https://xovee.cn/viz.html
-https://xovee.cn/xovee-xu.html
+https://xovee.cn/canv.html

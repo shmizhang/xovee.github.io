@@ -1,16 +1,30 @@
 <html>
 
 <head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RKRTC1TG5F"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-RKRTC1TG5F');
-    </script>
     <title>Co-Author Visualization of Xovee Xu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name='description' content='This page is a visualization of co-authorship network (CANV). You can create yours at https://github.com/Xovee/canv'>
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="./img/favicon/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="./img/favicon/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="./img/favicon/favicon-16x16.png" sizes="16x16" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
+    <!-- styles -->
+    <link rel='stylesheet' href='css/main.css'>
+    <script>
+        function menuIcon(x) {
+            x.classList.toggle('menu-icon-change');
+        }
+    </script>
+
+    <link rel='stylesheet' href='css/main.css'>
+
     <script type="text/javascript">/*! @source http://purl.eligrey.com/github/FileSaver.js/blob/master/FileSaver.js */
         var saveAs = saveAs || function (e) { "use strict"; if (!("undefined" == typeof e || "undefined" != typeof navigator && /MSIE [1-9]\./.test(navigator.userAgent))) { var t = e.document, n = function () { return e.URL || e.webkitURL || e }, o = t.createElementNS("http://www.w3.org/1999/xhtml", "a"), r = "download" in o, a = function (e) { var t = new MouseEvent("click"); e.dispatchEvent(t) }, i = /constructor/i.test(e.HTMLElement) || e.safari, d = /CriOS\/[\d]+/.test(navigator.userAgent), f = function (t) { (e.setImmediate || e.setTimeout)(function () { throw t }, 0) }, s = "application/octet-stream", u = 4e4, c = function (e) { var t = function () { "string" == typeof e ? n().revokeObjectURL(e) : e.remove() }; setTimeout(t, u) }, l = function (e, t, n) { t = [].concat(t); for (var o = t.length; o--;) { var r = e["on" + t[o]]; if ("function" == typeof r) try { r.call(e, n || e) } catch (a) { f(a) } } }, v = function (e) { return /^\s*(?:text\/\S*|application\/xml|\S*\/\S*\+xml)\s*;.*charset\s*=\s*utf-8/i.test(e.type) ? new Blob([String.fromCharCode(65279), e], { type: e.type }) : e }, p = function (t, f, u) { u || (t = v(t)); var p, w = this, m = t.type, y = m === s, S = function () { l(w, "writestart progress write writeend".split(" ")) }, h = function () { if ((d || y && i) && e.FileReader) { var o = new FileReader; return o.onloadend = function () { var t = d ? o.result : o.result.replace(/^data:[^;]*;/, "data:attachment/file;"), n = e.open(t, "_blank"); n || (e.location.href = t), t = void 0, w.readyState = w.DONE, S() }, o.readAsDataURL(t), void (w.readyState = w.INIT) } if (p || (p = n().createObjectURL(t)), y) e.location.href = p; else { var r = e.open(p, "_blank"); r || (e.location.href = p) } w.readyState = w.DONE, S(), c(p) }; return w.readyState = w.INIT, r ? (p = n().createObjectURL(t), void setTimeout(function () { o.href = p, o.download = f, a(o), S(), c(p), w.readyState = w.DONE })) : void h() }, w = p.prototype, m = function (e, t, n) { return new p(e, t || e.name || "download", n) }; return "undefined" != typeof navigator && navigator.msSaveOrOpenBlob ? function (e, t, n) { return t = t || e.name || "download", n || (e = v(e)), navigator.msSaveOrOpenBlob(e, t) } : (w.abort = function () { }, w.readyState = w.INIT = 0, w.WRITING = 1, w.DONE = 2, w.error = w.onwritestart = w.onprogress = w.onwrite = w.onabort = w.onerror = w.onwriteend = null, m) } }("undefined" != typeof self && self || "undefined" != typeof window && window || this); "undefined" != typeof module && module.exports ? module.exports.saveAs = saveAs : "undefined" != typeof define && null !== define && null !== define.amd && define("FileSaver.js", function () { return saveAs });
     </script>
@@ -88,61 +102,50 @@
         }
 
     </style>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='stylesheet' href='../../css/style.css'>
-
-    <!-- favicon -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../img/favicon/apple-touch-icon-144x144.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../img/favicon/apple-touch-icon-152x152.png" />
-    <link rel="icon" type="image/png" href="../../img/favicon/favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="../../img/favicon/favicon-16x16.png" sizes="16x16" />
-
-    <!-- font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    
 </head>
 
 <body>
 
-    <header>
-        <div id='header-content'>
-            <span id='header-home'><a href='/'>Home</a></span>
-            <a id='mobile-header-home'  onclick='menuIcon(this)'>
-                <div class='mobile-navi-home'>
-                    <div class='menu-icon-container'>
-                        <div class='icon-bar-1'></div>
-                        <div class='icon-bar-2'></div>
-                        <div class='icon-bar-3'></div>
-                    </div>
-                    <span>Xovee</span>
+<header>
+    <div id='header-content'>
+        <span id='header-home' class='hide-item'><a href='/'>Home</a></span>
+        <a id='mobile-header-home' onclick='menuIcon(this)'>
+            <div class='mobile-navi-home'>
+                <div class='menu-icon-container'>
+                    <div class='icon-bar-1'></div>
+                    <div class='icon-bar-2'></div>
+                    <div class='icon-bar-3'></div>
                 </div>
-            </a>
-            <span id='mobile-tags'>
-            <span><a class='navi-item' href='../../html/research.html'>Research</a></span>
-            <span><a class='navi-item' href='../../html/project.html'>Project</a></span>
-            <span><a class='navi-item' href='../../html/contact.html'>Contact</a></span>
-            </span>
-        </div>
+                <span>Home</span>
+            </div>
+        </a>
+        <span id='mobile-tags' class='hide-item'>
+        <span><a class='navi-item' href='./research.html'>Research</a></span>
+        <span><a class='navi-item' href='./project.html'>Project</a></span>
+        <span><a class='navi-item' href='./contact.html'>Contact</a></span>
+        </span>
+    </div>
+
+</header>
+
+<main>
     
-    </header>
+<h1>Co-Authorship Network</h1>
 
-    <main>
-    <h1>Co-Authorship Network</h1>
+<p>This is a visualization of <span id='network-name'></span>'s co-authorship network (<span
+        id='co-author-number'></span> co-authors, data from <a href='https://dblp.org/pid/261/9309.html' target='_blank'>DBLP</a>). You can try to create yours <a
+        href='https://github.com/Xovee/canv'>here</a>. The color and size of nodes indicate collaboration frequency.
+</p>
 
-    <p>This is a visualization of <span id='network-name'></span>'s co-authorship network (<span
-            id='co-author-number'></span> co-authors, data from <a href='https://dblp.org/pid/261/9309.html' target='_blank'>DBLP</a>). You can try to create yours <a
-            href='https://github.com/Xovee/canv'>here</a>. The color and size of nodes indicate collaboration frequency.
-    </p>
+<p id='my-canv-input'>
+    <input id='show-all-names' type='checkbox'> <label for='show-all-names'>Show all co-author names</label>
+    <input id='show-frequent-co-authors' type='checkbox' checked> <label for='show-frequent-co-authors'>Show
+        frequent co-authors</label>
+    <span id='show-certain-author-container'><label id='show-certain-author'> Search co-author</label></span>
+</p>
 
-    <p id='my-canv-input'>
-        <input id='show-all-names' type='checkbox'> <label for='show-all-names'>Show all co-author names</label>
-        <input id='show-frequent-co-authors' type='checkbox' checked> <label for='show-frequent-co-authors'>Show
-            frequent co-authors</label>
-        <span id='show-certain-author-container'><label id='show-certain-author'> Search co-author</label></span>
-    </p>
-
-    </main>
+</main>
 
 
 
@@ -3012,6 +3015,15 @@
             document.getElementById('network-name').innerHTML = webweb.display.displayName
 
         }
+    </script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RKRTC1TG5F"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-RKRTC1TG5F');
     </script>
 
 </body>

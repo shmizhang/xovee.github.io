@@ -2,36 +2,33 @@
 <html lang='en'>
 
 <head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RKRTC1TG5F"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-RKRTC1TG5F');
-
-        function menuIcon(x) {
-            x.classList.toggle('menu-icon-change');
-        }
+        // function menuIcon(x) {
+        //     x.classList.toggle('menu-icon-change');
+        // }
     </script>
     
     <title>Project of Xovee Xu</title>
     <meta charset='utf-8' author='xovee-xu' name='viewport' content='width=device-width, initial-scale=1.0'>
     <meta name='description' content="See Xovee Xu's projects here.">
-    <link rel='alternate' hreflang='en' href='https://xovee.cn'>
-    <link rel='canonical' href='https://xovee.cn'>
-    <link rel='stylesheet' href='../css/style.css'>
 
     <!-- favicon -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../img/favicon/apple-touch-icon-144x144.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../img/favicon/apple-touch-icon-152x152.png" />
-    <link rel="icon" type="image/png" href="../img/favicon/favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="../img/favicon/favicon-16x16.png" sizes="16x16" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="./img/favicon/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="./img/favicon/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="./img/favicon/favicon-16x16.png" sizes="16x16" />
 
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
+    <!-- styles -->
+    <link rel='stylesheet' href='css/main.css'>
+    <script>
+        function menuIcon(x) {
+            x.classList.toggle('menu-icon-change');
+        }
+    </script>
 
 </head>
 
@@ -39,8 +36,8 @@
 
 <header>
     <div id='header-content'>
-        <span id='header-home'><a href='/'>Home</a></span>
-        <a id='mobile-header-home'  onclick='menuIcon(this)'>
+        <span id='header-home' class='hide-item'><a href='/'>Home</a></span>
+        <a id='mobile-header-home' onclick='menuIcon(this)'>
             <div class='mobile-navi-home'>
                 <div class='menu-icon-container'>
                     <div class='icon-bar-1'></div>
@@ -50,21 +47,20 @@
                 <span>Home</span>
             </div>
         </a>
-        <span id='mobile-tags'>
-        <span><a class='navi-item' href='../html/research.html'>Research</a></span>
-        <span><a class='navi-item' href='../html/project.html'>Project</a></span>
-        <span><a class='navi-item' href='../html/contact.html'>Contact</a></span>
+        <span id='mobile-tags' class='hide-item'>
+        <span><a class='navi-item' href='./research.html'>Research</a></span>
+        <span><a class='navi-item' href='./project.html'>Project</a></span>
+        <span><a class='navi-item' href='./contact.html'>Contact</a></span>
         </span>
-    </div>
     </div>
 
 </header>
 
 <main>
 
-    <h1 id='project-title' style='font-size: 2.4em;'>Project</h1>
+    <h1>Project</h1>
     
-    Followings are several projects originated by Xovee Xu. 
+    <p>Followings are several projects originated by Xovee. </p>
 
     <div class='card-item'>
         <h3>CANV: Co-Authorship Network Visualization</h3>
@@ -78,9 +74,8 @@
         <p>
             <details>
                 <summary>Examples</summary>
-                <p>Mr. <a href='https://xovee.cn/html/canv/xovee-xu.html' target='_blank'>Xovee Xu</a>, PhD student of University of Electronic Science and Technology of China (UESTC), Chengdu, China</p>
+                <p>Mr. <a href='./canv.html' target='_blank'>Xovee Xu</a>, PhD student of University of Electronic Science and Technology of China (UESTC), Chengdu, China</p>
                 <p>Dr. <a href='https://xovee.cn/html/canv/andrew-y-ng.html' target='_blank'>Andrew Y. Ng</a>, Professor of Stanford University, CA, USA (at the time of 2021).</p>
-                <!-- <p>Dr. <a href='https://xovee.cn/html/canv/canv-goce-trajcevski.html' target='_blank'>Goce Trajcevski</a>, Associate Professor of Iowa State University, IA, USA</p> -->
                 <p>Forthcoming</p>
             </details>
         </p>
@@ -161,7 +156,6 @@
 <script>
     // navi-click
     var naviHome = document.getElementById('mobile-header-home')
-    var dots = document.getElementById('dots')
     var naviTags = document.getElementById('mobile-tags')
 
     naviHome.addEventListener('click', function(){
@@ -173,6 +167,16 @@
             naviHome.removeAttribute('href');
         }
     })
+</script>
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RKRTC1TG5F"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-RKRTC1TG5F');
 </script>
 
 </body>

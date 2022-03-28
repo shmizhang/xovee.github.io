@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <title>Curated List of Xovee's Publication</title>
+    <meta charset='utf-8' author='xovee-xu' name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta name='description' content="See Xovee Xu's curated publications here.">
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="./img/favicon/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="./img/favicon/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="./img/favicon/favicon-16x16.png" sizes="16x16" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
+    <!-- styles -->
+    <link rel='stylesheet' href='css/main.css'>
+    <script>
+        function menuIcon(x) {
+            x.classList.toggle('menu-icon-change');
+        }
+    </script>
+
+</head>
+
+<body>
+
+<header>
+    <div id='header-content'>
+        <span id='header-home' class='hide-item'><a href='/'>Home</a></span>
+        <a id='mobile-header-home' onclick='menuIcon(this)'>
+            <div class='mobile-navi-home'>
+                <div class='menu-icon-container'>
+                    <div class='icon-bar-1'></div>
+                    <div class='icon-bar-2'></div>
+                    <div class='icon-bar-3'></div>
+                </div>
+                <span>Home</span>
+            </div>
+        </a>
+        <span id='mobile-tags' class='hide-item'>
+        <span><a class='navi-item' href='./research.html'>Research</a></span>
+        <span><a class='navi-item' href='./project.html'>Project</a></span>
+        <span><a class='navi-item' href='./contact.html'>Contact</a></span>
+        </span>
+    </div>
+
+</header>
+
+<main>
+
+    <h1>Curated Publication</h1>
+
+    <p><a href='./research.html'>Back to all publications.</a></p>
+
+    <!-- <div class='card-item'>
+        <h3>Spatial-Temporal Contrasting for Fine-Grained Urban Flow Inference</h3>
+
+        <img src='./img/thumbnail/stcf-thumbnail.gif' width=240px>
+        <p><b>Xovee Xu</b>, Ting Zhong, Fan Zhou, and Goce Trajcevski</p>
+
+        <p>Under review, 2022</p>
+
+        <p>
+            Fine-grained urban flow inference (FUFI) problem aims to infer the fine-grained flow maps from coarse-grained ones, benefiting various smart-city applications on reducing electricity, maintenance, and operation costs. Existing models use techniques from image super-resolution and achieve good performance in FUFI. However, they often rely on supervised learning with a large amount of training data, and often generalize poorly and face overfitting. We present STCF, a self-supervised framework for data- and parameter-efficient <span id='stcf-button-id' class='show-text-button' onclick='showHiddenTexts("stcf-button-id", "stcf-text-id")'>Expand</span> <span id='stcf-text-id' style='display: none;'> urban flow inference. It consists of (i) two pre-training networks for spatial-temporal contrasting between flow maps; and (ii) one coupled fine-tuning network for fusing learned features. STCF attracts spatial-temporal similar flow maps together and repels others away in the representation space. Extensive experiments are conducted on five large-scale real-world urban flow datasets, demonstrating the advantages of STCF over prior arts on inference performance, efficiency, and transferability. </span>
+        </p>
+
+        <p><a href='https://github.com/Xovee/stcf' target='_blank'>code</a></p>
+    </div> -->
+
+    <div class='card-item'>
+        <h3>CCGL: Contrastive Cascade Graph Learning</h3>
+        
+        <p><b>Xovee Xu</b>, Fan Zhou*, Kunpeng Zhang, and Siyuan Liu</p>
+
+        <p>IEEE Transactions on Knowledge and Data Engineering, 2022</p>
+
+        <p class='card-links'><a href='https://arxiv.org/abs/2107.12576' target='_blank'>paper</a> <a href='https://github.com/Xovee/ccgl' target='_blank'>code</a></p>
+    </div>
+
+    <div class='card-item'>
+        <h3>CasFlow: Exploring Hierarchical Structures and Propagation Uncertainty for Cascade Prediction</h3>
+
+        <!-- <div class='curated-img'>
+            <img src='./img/thumbnail/casflow-thumbnail.jpg'>
+        </div> -->
+        <p><b>Xovee Xu</b>, Fan Zhou*, Kunpeng Zhang, Siyuan Liu, and Goce Trajcevski</p>
+
+        <p>IEEE Transactions on Knowledge and Data Engineering, 2021</p>
+
+        <p class='card-links'><a href='https://doi.org/10.1109/TKDE.2021.3126475' target='_blank'>paper</a> <a href='https://github.com/Xovee/casflow' target='_blank'>code</a>
+    </div>
+
+    <div class='card-item'>
+        <h3>A Survey of Information Cascade Analysis: Models, Predictions, and Recent Advances</h3>
+
+        <!-- <div class='curated-img'>
+            <img src='./img/thumbnail/csur-thumbnail.jpg' class='curated-img'>
+        </div> -->
+        <p>Fan Zhou, <b>Xovee Xu</b>*, Goce Trajcevski, and Kunpeng Zhang</p>
+
+        <p>ACM Computing Surveys, 2021</p>
+
+        <p class='card-links'><a href='https://dl.acm.org/doi/10.1145/3433000?cid=99659687041' target='_blank'>paper</a> <a href='https://arxiv.org/abs/2005.11041' target='_blank'>arXiv</a></p>
+    </div>
+
+    <div class='card-item'>
+        <h3>A Heterogeneous Dynamical Graph Neural Networks Approach to Quantify Scientific Impact</h3>
+
+        <!-- <div class='curated-img'>
+            <img src='./img/thumbnail/hdgnn-thumbnail.jpg'>
+        </div> -->
+        <p>Fan Zhou, <b>Xovee Xu</b>, Ce Li, Goce Trajcevski, Ting Zhong, and Kunpeng Zhang</p>
+
+        <p>arXiv:2003.12042, 2020</p>
+
+        <p class='card-links'><a href='https://arxiv.org/abs/2003.12042' target='_blank'>arXiv</a> <a href='https://github.com/celi52/si-hdgnn' target='_blank'>code</a></p>
+    </div>
+
+    <h3><a href='#curated-title'>Back to top.</a></h3>
+
+</main>
+
+<script>
+    // navi-click
+    var naviHome = document.getElementById('mobile-header-home')
+    var naviTags = document.getElementById('mobile-tags')
+
+    naviHome.addEventListener('click', function(){
+        if (naviTags.style.display === 'block') {
+            naviTags.style.display = 'none';
+            naviHome.setAttribute('href', '/');
+        } else {
+            naviTags.style.display = 'block';
+            naviHome.removeAttribute('href');
+        }
+    })
+
+    function showHiddenTexts() {
+        var currentButton = document.getElementById(arguments[0]);
+        var currentText = document.getElementById(arguments[1]);
+
+        currentButton.style.display = 'none';
+        currentText.style.display = 'inline';
+
+    }
+</script>
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RKRTC1TG5F"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-RKRTC1TG5F');
+</script>
+
+</body>
+
+</html>
