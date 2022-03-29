@@ -29,30 +29,29 @@
 <body>
 
 <header>
-    <div id='header-content'>
-        <span id='header-home' class='hide-item'><a href='/'>Home</a></span>
-        <a id='mobile-header-home' onclick='menuIcon(this)'>
-            <div class='mobile-navi-home'>
+    <div class='navibar'>
+        <a id='navi-mobile-home-item' onclick='menuIcon(this)'>
+            <div id='navi-mobile-icon'>
                 <div class='menu-icon-container'>
                     <div class='icon-bar-1'></div>
                     <div class='icon-bar-2'></div>
                     <div class='icon-bar-3'></div>
                 </div>
-                <span>Home</span>
             </div>
+            <div id='navi-mobile-home-text'>Xovee</div>
         </a>
-        <span id='mobile-tags' class='hide-item'>
-        <span><a class='navi-item' href='./research.html'>Research</a></span>
-        <span><a class='navi-item' href='./project.html'>Project</a></span>
-        <span><a class='navi-item' href='./contact.html'>Contact</a></span>
-        </span>
+        <a id='navi-desktop-home-item' href='/'><div>Home</div></a>
+        <div id='navi-other-items'>
+            <a class='navi-item' href='./research.html'><div>Research</div></a>
+            <a class='navi-item' href='./project.html'><div>Project</div></a>
+            <a class='navi-item' href='./contact.html'><div>Contact</div></a>
+        </div>
     </div>
-
 </header>
 
 <main>
 
-    <h1>Curated Publication</h1>
+    <h1 id='curated-title'>Curated Publication</h1>
 
     <p><a href='./research.html'>Back to all publications.</a></p>
 
@@ -126,8 +125,8 @@
 
 <script>
     // navi-click
-    var naviHome = document.getElementById('mobile-header-home')
-    var naviTags = document.getElementById('mobile-tags')
+    var naviHome = document.getElementById('navi-mobile-home-item')
+    var naviTags = document.getElementById('navi-other-items')
 
     naviHome.addEventListener('click', function(){
         if (naviTags.style.display === 'block') {
@@ -138,15 +137,6 @@
             naviHome.removeAttribute('href');
         }
     })
-
-    function showHiddenTexts() {
-        var currentButton = document.getElementById(arguments[0]);
-        var currentText = document.getElementById(arguments[1]);
-
-        currentButton.style.display = 'none';
-        currentText.style.display = 'inline';
-
-    }
 </script>
 
 <!-- Google Analytics -->
