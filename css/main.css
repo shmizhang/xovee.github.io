@@ -59,6 +59,7 @@ header {background-color: var(--header-bg-color); color: var(--header-text-color
 .avatar-container {display: block; width: 80%; margin: auto; padding: 1rem 0 0 0;}
 .avatar {aspect-ratio: 1/1; object-fit: cover; width: 100%;}
 #home-scholar-timeline {display: none;}
+#home-intro p {text-indent: -.8rem; padding-left: .8rem;}
 
 /* research */
 .pub-item {display: none; font-size: var(--text-size); font-weight: 300;}
@@ -107,10 +108,13 @@ header {background-color: var(--header-bg-color); color: var(--header-text-color
     footer {font-size: var(--text-small-size);}
 
     /* home content */
-    .avatar-container {display: inline-block; width: 27%; padding: 1rem 3rem 1rem 0;}
+    .avatar-container {display: inline-block; width: 25%; padding: 2rem 4rem 2rem 0;}
     .avatar {aspect-ratio: auto; }
-    .home-content {display: inline-block; width: 66%; vertical-align: top;}
+    .home-content {display: inline-block; width: 66%; vertical-align: top; padding-top: 2rem;}
     #home-scholar-timeline {display: block;}
+    #home-position {font-size: 1.2rem;}
+    #home-intro p {line-height: 1.3; margin: .8rem 0; font-weight: 300;}
+    #home-name {font-size: 4rem; }
 
     /* research */
     .pub-item, .pub-affi {margin-left: 2rem;}
