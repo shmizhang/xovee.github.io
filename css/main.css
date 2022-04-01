@@ -84,6 +84,7 @@ header {background-color: var(--header-bg-color); color: var(--header-text-color
 .uestc-logo {display: block; width: 50%; height: auto; margin: auto;}
 .affi-photo {width: 100%; height: auto; border: 2px solid black;}
 .affi-map {display: none; border: 2px solid black; width: 100%; height: 35vh;}
+#zh-lab-address {display: none;}
 
 /* modules */
 /* 1. card */

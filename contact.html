@@ -23,14 +23,6 @@
         function menuIcon(x) {
             x.classList.toggle('menu-icon-change');
         }
-        // toggle address
-        function toggleAddress(x) {
-            if (x.innerHTML === '<b>Lab address</b><br>Room 433, Main Building<br>4 Section 2, N Jianshe Rd<br>Chengdu, Sichuan 610054, China<br><br>') {
-                x.innerHTML = '<b>Lab address</b><br>6 1 0 0 5 4<br>中国&nbsp;&nbsp;四川省&nbsp;&nbsp;成都市&nbsp;&nbsp;成华区&nbsp;&nbsp;建设北路二段4号<br>电子科技大学（沙河校区）&nbsp;&nbsp;主楼中433<br><br>';
-            } else {
-                x.innerHTML =   '<b>Lab address</b><br>Room 433, Main Building<br>4 Section 2, N Jianshe Rd<br>Chengdu, Sichuan 610054, China<br><br>';
-            }
-        }
     </script>
     
 </head>
@@ -71,7 +63,11 @@
 
         <b>Email</b>: <span style='margin-right: .3em; margin-left: .3em;'>first-name</span> @ieee.org or @std.uestc.edu.cn<br><br>
 
-        <div id='lab-address' onclick='toggleAddress(this)' title='Click to show Chinese/English version.'><b>Lab address</b><br>Room 433, Main Building<br>4 Section 2, N Jianshe Rd<br>Chengdu, Sichuan 610054, China<br><br></div>
+        <div id='lab-address-container' onclick='toggleAddress(this)' title='Click to show Chinese/English version.'>
+            <b>Lab address</b><br>
+            <div id='lab-address'>Room 433, Main Building<br>4 Section 2, N Jianshe Rd<br>Chengdu, Sichuan 610054, China<br><br></div>
+            <div id='zh-lab-address'>6 1 0 0 5 4<br>中国&nbsp;&nbsp;四川省&nbsp;&nbsp;成都市&nbsp;&nbsp;成华区&nbsp;&nbsp;建设北路二段4号<br>电子科技大学（沙河校区）&nbsp;&nbsp;主楼中433<br><br></div>
+        </div>
 
         <b>Affiliations</b><br>
         <a href='https://www.en.scse.uestc.edu.cn/' target='_blank'>School of Computer Science and Engineering</a><br>
@@ -101,7 +97,21 @@
             naviHome.removeAttribute('href');
         }
     })
+    
+    // toggle address
+    var addressContainer = document.getElementById('lab-address-container')
+    var englishAddress = document.getElementById('lab-address')
+    var chineseAddress = document.getElementById('zh-lab-address')
 
+    addressContainer.addEventListener('click', function(){
+        if (englishAddress.style.display === 'block') {
+            englishAddress.style.display = 'none';
+            chineseAddress.style.display = 'block';
+        } else {
+            englishAddress.style.display = 'block';
+            chineseAddress.style.display = 'none';
+        }
+    })
 </script>
 
 <!-- Google Analytics -->
