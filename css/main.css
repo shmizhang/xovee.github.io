@@ -2,8 +2,10 @@
 colors: 
 black: 141414
 white text: eee 
-gray text: 86868b
+grey text: 86868b
 */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
 /* global */
 :root {
@@ -18,20 +20,22 @@ gray text: 86868b
     --text-size: 16px;
     --text-large-size: 18px;
     --text-small-size: 14px;
+    --font-family: "Roboto", Helvetica, sans-serif;
+    --font-family-serif: 'Times New Roman', Times, serif; 
 }
 
 /* overall */
 html {overflow-y: scroll; font-size: var(--text-size);}
 html, button, input, select, textarea, .pure-g [class *= "pure-u"] {
-    font-family: 'Roboto', sans-serif;}
+    font-family: var(--font-family);}
 h1 {font-size: 3em;}
 img {width: 100%; height: auto; margin: auto;}
 main {width: 95%; margin: auto; margin-top: 5rem;}
 footer {width: 95%; margin: auto; color: var(--text-grey-color); font-size: var(--text-small-size);}
 .footnote-date, .corresponding {float: right; color: var(--text-grey-color);}
 .corresponding {margin-top: 1rem;}
-h1, h2, h3, h4, h5, h6 {font-family: 'Times New Roman', Times, serif; color: var(--text-color);}
-body {margin: auto; background-color: var(--main-bg-color); font-family: 'Roboto', 'Open Sans', Helvetica, sans-serif; color: var(--text-color);}
+h1, h2, h3, h4, h5, h6 {font-family: var(--font-family-serif); color: var(--text-color);}
+body {margin: auto; background-color: var(--main-bg-color); font-family: var(--font-family); color: var(--text-color); }
 p {line-height: 1.28;}
 .font-normal-weight {font-weight: normal;}
 
@@ -62,10 +66,10 @@ header {background-color: var(--header-bg-color); color: var(--header-text-color
 #home-intro p {text-indent: -.8rem; padding-left: .8rem;}
 
 /* publication */
-.pub-item {display: none; font-size: var(--text-size); font-weight: 300;}
+.pub-item {display: none; font-size: var(--text-size); font-weight: lighter;}
 .pub-selected {display: block;}
 #pubs-by-topic ul {font-weight: 400;}
-#pubs-by-topic ul a {font-weight: 300;}
+#pubs-by-topic ul a {font-weight: lighter;}
 #pubs-browse-year:checked + label, #pubs-browse-topic:checked + label {font-weight: bold;}
 #pubs-by-topic {display: none;}
 
@@ -114,7 +118,7 @@ header {background-color: var(--header-bg-color); color: var(--header-text-color
     .home-content {display: inline-block; width: 66%; vertical-align: top; padding-top: 2rem;}
     #home-scholar-timeline {display: block;}
     #home-position {font-size: 1.2rem;}
-    #home-intro p {line-height: 1.3; margin: .8rem 0; font-weight: 300;}
+    #home-intro p {line-height: 1.3; margin: .8rem 0; font-weight: lighter;}
     #home-name {font-size: 4rem; }
 
     /* publication */
