@@ -131,6 +131,7 @@ header {background-color: var(--header-bg-color); color: var(--header-text-color
 
     /* viz */
     #stat-page {display: block;}
+    #stat-mobile {display: none;}
     #pub-rel-viz-frame {min-width: 40rem; min-height: 33rem; width: 100%; border: 0; background-color: #eee;}
 }
 
