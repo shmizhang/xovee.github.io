@@ -113,13 +113,13 @@ header {background-color: var(--header-bg-color); color: var(--header-text-color
     footer {font-size: var(--text-small-size);}
 
     /* home content */
-    .avatar-container {display: inline-block; width: 25%; padding: 2rem 4rem 2rem 0;}
+    .avatar-container {display: inline-block; width: 24%; padding: 2rem 4rem 2rem 0;}
     .avatar {aspect-ratio: auto; }
     .home-content {display: inline-block; width: 66%; vertical-align: top; padding-top: 2rem;}
     #home-scholar-timeline {display: block;}
     #home-position {font-size: 1.2rem;}
     #home-intro p {line-height: 1.3; margin: .8rem 0; font-weight: lighter;}
-    #home-name {font-size: 4rem; }
+    #home-name {font-size: 3.3rem; }
 
     /* publication */
     .pub-item, .pub-affi {margin-left: 2rem;}
