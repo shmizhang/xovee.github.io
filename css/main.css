@@ -18,8 +18,10 @@ grey text: 86868b
     --card-bg-color: white;
     --box-border-color: black;
     --text-size: 16px;
-    --text-large-size: 18px;
-    --text-small-size: 14px;
+    --text-large-size: 1.1rem;
+    --text-small-size: 0.85rem;
+    --text-size-2k: 18px;
+    --text-size-4k: 20px;
     --font-family: "Roboto", Helvetica, sans-serif;
     --font-family-serif: 'Times New Roman', Times, serif; 
 }
@@ -66,7 +68,7 @@ header {background-color: var(--header-bg-color); color: var(--header-text-color
 #home-intro p {text-indent: -.8rem; padding-left: .8rem;}
 
 /* publication */
-.pub-item {display: none; font-size: var(--text-size); font-weight: lighter;}
+.pub-item {display: none; font-weight: lighter;}
 .pub-selected {display: block;}
 #pubs-by-topic ul {font-weight: 400;}
 #pubs-by-topic ul a {font-weight: lighter;}
@@ -98,7 +100,7 @@ header {background-color: var(--header-bg-color); color: var(--header-text-color
 /* 2. tools */
 .clear-both {clear: both;}
 
-@media (min-width: 600px) {
+@media (min-width: 630px) {
     /* header */
     header {font-size: 1.05rem; opacity: .98; box-shadow:0 2px 16px 0 rgba(0,0,0,.22),inset 0 -1px 0 0 #dadce0; background-color: var(--main-bg-color); color: var(--text-color);}
     .navibar {max-width: 1080px; width: 100%; margin: .8rem auto; text-align: right;}
@@ -113,9 +115,9 @@ header {background-color: var(--header-bg-color); color: var(--header-text-color
     footer {font-size: var(--text-small-size);}
 
     /* home content */
-    .avatar-container {display: inline-block; width: 24%; padding: 2rem 4rem 2rem 0;}
+    .avatar-container {display: inline-block; width: 35%; padding: 2rem 2rem 2rem 0;}
     .avatar {aspect-ratio: auto; }
-    .home-content {display: inline-block; width: 66%; vertical-align: top; padding-top: 2rem;}
+    .home-content {display: inline-block; width: 58%; vertical-align: top; padding-top: 2rem;}
     #home-scholar-timeline {display: block;}
     #home-position {font-size: 1.2rem;}
     #home-intro p {line-height: 1.3; margin: .8rem 0; font-weight: lighter;}
@@ -126,8 +128,8 @@ header {background-color: var(--header-bg-color); color: var(--header-text-color
 
     /* contact */
     .uestc-logo {float: right; width: 10rem; margin: 1rem;}
-    .affi-photo {display: inline-block; width: 48%; height: 22rem; object-fit: cover;}
-    .affi-map {display: inline-block; width:48%; height: 22rem; }
+    .affi-photo {display: inline-block; width: 100%; object-fit: cover;}
+    .affi-map {display: inline-block; width: 100%; height: 30rem;}
 
     /* viz */
     #stat-page {display: block;}
@@ -135,6 +137,28 @@ header {background-color: var(--header-bg-color); color: var(--header-text-color
     #pub-rel-viz-frame {min-width: 40rem; min-height: 33rem; width: 100%; border: 0; background-color: #eee;}
 }
 
+@media (min-width: 992px) {
+    /* home content */
+    .avatar-container {width: 24%;}
+    .home-content {width: 66%; }
+
+    /* contact */
+    .uestc-logo {float: right; width: 10rem; margin: 1rem;}
+    .affi-photo {width: 48%; height: 22rem;}
+    .affi-map {width:48%; height: 22rem;}
+}
+
+@media (min-width: 2000px) {
+    html {
+        font-size: 18px;
+    }
+
+    /* max width of navibar */
+}
+
+@media (min-width: 3000px) {
+
+}
 
 /* @media screen and (min-width: 2000px) {
     html {
