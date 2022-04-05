@@ -103,7 +103,7 @@ header {background-color: var(--header-bg-color); color: var(--header-text-color
 @media (min-width: 630px) {
     /* header */
     header {font-size: 1.05rem; opacity: .98; box-shadow:0 2px 16px 0 rgba(0,0,0,.22),inset 0 -1px 0 0 #dadce0; background-color: var(--main-bg-color); color: var(--text-color);}
-    .navibar {max-width: 1080px; width: 100%; margin: .8rem auto; text-align: right;}
+    .navibar {width: 100%; margin: .8rem auto; text-align: right;}
     #navi-mobile-home-item {display: none;}
     #navi-desktop-home-item, #navi-other-items, #navi-other-items a {display: inline-block; border: 0;}
     .navi-item, #navi-desktop-home-item {padding: .2rem .3rem; margin-right: 1rem;}
@@ -111,7 +111,6 @@ header {background-color: var(--header-bg-color); color: var(--header-text-color
     .navibar a:hover {color: var(--text-grey-color); transition: .5s; text-decoration: underline;}
 
     /* layout */
-    main, footer {max-width: 1080px;}
     footer {font-size: var(--text-small-size);}
 
     /* home content */
@@ -153,7 +152,7 @@ header {background-color: var(--header-bg-color); color: var(--header-text-color
         font-size: 18px;
     }
 
-    /* max width of navibar */
+    /* max width of navibar, main, footer */
 }
 
 @media (min-width: 3000px) {
