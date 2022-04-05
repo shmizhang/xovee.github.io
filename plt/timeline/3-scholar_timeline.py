@@ -6,8 +6,13 @@ from datetime import datetime, timedelta
 import csv
 
 
-def load_data():
-    with open('./paper.csv') as f:
+paper_file = './plt/timeline/paper.csv'
+milestone_file = './plt/timeline/milestone.csv'
+scripts_output_file = './plt/timeline/scholar_timeline_output.txt'
+
+
+def load_data(paper_path, milestone_path):
+    with open(paper_path) as f:
         reader = csv.reader(f, delimiter=',')
         next(reader)
 
@@ -16,7 +21,7 @@ def load_data():
         for row in reader:
             papers.append(row)
 
-    with open('./milestone.csv') as f:
+    with open(milestone_path) as f:
         reader = csv.reader(f, delimiter=',')
         next(reader)
 
@@ -32,7 +37,7 @@ def to_date(date):
     return datetime.strptime(date, '%Y/%m/%d')
 
 
-papers, milestones = load_data()
+papers, milestones = load_data(paper_file, milestone_file)
 print(papers[0])
 print(milestones[-1])
 paper_source = ColumnDataSource(

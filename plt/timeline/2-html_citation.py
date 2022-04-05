@@ -24,11 +24,13 @@ def read_my_csv_data(path, papers):
         csv_reader = csv.reader(f, delimiter=',')
         headers = next(csv_reader)
         lines = list(csv_reader)
+        sum_citations = int()
 
         for row in lines:
             if row[0] in papers.keys():
                 old_citation = int(row[-1])
                 new_citation = papers[row[0]]
+                sum_citations += new_citation
                 if old_citation != new_citation:
                     row[-1] = new_citation
                     print('Update citation from {} to {}, for paper {}'.format(
@@ -37,20 +39,20 @@ def read_my_csv_data(path, papers):
             else:
                 print('This paper is not tracked by Google Scholar or has zero citation: ', row[0])
 
+        print('Sum of citations: ', sum_citations)
         return headers, lines
 
 
-html_path = './citation.html'
-csv_path = './paper.csv'
+html_path = './plt/timeline/1-citation.html'
+csv_path = './plt/timeline/paper.csv'
+csv_gene = './plt/timeline/paper_gene.csv'
 
 papers = read_google_scholar_page(html_path)
 
 headers, new_csv_data = read_my_csv_data(csv_path, papers)
 
-with open('paper_new.csv', 'w', newline='') as f:
+with open(csv_gene, 'w', newline='') as f:
     csv_writer = csv.writer(f)
     csv_writer.writerow(headers)
     csv_writer.writerows(new_csv_data)
-
-
 
