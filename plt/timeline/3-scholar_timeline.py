@@ -173,7 +173,7 @@ circles.level = 'annotation'
 
 script, div = components(p)
 
-with open('./scholar_timeline_output.txt', 'w') as f:
+with open(scripts_output_file, 'w') as f:
     f.write(script)
     f.write(div)
 
