@@ -10,4 +10,6 @@
 *.run.xml
 .idea/
 bib.pdf
+.DS_Store
 .DS_store
+__pycache__/
