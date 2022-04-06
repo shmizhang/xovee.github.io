@@ -1,8 +1,9 @@
 /* 
-colors: 
-black: 141414
-white text: eee 
-grey text: 86868b
+mobile: 0-629px
+Tablet: 630-1023px
+Desktop: 1024-1999px
+2k: 
+4k: 
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
@@ -100,6 +101,7 @@ header {background-color: var(--header-bg-color); color: var(--header-text-color
 /* 2. tools */
 .clear-both {clear: both;}
 
+/* 630-1023px */
 @media (min-width: 630px) {
     /* header */
     header {font-size: 1.05rem; opacity: .98; box-shadow:0 2px 16px 0 rgba(0,0,0,.22),inset 0 -1px 0 0 #dadce0; background-color: var(--main-bg-color); color: var(--text-color);}
@@ -136,7 +138,8 @@ header {background-color: var(--header-bg-color); color: var(--header-text-color
     #pub-rel-viz-frame {min-width: 40rem; min-height: 33rem; width: 100%; border: 0; background-color: #eee;}
 }
 
-@media (min-width: 992px) {
+/* 1024-2000px */
+@media (min-width: 1024px) {
     /* home content */
     .avatar-container {width: 24%;}
     .home-content {width: 66%; }
@@ -147,6 +150,7 @@ header {background-color: var(--header-bg-color); color: var(--header-text-color
     .affi-map {width:48%; height: 22rem;}
 }
 
+/* 2000-2999px */
 @media (min-width: 2000px) {
     html {
         font-size: 18px;
@@ -155,6 +159,7 @@ header {background-color: var(--header-bg-color); color: var(--header-text-color
     /* max width of navibar, main, footer */
 }
 
+/* >=3000px */
 @media (min-width: 3000px) {
 
 }
