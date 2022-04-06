@@ -1,7 +1,7 @@
 /* 
 mobile: 0-629px
-Tablet: 630-1023px
-Desktop: 1024-1999px
+Tablet: 630-1024px
+Desktop: 1025-1999px
 2k: 
 4k: 
 */
@@ -101,11 +101,11 @@ header {background-color: var(--header-bg-color); color: var(--header-text-color
 /* 2. tools */
 .clear-both {clear: both;}
 
-/* 630-1023px */
+/* 630-1024px */
 @media (min-width: 630px) {
     /* header */
     header {font-size: 1.05rem; opacity: .98; box-shadow:0 2px 16px 0 rgba(0,0,0,.22),inset 0 -1px 0 0 #dadce0; background-color: var(--main-bg-color); color: var(--text-color);}
-    .navibar {width: 100%; margin: .8rem auto; text-align: right;}
+    .navibar {width: 95%; margin: .8rem auto; text-align: right;}
     #navi-mobile-home-item {display: none;}
     #navi-desktop-home-item, #navi-other-items, #navi-other-items a {display: inline-block; border: 0;}
     .navi-item, #navi-desktop-home-item {padding: .2rem .3rem; margin-right: 1rem;}
@@ -114,6 +114,7 @@ header {background-color: var(--header-bg-color); color: var(--header-text-color
 
     /* layout */
     footer {font-size: var(--text-small-size);}
+    /* .navibar, main, footer {max-width: 950px;} */
 
     /* home content */
     .avatar-container {display: inline-block; width: 35%; padding: 2rem 2rem 2rem 0;}
@@ -129,8 +130,8 @@ header {background-color: var(--header-bg-color); color: var(--header-text-color
 
     /* contact */
     .uestc-logo {float: right; width: 10rem; margin: 1rem;}
-    .affi-photo {display: inline-block; width: 100%; object-fit: cover;}
-    .affi-map {display: inline-block; width: 100%; height: 30rem;}
+    .affi-photo {display: inline-block; width: 48%; height: 22rem; object-fit: cover;}
+    .affi-map {display: inline-block; width: 48%; height: 22rem;}
 
     /* viz */
     #stat-page {display: block;}
@@ -138,39 +139,27 @@ header {background-color: var(--header-bg-color); color: var(--header-text-color
     #pub-rel-viz-frame {min-width: 40rem; min-height: 33rem; width: 100%; border: 0; background-color: #eee;}
 }
 
-/* 1024-2000px */
-@media (min-width: 1024px) {
+/* 1025-2000px */
+@media (min-width: 1025px) {
+    /* layout */
+    .navibar, main, footer {width: 70%; min-width: 1150px;}
+    
     /* home content */
     .avatar-container {width: 24%;}
     .home-content {width: 66%; }
-
-    /* contact */
-    .uestc-logo {float: right; width: 10rem; margin: 1rem;}
-    .affi-photo {width: 48%; height: 22rem;}
-    .affi-map {width:48%; height: 22rem;}
 }
 
 /* 2000-2999px */
 @media (min-width: 2000px) {
-    html {
-        font-size: 18px;
-    }
-
-    /* max width of navibar, main, footer */
+    /* layout */
+    html {font-size: 18px;}
+    .navibar, main, footer {width: 70%; min-width: 2200px;}
 }
 
 /* >=3000px */
 @media (min-width: 3000px) {
+    /* layout */
+    html {font-size: 20px;}
+    .navibar, main, footer {width: 70%; min-width: 3200px;}
 
 }
-
-/* @media screen and (min-width: 2000px) {
-    html {
-        font-size: 20px;
-    }
-    #bib-data-object, main, #header-content, #foot-content {
-        /* max-width: 80%; */
-        /* width: 80%;
-        margin: auto;
-    }
-} */ 

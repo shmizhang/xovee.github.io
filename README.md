@@ -3,13 +3,13 @@ This repo contains the source codes of Xovee Xu's home page.
 
 ## Design Experience
 
-Designing a website is really a challenging task, not the technical parts but the designs. 
+Designing a website from scratch is really a challenging task, not the technical parts but the designs. 
 
-It's just like a competition. Player A tells me to put many fancy functions and content on the page, but player B tells me you need to be concise and clear, don't put too much on the website, otherwise the visitor's attention would be distracted. 
+It's just like a competition. Player A tells me to put many fancy stuffs on the page, but player B tells me you need to be concise and clear, otherwise the visitor's attention would be distracted. 
 
-As a result, I was sometimes busying on adding features to my site, and the next day I delete them all. 
+As a result, I was sometimes busying on adding features and the next day I deleted them all. 
 
-Anyway, I prefer a simple design and control myself not to obey this rule. 
+Anyway, I prefer a simple design and keep controlling myself not to obey this rule. 
 
 ## Resue
 
@@ -23,8 +23,7 @@ If you want to use this template, please give me a star and add a link at the fo
 
 Just play the following files:
 
-- `./index.html`
-- `./css/style.css`
-- `./html/*.html`
+- `*.html`
+- `./css/main.css`
 
 Thanks a million!

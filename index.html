@@ -59,7 +59,11 @@
     <div class=''>
         <div class='avatar-container'>
             <picture>
-                <img class='avatar' src='img/photo-1.webp' alt='avatar'>
+                <source type='image/webp' media='(max-width:629px)' srcset='img/a2-2320.webp 2320w, img/a2-1200.webp 1200w, img/a2-800.webp 800w, img/a2-400.webp 400w' sizes='80vw'>
+                <source type='image/webp' srcset='img/a2-2320@d.webp 2320w, img/a2-1200@d.webp 1200w, img/a2-800@d.webp 800w, img/a2-400@d.webp 400w' sizes='30vw'>
+                <source type='image/jpeg' media='(max-width:629px)' srcset='img/a2-2320.jpg 2320w'>
+                <source type='image/jpeg' srcset='img/a2-2320.jpg 2320w'>
+                <img class='avatar' src='img/a2-2320.jpg' alt='avatar'>
             </picture>
         </div>
 
