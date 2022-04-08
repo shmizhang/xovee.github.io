@@ -6,8 +6,6 @@ Desktop: 1025-1999px
 4k: 
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
-
 /* global */
 :root {
     --main-bg-color: #eee;
@@ -38,7 +36,7 @@ footer {width: 95%; margin: auto; color: var(--text-grey-color); font-size: var(
 .footnote-date, .corresponding {float: right; color: var(--text-grey-color);}
 .corresponding {margin-top: 1rem;}
 h1, h2, h3, h4, h5, h6 {font-family: var(--font-family-serif); color: var(--text-color);}
-body {margin: auto; background-color: var(--main-bg-color); font-family: var(--font-family); color: var(--text-color); }
+body {margin: auto; background-color: var(--main-bg-color); color: var(--text-color); }
 p {line-height: 1.28;}
 .font-normal-weight {font-weight: normal;}
 
