@@ -30,7 +30,7 @@ html {overflow-y: scroll; font-size: var(--text-size);}
 html, button, input, select, textarea, .pure-g [class *= "pure-u"] {
     font-family: var(--font-family);}
 h1 {font-size: 3em;}
-img {width: 100%; height: auto; margin: auto;}
+img {width: 100%; margin: auto;}
 main {width: 95%; margin: auto; margin-top: 5rem;}
 footer {width: 95%; margin: auto; color: var(--text-grey-color); font-size: var(--text-small-size);}
 .footnote-date, .corresponding {float: right; color: var(--text-grey-color);}
@@ -128,8 +128,8 @@ header {background-color: var(--header-bg-color); color: var(--header-text-color
 
     /* contact */
     .uestc-logo {float: right; width: 10rem; margin: 1rem;}
-    .affi-photo {display: inline-block; width: 48%; height: 22rem; object-fit: cover;}
-    .affi-map {display: inline-block; width: 48%; height: 22rem;}
+    .affi-photo {display: inline-block; width: 49%; height: 15rem; object-fit: cover;}
+    .affi-map {display: inline-block; width: 49%; height: 15rem;}
 
     /* viz */
     #stat-page {display: block;}
@@ -145,6 +145,10 @@ header {background-color: var(--header-bg-color); color: var(--header-text-color
     /* home content */
     .avatar-container {width: 24%;}
     .home-content {width: 66%; }
+
+    /* contact */
+    .affi-photo {height: 25rem;}
+    .affi-map {height: 25rem;}
 }
 
 /* 2000-2999px */
@@ -152,6 +156,10 @@ header {background-color: var(--header-bg-color); color: var(--header-text-color
     /* layout */
     html {font-size: 18px;}
     .navibar, main, footer {width: 70%; min-width: 2200px;}
+
+    /* contact */
+    .affi-photo {height: 35rem;}
+    .affi-map {height: 35rem;}
 }
 
 /* >=3000px */
@@ -160,4 +168,7 @@ header {background-color: var(--header-bg-color); color: var(--header-text-color
     html {font-size: 20px;}
     .navibar, main, footer {width: 70%; min-width: 3200px;}
 
+    /* contact */
+    .affi-photo {height: 55rem;}
+    .affi-map {height: 55rem;}
 }
