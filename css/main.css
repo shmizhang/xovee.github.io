@@ -30,7 +30,7 @@ html {overflow-y: scroll; font-size: var(--text-size);}
 html, button, input, select, textarea, .pure-g [class *= "pure-u"] {
     font-family: var(--font-family);}
 h1 {font-size: 3em;}
-img {width: 100%; margin: auto;}
+img, iframe {max-inline-size: 100%; margin: auto; block-size: auto;}
 main {width: 95%; margin: auto; margin-top: 5rem;}
 footer {width: 95%; margin: auto; color: var(--text-grey-color); font-size: var(--text-small-size);}
 .footnote-date, .corresponding {float: right; color: var(--text-grey-color);}
