@@ -9,6 +9,8 @@ import csv
 paper_file = './plt/timeline/paper.csv'
 milestone_file = './plt/timeline/milestone.csv'
 scripts_output_file = './plt/timeline/scholar_timeline_output.txt'
+height = (400, 300)
+height = (270, 200)
 
 
 def load_data(paper_path, milestone_path):
@@ -71,7 +73,7 @@ p = figure(title="Xovee's Timeline",
            x_axis_label='', y_axis_label='',
            x_axis_type='datetime',
            y_axis_location='left',
-           height=270, width=1080,
+           height=height[0], width=1080,
            sizing_mode='stretch_width',
            x_range=(to_date('2013/09/01'), to_date('2024/06/30')),
            y_range=(0, max_citations),
@@ -127,7 +129,7 @@ all_milestone_lines = list()
 
 
 def draw_milestone_annotation(data):
-    label = Label(x=to_date(data[0]), y=200, x_units='data', y_units='screen', text=' > ' + data[1], text_color='gray',
+    label = Label(x=to_date(data[0]), y=height[1], x_units='data', y_units='screen', text=' > ' + data[1], text_color='gray',
                   text_font_size='12px')
     p.add_layout(label)
     all_milestone_lines.append(label)

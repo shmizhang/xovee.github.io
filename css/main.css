@@ -19,8 +19,6 @@ Desktop: 1025-1999px
     --text-size: 16px;
     --text-large-size: 1.1rem;
     --text-small-size: 0.85rem;
-    --text-size-2k: 18px;
-    --text-size-4k: 20px;
     --font-family: "Roboto", Helvetica, sans-serif;
     --font-family-serif: 'Times New Roman', Times, serif; 
 }
@@ -63,8 +61,9 @@ header {background-color: var(--header-bg-color); color: var(--header-text-color
 /* home content */
 .avatar-container {display: block; width: 80%; margin: auto; padding: 1rem 0 0 0;}
 .avatar {aspect-ratio: 1/1; object-fit: cover; width: 100%;}
-#home-scholar-timeline {display: none;}
+#home-name {text-align: center; margin-top: 1rem;}
 #home-intro p {text-indent: -.8rem; padding-left: .8rem;}
+#home-scholar-timeline {display: none;}
 
 /* publication */
 .pub-item {display: none; font-weight: lighter;}
@@ -121,7 +120,7 @@ header {background-color: var(--header-bg-color); color: var(--header-text-color
     #home-scholar-timeline {display: block;}
     #home-position {font-size: 1.2rem;}
     #home-intro p {line-height: 1.3; margin: .8rem 0; font-weight: lighter;}
-    #home-name {font-size: 3.3rem; }
+    #home-name {font-size: 3.3rem; text-align: left; margin: 2rem auto;}
 
     /* publication */
     .pub-item, .pub-affi {margin-left: 2rem;}
@@ -140,7 +139,7 @@ header {background-color: var(--header-bg-color); color: var(--header-text-color
 /* 1025-2000px */
 @media (min-width: 1025px) {
     /* layout */
-    .navibar, main, footer {width: 70%; min-width: 1150px;}
+    .navibar, main, footer {width: 60%; min-width: 1100px;}
     
     /* home content */
     .avatar-container {width: 24%;}
@@ -154,8 +153,11 @@ header {background-color: var(--header-bg-color); color: var(--header-text-color
 /* 2000-2999px */
 @media (min-width: 2000px) {
     /* layout */
-    html {font-size: 18px;}
-    .navibar, main, footer {width: 70%; min-width: 2200px;}
+    html {font-size: calc(var(--text-size) + .4vw);}
+    .navibar, main, footer {width: 60%; min-width: 1300px;}
+
+    /* home content */
+    .avatar-container {width: 27%;}
 
     /* contact */
     .affi-photo {height: 35rem;}
@@ -165,8 +167,11 @@ header {background-color: var(--header-bg-color); color: var(--header-text-color
 /* >=3000px */
 @media (min-width: 3000px) {
     /* layout */
-    html {font-size: 20px;}
-    .navibar, main, footer {width: 70%; min-width: 3200px;}
+    html {font-size: calc(var(--text-size) + .55vw);}
+    .navibar, main, footer {width: 70%; min-width: 2300px;}
+
+    /* home content */
+    .avatar-container {width: 24%;}
 
     /* contact */
     .affi-photo {height: 55rem;}

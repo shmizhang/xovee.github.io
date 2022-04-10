@@ -80,7 +80,7 @@
 
     <div class='card-item timeline-container'>
         <!-- scholar timeline -->
-        <div class="bk-root" id="c18b8bec-0d5e-47e1-817c-3b756661908d" data-root-id="1004"></div>
+        <div class="bk-root" id="43149920-0cab-4c96-a113-c0e1eb528508" data-root-id="1004"></div>
     </div>
 
     <h2 id='pub-rel-viz'>Publication Relation Visualization</h2>
@@ -154,9 +154,14 @@
 
             bokehJS.onload = () => {
                 var timelineJS = document.createElement('script');
+                var screenWidth = document.documentElement.clientWidth;
 
                 timelineJS.type = 'text/javascript';
-                timelineJS.src = 'js/timeline.js';
+                if(screenWidth >= 2000) {
+                    timelineJS.src = 'js/timeline-4k.js';
+                } else {
+                    timelineJS.src = 'js/timeline-1920.js';
+                }
                 
                 head.appendChild(timelineJS);
             }
