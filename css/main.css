@@ -88,7 +88,8 @@ header {background-color: var(--header-bg-color); color: var(--header-text-color
 /* contact */
 .uestc-logo {display: block; width: 50%; height: auto; margin: auto;}
 .affi-photo {width: 100%; height: auto; border: 2px solid black;}
-.affi-map {display: none; border: 2px solid black; width: 100%; height: 35vh;}
+.affi-map {display: block; border: 2px solid black; width: 100%; height: 35vh; transition: 1s; filter: hue-rotate(180deg);}
+.affi-map:hover {filter: hue-rotate(320deg); transition: 1s;}
 #zh-lab-address {display: none;}
 
 /* modules */
@@ -106,7 +107,7 @@ header {background-color: var(--header-bg-color); color: var(--header-text-color
     #navi-mobile-home-item {display: none;}
     #navi-desktop-home-item, #navi-other-items, #navi-other-items a {display: inline-block; border: 0;}
     .navi-item, #navi-desktop-home-item {padding: .2rem .3rem; margin-right: 1rem;}
-    .navibar a:link, .navibar a:visited {color: var(--text-color); text-decoration: none;}
+    .navibar a:link, .navibar a:visited {color: var(--text-color); text-decoration: none; transition: .5s;}
     .navibar a:hover {color: var(--text-grey-color); transition: .5s; text-decoration: underline;}
 
     /* layout */
