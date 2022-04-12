@@ -161,8 +161,8 @@ header {background-color: var(--header-bg-color); color: var(--header-text-color
     .avatar-container {width: 27%;}
 
     /* contact */
-    .affi-photo {height: 35rem;}
-    .affi-map {height: 35rem;}
+    .affi-photo {height: 20rem;}
+    .affi-map {height: 20rem;}
 }
 
 /* >=3000px */
@@ -175,6 +175,6 @@ header {background-color: var(--header-bg-color); color: var(--header-text-color
     .avatar-container {width: 24%;}
 
     /* contact */
-    .affi-photo {height: 55rem;}
-    .affi-map {height: 55rem;}
+    .affi-photo {height: 23rem;}
+    .affi-map {height: 23rem;}
 }
