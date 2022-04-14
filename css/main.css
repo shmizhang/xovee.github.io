@@ -119,7 +119,7 @@ header {background-color: var(--header-bg-color); color: var(--header-text-color
     .avatar {aspect-ratio: auto; }
     .home-content {display: inline-block; width: 55%; vertical-align: top; padding-top: 2rem;}
     #home-scholar-timeline {display: block;}
-    #home-position {font-size: 1.1rem; font-weight: bold;}
+    #home-position {font-size: 1.2rem; font-weight: bold;}
     #home-intro p {line-height: 1.3; margin: .8rem 0; font-weight: normal;}
     #home-name {font-size: 3.3rem; text-align: left; margin: 2rem auto;}
 
