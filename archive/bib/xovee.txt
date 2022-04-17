@@ -86,7 +86,7 @@
 @article{zhou2021survey,
   title = {A Survey of Information Cascade Analysis: Models, Predictions, and Recent advances},
   author = {Fan Zhou and Xovee Xu and Goce Trajcevski and Kunpeng Zhang},
-  journal = {ACM Computing Surveys (CSUR)},
+  journal = {ACM Computing Surveys},
   volume = {54},
   number = {2},
   pages = {1--36},
