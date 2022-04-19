@@ -10,7 +10,7 @@ paper_file = './plt/timeline/paper.csv'
 milestone_file = './plt/timeline/milestone.csv'
 scripts_output_file = './plt/timeline/scholar_timeline_output.txt'
 height = (400, 300)
-height = (270, 200)
+# height = (270, 200)
 
 
 def load_data(paper_path, milestone_path):
