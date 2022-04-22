@@ -108,7 +108,7 @@ header {background-color: var(--header-bg-color); color: var(--header-text-color
     #navi-desktop-home-item, #navi-other-items, #navi-other-items a {display: inline-block; border: 0;}
     .navi-item, #navi-desktop-home-item {padding: .2rem .3rem; margin-right: 1rem;}
     .navibar a:link, .navibar a:visited {color: var(--text-color); text-decoration: none; transition: .5s;}
-    .navibar a:hover {color: var(--text-grey-color); transition: .5s; text-decoration: underline;}
+    .navibar a:hover {color: var(--text-grey-color); transition: .5s; text-decoration: none;}
 
     /* layout */
     footer {font-size: var(--text-small-size);}
@@ -143,8 +143,8 @@ header {background-color: var(--header-bg-color); color: var(--header-text-color
     .navibar, main, footer {width: 900px;}
     
     /* home content */
-    .avatar-container {width: 290px;}
-    .home-content {width: 510px; }
+    .avatar-container {width: 275px;}
+    .home-content {width: 525px; }
 
     /* contact */
     .affi-photo {height: 18rem;}
@@ -157,7 +157,7 @@ header {background-color: var(--header-bg-color); color: var(--header-text-color
     .navibar, main, footer {width: 1000px;}
     
     /* home content */
-    .avatar-container {width: 270px;}
+    .avatar-container {width: 255px;}
     .home-content {width: 600px; }
 
     /* contact */
@@ -172,7 +172,7 @@ header {background-color: var(--header-bg-color); color: var(--header-text-color
     .navibar, main, footer {width: 1300px}
 
     /* home content */
-    .avatar-container {width: 320px;}
+    .avatar-container {width: 300px;}
     .home-content {width: 800px;}
 
     /* contact */
@@ -187,7 +187,7 @@ header {background-color: var(--header-bg-color); color: var(--header-text-color
     .navibar, main, footer {width: 2000px}
 
     /* home content */
-    .avatar-container {width: 540px;}
+    .avatar-container {width: 520px;}
     .home-content {width: 1200px;}
 
     /* contact */
