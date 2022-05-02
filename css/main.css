@@ -161,7 +161,7 @@ header {background-color: var(--mobile-header-bg-color); color: var(--mobile-hea
     
     /* home content */
     .avatar-container {width: 255px;}
-    .home-content {width: 600px; }
+    .home-content {width: 620px; }
 
     /* contact */
     .affi-photo {height: 20rem;}
