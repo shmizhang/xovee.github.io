@@ -1,16 +1,6 @@
 # author: Xovee Xu
 # homepage: https://xovee.cn
 
-
-@article{xu2022ccgl, 
-  title = {{CCGL}: Contrastive Cascade Graph Learning}, 
-  author = {Xovee Xu and Fan Zhou and Kunpeng Zhang and Siyuan Liu}, 
-  journal = {IEEE Transactions on Knowledge and Data Engineering (TKDE)}, 
-  numpages = {15}, 
-  year = {2022}, 
-  publisher = {IEEE}, 
-}
-
 @inproceedings{zhong2022probabilistic, 
   title = {Probabilistic Fine-Grained Urban Flow Inference With Normalizing Flows}, 
   author = {Ting Zhong and Haoyang Yu and Rongfan Li and Xovee Xu and Xucheng Luo and Fan Zhou}, 
@@ -23,6 +13,19 @@
   publisher = {IEEE}, 
   doi = {10.1109/ICASSP43922.2022.9747900}，
 }
+
+
+@article{xu2022ccgl, 
+  title = {{CCGL}: Contrastive Cascade Graph Learning}, 
+  author = {Xovee Xu and Fan Zhou and Kunpeng Zhang and Siyuan Liu}, 
+  journal = {IEEE Transactions on Knowledge and Data Engineering (TKDE)}, 
+  numpages = {15}, 
+  month = feb,
+  year = {2022}, 
+  publisher = {IEEE}, 
+  doi = {10.1109/TKDE.2022.3151829}
+}
+
 
 # aaai 22
 # aaai 22
