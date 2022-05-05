@@ -71,6 +71,7 @@ header {background-color: var(--mobile-header-bg-color); color: var(--mobile-hea
 .pub-item {display: none; font-weight: lighter;}
 .pub-selected {display: block;}
 .pub-item .pub-title {font-weight: bold; font-size: normal;}
+.pub-item-link {margin-right: .6rem;}
 #pubs-by-topic ul {font-weight: normal;}
 #pubs-by-topic ul a {font-weight: lighter;}
 #pubs-browse-year:checked + label, #pubs-browse-topic:checked + label {font-weight: bold;}
