@@ -161,7 +161,7 @@ header {background-color: var(--mobile-header-bg-color); color: var(--mobile-hea
     .navibar, main, footer {width: 1000px;}
     
     /* home content */
-    .avatar-container {width: 255px;}
+    .avatar-container {width: 245px;}
     .home-content {width: 620px; }
 
     /* contact */
