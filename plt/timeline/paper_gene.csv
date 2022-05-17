@@ -2,16 +2,16 @@ paper,author,venue,date,citation
 Probabilistic Fine-Grained Urban Flow Inference With Normalizing Flows,"Ting Zhong, Haoyang Yu, Rongfan Li, <b>Xovee Xu</b>*, Xucheng Luo, and Fan Zhou",ICASSP 22,2022/05/22,0
 Linking Transformer to Hawkes Process for Information Cascade Prediction (Student Abstract),"Liu Yu, <b>Xovee Xu</b>, Ting Zhong, Goce Trajcevski, and Fan Zhou*",AAAI Student Abs. 22,2022/02/22,0
 Conditional Collaborative Filtering Process for Top-K Recommender System (Student Abstract),"Guanyu Wang, <b>Xovee Xu</b>, Ting Zhong*, and Fan Zhou",AAAI Student Abs. 22,2022/02/22,0
-Fine-Grained Urban Flow Inference via Normalizing Flows (Student Abstract),"Haoyang Yu, <b>Xovee Xu</b>, Ting Zhong, and Fan Zhou*",AAAI Student Abs. 22,2022/02/22,0
+Fine-Grained Urban Flow Inference via Normalizing Flows (Student Abstract),"Haoyang Yu, <b>Xovee Xu</b>, Ting Zhong, and Fan Zhou*",AAAI Student Abs. 22,2022/02/22,1
 PrEF: Probabilistic Electricity Forecasting via Copula-Augmented State Space Model,"Zhiyuan Wang, <b>Xovee Xu</b>, Goce Trajcevski, Kunpeng Zhang, Ting Zhong, and Fan Zhou*",AAAI 22,2022/02/22,0
 CCGL: Contrastive Cascade Graph Learning,"<b>Xovee Xu</b>, Fan Zhou*, Kunpeng Zhang, and Siyuan Liu",TKDE 22,2021/07/20,0
 Heterogeneous Dynamical Academic Network for Learning Scientific Impact Propagation,"<b>Xovee Xu</b>, Ting Zhong, Ce Li, Goce Trajcevski, and Fan Zhou*",KBS 22,2022/02/01,0
-Contrastive Trajectory Learning for Tour Recommendation,"Fan Zhou, Pengyu Wang, <b>Xovee Xu</b>*, Wenxin Tai, and Goce Trajcevski",ACM TIST,2022/02/01,1
+Contrastive Trajectory Learning for Tour Recommendation,"Fan Zhou, Pengyu Wang, <b>Xovee Xu</b>*, Wenxin Tai, and Goce Trajcevski",ACM TIST,2022/02/01,2
 HGENA: A Hyperbolic Graph Embedding Approach for Network Alignment,"Fan Zhou, Ce Li, <b>Xovee Xu</b>, Leyuan Liu*, and Goce Trajcevski",GLOBECOM 21,2021/12/07,0
-CasFlow: Exploring Hierarchical Structures and Propagation Uncertainty for Cascade Prediction,"<b>Xovee Xu</b>, Fan Zhou*, Kunpeng Zhang, Siyuan Liu, and Goce Trajcevski",TKDE 21,2021/11/01,2
+CasFlow: Exploring Hierarchical Structures and Propagation Uncertainty for Cascade Prediction,"<b>Xovee Xu</b>, Fan Zhou*, Kunpeng Zhang, Siyuan Liu, and Goce Trajcevski",TKDE 21,2021/11/01,3
 Vector-Quantized Autoencoder With Copula for Collaborative Filtering,"Guanyu Wang, Ting Zhong, <b>Xovee Xu</b>, Kunpeng Zhang, Fan Zhou*, and Yong Wang",CIKM 21,2021/10/26,0
-Decoupling Representation and Regressor for Long-Tailed Information Cascade Prediction,"Fan Zhou, Liu Yu, <b>Xovee Xu</b>*, and Goce Trajcevski",SIGIR 21,2021/07/11,2
-"A Survey of Information Cascade Analysis: Models, Predictions, and Recent Advances","Fan Zhou, <b>Xovee Xu</b>*, Goce Trajcevski, and Kunpeng Zhang",CSUR 21,2021/03/01,46
+Decoupling Representation and Regressor for Long-Tailed Information Cascade Prediction,"Fan Zhou, Liu Yu, <b>Xovee Xu</b>*, and Goce Trajcevski",SIGIR 21,2021/07/11,3
+"A Survey of Information Cascade Analysis: Models, Predictions, and Recent Advances","Fan Zhou, <b>Xovee Xu</b>*, Goce Trajcevski, and Kunpeng Zhang",CSUR 21,2021/03/01,49
 Continual Information Cascade Learning,"Fan Zhou, Xin Jing, <b>Xovee Xu</b>, Ting Zhong, Goce Trajcevski, and Jin Wu*",GLOBECOM 20,2020/12/07,5
 Unsupervised User Identity Linkage via Graph Neural Networks,"Fan Zhou, Zijing Wen, Ting Zhong*, Goce Trajcevski, <b>Xovee Xu</b>, and Leyuan Liu*",GLOEBCOM 20,2020/12/07,3
 Meta-Learned User Preference for Topic Participation Prediction,"Fan Zhou, Xiuxiu Qi, <b>Xovee Xu</b>, Jiahao Wang*, Ting Zhong, and Goce Trajcevski",GLOBECOM 20,2020/12/07,0

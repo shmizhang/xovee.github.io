@@ -40,8 +40,10 @@ def to_date(date):
 
 
 papers, milestones = load_data(paper_file, milestone_file)
+all_citations = sum([int(paper[4]) for paper in papers])
 print(papers[0])
 print(milestones[-1])
+print(all_citations)
 paper_source = ColumnDataSource(
     data={
         'title': [paper[0] for paper in papers],
@@ -143,8 +145,8 @@ lines = p.segment(x0='date', y0=0,
 for milestone in milestones:
     draw_milestone_annotation(milestone)
 
-yaxis_label = Label(x=0, y=5, x_units='screen', y_units='screen', text=' # citations', text_color='black',
-                    text_font_size='12px', text_alpha=.5)
+yaxis_label = Label(x=0, y=5, x_units='screen', y_units='screen', text=' # citation: {}'.format(all_citations), text_color='black',
+                    text_font_size='12px', text_alpha=1.)
 p.add_layout(yaxis_label)
 
 paper_tooltips = """
